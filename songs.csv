@@ -1,0 +1,101 @@
+ID, Title, Artist, Genre, BPM, Tags
+1, Shattered Dreams, The Echoes, Pop, 120, upbeat, summer, love
+2, Midnight Drive, Neon Skies, Synthwave, 130, retro, night, chill
+3, Lost in Time, Aurora Falls, Indie Rock, 110, nostalgic, acoustic, dreamy
+4, Electric City, Strobe Pulse, Electronic, 128, party, dance, energetic
+5, Golden Horizon, Sundown Soul, Country, 95, acoustic, laid-back, storytelling
+6, Heartbreak Avenue, Crimson Hearts, Rock, 140, passionate, breakup, powerful
+7, Ocean Waves, Tidepool Dreams, Chillout, 85, relaxing, ambient, nature
+8, Cosmic Voyage, Galaxy Bound, Psytrance, 145, trippy, space, intense
+9, Urban Nights, Cityscape, Hip Hop, 100, groovy, urban, street
+10, Sunset Boulevard, Violet Lights, Jazz, 75, smooth, saxophone, lounge
+11, Electric Rain, Neon Nights, Synthpop, 115, futuristic, mellow, dreamy
+12, Fire in the Sky, Ember Lane, Rock, 150, aggressive, guitar, solo
+13, Moonlit Dunes, Desert Mirage, World, 95, ethnic, percussive, mysterious
+14, Highway Run, Jetstream, Rock, 145, fast, roadtrip, freedom
+15, Distant Stars, Nebula Waves, Ambient, 70, calm, space, meditation
+16, Blazing Trails, Rogue Rider, Country Rock, 120, adventure, outdoors, grit
+17, Digital Dreams, Pixel Storm, EDM, 128, party, futuristic, high-energy
+18, Velvet Skies, Crimson Moon, Indie Pop, 110, soft, emotional, introspective
+19, Runaway Heart, Silver Lines, Pop, 100, breakup, longing, heartache
+20, Echoes of Yesterday, Silent Voices, Alternative, 135, dark, moody, introspective
+21, Frostbite, Polar Wind, Electronic, 140, cold, sharp, minimal
+22, Jungle Fever, Tropic Tides, Reggaeton, 95, dance, tropical, party
+23, Galactic Beat, Space Raiders, Drum & Bass, 170, fast, space, electronic
+24, Morning Dew, Whispering Pines, Folk, 80, acoustic, mellow, nature
+25, Rising Sun, Zenith Point, Progressive House, 128, uplifting, dance, festival
+26, Winds of Change, Storm Front, Hard Rock, 150, intense, power, anthemic
+27, Suburban Escape, Pastel Roads, Indie, 110, chill, easy-going, youthful
+28, Black Horizon, Shadowscape, Metal, 170, dark, heavy, distortion
+29, Moonlit Serenade, Starlight Grove, Jazz, 80, romantic, smooth, saxophone
+30, Crystal Waters, Blue Horizon, Ambient, 60, calm, nature, water
+31, Urban Pulse, Beat Street, Hip Hop, 95, urban, groove, street
+32, Silver Lining, Golden Days, Pop, 105, uplifting, bright, feel-good
+33, Electric Sunset, Neon Mirage, Synthwave, 120, retro, electronic, dreamy
+34, Whispering Winds, Forest Spirits, World, 85, nature, ethnic, mystical
+35, Iron Will, Forge and Flame, Metal, 180, aggressive, fast, powerful
+36, Crimson Horizon, Twilight Abyss, Electronic, 140, dark, synth, driving
+37, Blue Skies, Cloud Runners, Pop Rock, 115, optimistic, guitar, summer
+38, Flaming Roads, Dust Devils, Country Rock, 100, gritty, southern, journey
+39, Deep Space, Nebula Riders, Psybient, 85, cosmic, slow, meditative
+40, Glowing Embers, Firelight Tales, Folk, 75, acoustic, storytelling, warm
+41, Electric Rush, Shockwave, Electro, 128, club, energetic, synth
+42, Silent Nightfall, Moonlit Shores, Classical, 60, piano, soothing, night
+43, Endless Highways, Rolling Thunder, Classic Rock, 140, guitar, roadtrip, solo
+44, Summer Rain, Golden Shore, Soft Rock, 110, easy, acoustic, relaxing
+45, Violet Dreams, Nebula Visions, Indie Pop, 115, dreamy, introspective, electronic
+46, Desert Winds, Sahara Horizon, World, 100, ethnic, sand, mystery
+47, Urban Blaze, Skyline Hustle, Trap, 140, street, dark, bass-heavy
+48, Distant Echoes, Whispered Memories, Ambient, 65, soft, calm, space
+49, Mystic Ritual, Ancient Spirits, World, 90, tribal, percussion, deep
+50, Runaway Train, Rolling Steel, Country, 95, journey, acoustic, freedom
+51, Aurora Lights, Northern Dream, Chillout, 70, relaxing, calm, night
+52, Wild Frontier, Outlaw Kings, Southern Rock, 120, guitar, gritty, adventure
+53, Lost Highway, Neon Storm, Synthwave, 130, retro, night, drive
+54, Silent Forest, Whispering Pines, New Age, 60, nature, meditation, calm
+55, Blazing Sky, Fires of Dawn, Hard Rock, 155, powerful, guitar, anthem
+56, Neon Nights, City Lights, EDM, 125, night, club, party
+57, Ocean Depths, Tidepool Dreams, Chillout, 90, relaxing, ambient, water
+58, Thunder Road, Midnight Marauders, Rock, 135, guitar, dark, powerful
+59, Digital Horizon, Cyberdreams, Synthpop, 118, electronic, futuristic, mellow
+60, Whispered Truths, Silent Echo, Alternative, 112, introspective, deep, dark
+61, Rising Flames, Ember Kings, Metal, 180, fast, intense, powerful
+62, Neon Shadows, City Strangers, Synthwave, 128, dark, retro, electronic
+63, Golden Rivers, Silent Fields, Country, 105, laid-back, acoustic, easy
+64, Electric Heart, Pulse Driver, Electronic, 135, dance, energetic, club
+65, Distant Shores, Oceanic Dreams, Ambient, 70, relaxing, nature, calm
+66, Fading Lights, Midnight Drive, Indie Pop, 118, dreamy, retro, soft
+67, Southern Winds, Wild Heart, Country, 85, acoustic, journey, freedom
+68, Urban Vibes, Skyline Sound, Hip Hop, 110, street, groove, urban
+69, Blazing Trails, Outlaw Kings, Country Rock, 130, guitar, adventure, rugged
+70, Storm Chaser, Electric Stride, Rock, 150, fast, powerful, guitar
+71, Ocean Breeze, Sundown Sessions, Chillout, 75, ambient, nature, ocean
+72, Galactic Journey, Cosmic Nomads, Psytrance, 148, trippy, space, high-energy
+73, Burning Ember, Phoenix Drive, Rock, 135, powerful, fiery, guitar
+74, Summer Daze, Coastal Dreams, Pop, 100, relaxing, beach, feel-good
+75, Electric Groove, Night Pulse, Funk, 120, dance, groove, retro
+76, Canyon Shadows, Dusty Trails, Western, 80, slow, gritty, acoustic
+77, Neon Streets, Skyline Raiders, Synthwave, 125, retro, city, dark
+78, Frozen Time, Winter Souls, Ambient, 70, chill, relaxing, cold
+79, Cosmic Drift, Stellar Dreams, Chillout, 85, space, calm, ambient
+80, Iron Fist, Metal Surge, Metal, 165, heavy, distortion, power
+81, Falling Stars, Twilight Horizon, Indie, 110, dreamy, acoustic, introspective
+82, Golden Flames, Ember Sky, Country Rock, 100, outdoors, acoustic, journey
+83, Electric Pulse, Neon Dreams, Synthpop, 115, retro, electronic, smooth
+84, Blue Moon, Night Serenade, Jazz, 70, saxophone, smooth, romantic
+85, Running Wild, Outlaw Riders, Southern Rock, 140, fast, gritty, journey
+86, Digital Rain, Cyber Skies, Electronic, 130, futuristic, dance, high-energy
+87, Crimson Glow, Twilight Beats, Trap, 140, bass-heavy, dark, street
+88, Endless Dreams, Oceanview, Ambient, 75, calm, relaxing, water
+89, Silent Rush, Midnight Chase, Rock, 130, fast, dark, intense
+90, Golden Fields, Whispering Pines, Folk, 85, acoustic, storytelling, mellow
+91, Electric Skies, Neon Breeze, EDM, 125, party, electronic, festival
+92, Night Stalker, City Dwellers, Synthwave, 128, dark, retro, city
+93, Rising Tide, Ocean Spirits, Chillout, 70, ambient, relaxing, nature
+94, Blazing Inferno, Phoenix Flames, Rock, 150, powerful, guitar, fiery
+95, Sunset Glow, Tropical Waves, Reggae, 90, island, chill, beach
+96, Cosmic Dawn, Stellar Nomads, Psybient, 80, space, calm, relaxing
+97, Golden Strings, Sunset Serenade, Country, 95, acoustic, warm, storytelling
+98, Midnight Serenade, Violet Echo, Jazz, 75, smooth, saxophone, romantic
+99, Iron Shadows, Steel Runners, Metal, 170, heavy, distortion, powerful
+100, Frosted Echoes, Winter Solstice, Ambient, 60, chill, cold, ethereal
