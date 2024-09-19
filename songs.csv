@@ -1,101 +1,101 @@
 ID, Title, Artist, Genre, BPM, Tags
-1, Shattered Dreams, The Echoes, Pop, 120, upbeat, summer, love
-2, Midnight Drive, Neon Skies, Synthwave, 130, retro, night, chill
-3, Lost in Time, Aurora Falls, Indie Rock, 110, nostalgic, acoustic, dreamy
-4, Electric City, Strobe Pulse, Electronic, 128, party, dance, energetic
-5, Golden Horizon, Sundown Soul, Country, 95, acoustic, laid-back, storytelling
-6, Heartbreak Avenue, Crimson Hearts, Rock, 140, passionate, breakup, powerful
-7, Ocean Waves, Tidepool Dreams, Chillout, 85, relaxing, ambient, nature
-8, Cosmic Voyage, Galaxy Bound, Psytrance, 145, trippy, space, intense
-9, Urban Nights, Cityscape, Hip Hop, 100, groovy, urban, street
-10, Sunset Boulevard, Violet Lights, Jazz, 75, smooth, saxophone, lounge
-11, Electric Rain, Neon Nights, Synthpop, 115, futuristic, mellow, dreamy
-12, Fire in the Sky, Ember Lane, Rock, 150, aggressive, guitar, solo
-13, Moonlit Dunes, Desert Mirage, World, 95, ethnic, percussive, mysterious
-14, Highway Run, Jetstream, Rock, 145, fast, roadtrip, freedom
-15, Distant Stars, Nebula Waves, Ambient, 70, calm, space, meditation
-16, Blazing Trails, Rogue Rider, Country Rock, 120, adventure, outdoors, grit
-17, Digital Dreams, Pixel Storm, EDM, 128, party, futuristic, high-energy
-18, Velvet Skies, Crimson Moon, Indie Pop, 110, soft, emotional, introspective
-19, Runaway Heart, Silver Lines, Pop, 100, breakup, longing, heartache
-20, Echoes of Yesterday, Silent Voices, Alternative, 135, dark, moody, introspective
-21, Frostbite, Polar Wind, Electronic, 140, cold, sharp, minimal
-22, Jungle Fever, Tropic Tides, Reggaeton, 95, dance, tropical, party
-23, Galactic Beat, Space Raiders, Drum & Bass, 170, fast, space, electronic
-24, Morning Dew, Whispering Pines, Folk, 80, acoustic, mellow, nature
-25, Rising Sun, Zenith Point, Progressive House, 128, uplifting, dance, festival
-26, Winds of Change, Storm Front, Hard Rock, 150, intense, power, anthemic
-27, Suburban Escape, Pastel Roads, Indie, 110, chill, easy-going, youthful
-28, Black Horizon, Shadowscape, Metal, 170, dark, heavy, distortion
-29, Moonlit Serenade, Starlight Grove, Jazz, 80, romantic, smooth, saxophone
-30, Crystal Waters, Blue Horizon, Ambient, 60, calm, nature, water
-31, Urban Pulse, Beat Street, Hip Hop, 95, urban, groove, street
-32, Silver Lining, Golden Days, Pop, 105, uplifting, bright, feel-good
-33, Electric Sunset, Neon Mirage, Synthwave, 120, retro, electronic, dreamy
-34, Whispering Winds, Forest Spirits, World, 85, nature, ethnic, mystical
-35, Iron Will, Forge and Flame, Metal, 180, aggressive, fast, powerful
-36, Crimson Horizon, Twilight Abyss, Electronic, 140, dark, synth, driving
-37, Blue Skies, Cloud Runners, Pop Rock, 115, optimistic, guitar, summer
-38, Flaming Roads, Dust Devils, Country Rock, 100, gritty, southern, journey
-39, Deep Space, Nebula Riders, Psybient, 85, cosmic, slow, meditative
-40, Glowing Embers, Firelight Tales, Folk, 75, acoustic, storytelling, warm
-41, Electric Rush, Shockwave, Electro, 128, club, energetic, synth
-42, Silent Nightfall, Moonlit Shores, Classical, 60, piano, soothing, night
-43, Endless Highways, Rolling Thunder, Classic Rock, 140, guitar, roadtrip, solo
-44, Summer Rain, Golden Shore, Soft Rock, 110, easy, acoustic, relaxing
-45, Violet Dreams, Nebula Visions, Indie Pop, 115, dreamy, introspective, electronic
-46, Desert Winds, Sahara Horizon, World, 100, ethnic, sand, mystery
-47, Urban Blaze, Skyline Hustle, Trap, 140, street, dark, bass-heavy
-48, Distant Echoes, Whispered Memories, Ambient, 65, soft, calm, space
-49, Mystic Ritual, Ancient Spirits, World, 90, tribal, percussion, deep
-50, Runaway Train, Rolling Steel, Country, 95, journey, acoustic, freedom
-51, Aurora Lights, Northern Dream, Chillout, 70, relaxing, calm, night
-52, Wild Frontier, Outlaw Kings, Southern Rock, 120, guitar, gritty, adventure
-53, Lost Highway, Neon Storm, Synthwave, 130, retro, night, drive
-54, Silent Forest, Whispering Pines, New Age, 60, nature, meditation, calm
-55, Blazing Sky, Fires of Dawn, Hard Rock, 155, powerful, guitar, anthem
-56, Neon Nights, City Lights, EDM, 125, night, club, party
-57, Ocean Depths, Tidepool Dreams, Chillout, 90, relaxing, ambient, water
-58, Thunder Road, Midnight Marauders, Rock, 135, guitar, dark, powerful
-59, Digital Horizon, Cyberdreams, Synthpop, 118, electronic, futuristic, mellow
-60, Whispered Truths, Silent Echo, Alternative, 112, introspective, deep, dark
-61, Rising Flames, Ember Kings, Metal, 180, fast, intense, powerful
-62, Neon Shadows, City Strangers, Synthwave, 128, dark, retro, electronic
-63, Golden Rivers, Silent Fields, Country, 105, laid-back, acoustic, easy
-64, Electric Heart, Pulse Driver, Electronic, 135, dance, energetic, club
-65, Distant Shores, Oceanic Dreams, Ambient, 70, relaxing, nature, calm
-66, Fading Lights, Midnight Drive, Indie Pop, 118, dreamy, retro, soft
-67, Southern Winds, Wild Heart, Country, 85, acoustic, journey, freedom
-68, Urban Vibes, Skyline Sound, Hip Hop, 110, street, groove, urban
-69, Blazing Trails, Outlaw Kings, Country Rock, 130, guitar, adventure, rugged
-70, Storm Chaser, Electric Stride, Rock, 150, fast, powerful, guitar
-71, Ocean Breeze, Sundown Sessions, Chillout, 75, ambient, nature, ocean
-72, Galactic Journey, Cosmic Nomads, Psytrance, 148, trippy, space, high-energy
-73, Burning Ember, Phoenix Drive, Rock, 135, powerful, fiery, guitar
-74, Summer Daze, Coastal Dreams, Pop, 100, relaxing, beach, feel-good
-75, Electric Groove, Night Pulse, Funk, 120, dance, groove, retro
-76, Canyon Shadows, Dusty Trails, Western, 80, slow, gritty, acoustic
-77, Neon Streets, Skyline Raiders, Synthwave, 125, retro, city, dark
-78, Frozen Time, Winter Souls, Ambient, 70, chill, relaxing, cold
-79, Cosmic Drift, Stellar Dreams, Chillout, 85, space, calm, ambient
-80, Iron Fist, Metal Surge, Metal, 165, heavy, distortion, power
-81, Falling Stars, Twilight Horizon, Indie, 110, dreamy, acoustic, introspective
-82, Golden Flames, Ember Sky, Country Rock, 100, outdoors, acoustic, journey
-83, Electric Pulse, Neon Dreams, Synthpop, 115, retro, electronic, smooth
-84, Blue Moon, Night Serenade, Jazz, 70, saxophone, smooth, romantic
-85, Running Wild, Outlaw Riders, Southern Rock, 140, fast, gritty, journey
-86, Digital Rain, Cyber Skies, Electronic, 130, futuristic, dance, high-energy
-87, Crimson Glow, Twilight Beats, Trap, 140, bass-heavy, dark, street
-88, Endless Dreams, Oceanview, Ambient, 75, calm, relaxing, water
-89, Silent Rush, Midnight Chase, Rock, 130, fast, dark, intense
-90, Golden Fields, Whispering Pines, Folk, 85, acoustic, storytelling, mellow
-91, Electric Skies, Neon Breeze, EDM, 125, party, electronic, festival
-92, Night Stalker, City Dwellers, Synthwave, 128, dark, retro, city
-93, Rising Tide, Ocean Spirits, Chillout, 70, ambient, relaxing, nature
-94, Blazing Inferno, Phoenix Flames, Rock, 150, powerful, guitar, fiery
-95, Sunset Glow, Tropical Waves, Reggae, 90, island, chill, beach
-96, Cosmic Dawn, Stellar Nomads, Psybient, 80, space, calm, relaxing
-97, Golden Strings, Sunset Serenade, Country, 95, acoustic, warm, storytelling
-98, Midnight Serenade, Violet Echo, Jazz, 75, smooth, saxophone, romantic
-99, Iron Shadows, Steel Runners, Metal, 170, heavy, distortion, powerful
-100, Frosted Echoes, Winter Solstice, Ambient, 60, chill, cold, ethereal
+1, Blinding Lights, The Weeknd, Pop, 171, retro, upbeat, synth
+2, Billie Jean, Michael Jackson, Pop, 117, iconic, dance, funky
+3, Smells Like Teen Spirit, Nirvana, Grunge, 117, rebellious, grunge, anthem
+4, Rolling in the Deep, Adele, Pop, 105, powerful, emotional, breakup
+5, Hotel California, Eagles, Rock, 75, classic, acoustic, iconic
+6, Bohemian Rhapsody, Queen, Rock, 144, epic, operatic, progressive
+7, Shape of You, Ed Sheeran, Pop, 96, catchy, tropical, love
+8, Stairway to Heaven, Led Zeppelin, Rock, 82, legendary, guitar, ballad
+9, Imagine, John Lennon, Pop, 75, peace, piano, anthem
+10, Uptown Funk, Mark Ronson ft. Bruno Mars, Funk, 115, groovy, dance, retro
+11, Lose Yourself, Eminem, Hip Hop, 171, intense, motivational, rap
+12, Sweet Child O' Mine, Guns N' Roses, Rock, 125, guitar, iconic, ballad
+13, Dancing Queen, ABBA, Disco, 100, classic, upbeat, dance
+14, Hotline Bling, Drake, Hip Hop, 134, catchy, mellow, pop-rap
+15, Wonderwall, Oasis, Britpop, 87, nostalgic, acoustic, anthem
+16, Clocks, Coldplay, Alternative, 131, piano, emotional, dreamy
+17, Happy, Pharrell Williams, Pop, 160, cheerful, upbeat, feel-good
+18, Hey Jude, The Beatles, Rock, 72, anthemic, sing-along, classic
+19, Thunderstruck, AC/DC, Rock, 134, energetic, guitar, powerful
+20, Despacito, Luis Fonsi ft. Daddy Yankee, Reggaeton, 89, summer, dance, Latin
+21, Can't Stop the Feeling!, Justin Timberlake, Pop, 113, fun, upbeat, dance
+22, Someone Like You, Adele, Pop, 67, emotional, piano, breakup
+23, Take On Me, A-ha, Synthpop, 169, retro, catchy, 80s
+24, Hips Don't Lie, Shakira, Latin Pop, 100, dance, catchy, Latin
+25, Back in Black, AC/DC, Rock, 94, powerful, guitar, anthemic
+26, Superstition, Stevie Wonder, Funk, 100, groovy, soulful, funky
+27, I Will Always Love You, Whitney Houston, Pop, 67, emotional, ballad, iconic
+28, Africa, Toto, Rock, 92, nostalgic, 80s, sing-along
+29, Lose Yourself to Dance, Daft Punk ft. Pharrell Williams, Funk, 100, groovy, electronic, retro
+30, Creep, Radiohead, Alternative Rock, 92, moody, grunge, introspective
+31, Seven Nation Army, The White Stripes, Rock, 124, guitar, anthemic, alternative
+32, Beat It, Michael Jackson, Rock, 139, energetic, guitar, dance
+33, Thinking Out Loud, Ed Sheeran, Pop, 79, romantic, acoustic, wedding
+34, Roxanne, The Police, Reggae Rock, 83, classic, rock, reggae
+35, Yesterday, The Beatles, Pop, 85, nostalgic, acoustic, ballad
+36, Bad Guy, Billie Eilish, Pop, 135, dark, catchy, bass-heavy
+37, Don't Stop Believin', Journey, Rock, 118, anthemic, sing-along, classic
+38, Time, Hans Zimmer, Soundtrack, 60, cinematic, orchestral, epic
+39, Bad Romance, Lady Gaga, Pop, 119, dance, catchy, anthemic
+40, Rolling Stone, The Rolling Stones, Rock, 113, classic, bluesy, rebellious
+41, Good 4 U, Olivia Rodrigo, Pop Punk, 170, angsty, energetic, breakup
+42, Lean On, Major Lazer & DJ Snake ft. MØ, EDM, 98, tropical, dance, summer
+43, Lose My Breath, Destiny's Child, R&B, 120, energetic, dance, powerful
+44, Let Her Go, Passenger, Indie Folk, 75, acoustic, emotional, ballad
+45, Radioactive, Imagine Dragons, Alternative, 136, powerful, electronic, rock
+46, Poker Face, Lady Gaga, Pop, 120, dance, catchy, upbeat
+47, Mr. Brightside, The Killers, Rock, 148, upbeat, anthemic, alternative
+48, Hotline Bling, Drake, Hip Hop, 135, mellow, catchy, chill
+49, Viva La Vida, Coldplay, Alternative, 138, orchestral, anthemic, epic
+50, Senorita, Shawn Mendes & Camila Cabello, Pop, 117, romantic, catchy, Latin
+51, Smells Like Teen Spirit, Nirvana, Grunge, 117, grunge, rebellious, 90s
+52, Lose Yourself, Eminem, Hip Hop, 171, intense, rap, motivational
+53, Happy, Pharrell Williams, Pop, 160, cheerful, upbeat, feel-good
+54, Rolling in the Deep, Adele, Pop, 105, powerful, emotional, breakup
+55, Take Me to Church, Hozier, Indie Rock, 129, emotional, soulful, powerful
+56, Heroes, David Bowie, Rock, 115, anthemic, epic, timeless
+57, We Will Rock You, Queen, Rock, 81, stomping, sing-along, iconic
+58, Titanium, David Guetta ft. Sia, EDM, 126, empowering, electronic, anthemic
+59, I Gotta Feeling, The Black Eyed Peas, Pop, 128, party, feel-good, dance
+60, Counting Stars, OneRepublic, Pop Rock, 122, upbeat, anthemic, acoustic
+61, Old Town Road, Lil Nas X ft. Billy Ray Cyrus, Country Rap, 136, viral, catchy, country
+62, Zombie, The Cranberries, Rock, 84, emotional, anthemic, alternative
+63, Royals, Lorde, Indie Pop, 85, minimalist, catchy, introspective
+64, Blurred Lines, Robin Thicke ft. Pharrell, R&B, 120, catchy, funky, controversial
+65, Wake Me Up, Avicii, EDM, 124, anthemic, summer, electronic
+66, Sweet Home Alabama, Lynyrd Skynyrd, Southern Rock, 98, classic, guitar, anthem
+67, Brown Eyed Girl, Van Morrison, Rock, 120, nostalgic, upbeat, classic
+68, Firework, Katy Perry, Pop, 124, empowering, anthemic, uplifting
+69, Don't Start Now, Dua Lipa, Disco, 124, groovy, upbeat, catchy
+70, Stay, The Kid LAROI & Justin Bieber, Pop, 170, catchy, emotional, pop
+71, Let It Be, The Beatles, Pop Rock, 72, timeless, piano, classic
+72, In the End, Linkin Park, Nu Metal, 105, emotional, angsty, rock
+73, Hotline Bling, Drake, Hip Hop, 135, mellow, catchy, pop-rap
+74, Somebody That I Used to Know, Gotye ft. Kimbra, Indie Pop, 129, breakup, emotional, indie
+75, Eye of the Tiger, Survivor, Rock, 109, powerful, motivational, iconic
+76, Royals, Lorde, Indie Pop, 85, minimalist, introspective, pop
+77, Dreams, Fleetwood Mac, Rock, 120, classic, dreamy, iconic
+78, Shake It Off, Taylor Swift, Pop, 160, fun, upbeat, dance
+79, Riptide, Vance Joy, Indie Folk, 100, acoustic, catchy, summer
+80, Can't Feel My Face, The Weeknd, Pop, 108, catchy, upbeat, funky
+81, Levitating, Dua Lipa, Pop, 103, catchy, disco, fun
+82, Watermelon Sugar, Harry Styles, Pop, 95, summer, upbeat, romantic
+83, Bad Guy, Billie Eilish, Pop, 135, dark, bass-heavy, catchy
+84, Yellow, Coldplay, Alternative, 174, dreamy, mellow, introspective
+85, Dark Horse, Katy Perry ft. Juicy J, Pop, 133, catchy, bass-heavy, dark
+86, Hotline Bling, Drake, Hip Hop, 135, mellow, catchy, pop-rap
+87, Take On Me, A-ha, Synthpop, 169, retro, upbeat, iconic
+88, Stayin' Alive, Bee Gees, Disco, 104, groovy, classic, dance
+89, Rockstar, Post Malone ft. 21 Savage, Hip Hop, 160, dark, moody, trap
+90, The Less I Know the Better, Tame Impala, Psychedelic Rock, 118, groovy, retro, bass-heavy
+91, Sunflower, Post Malone & Swae Lee, Hip Hop, 90, chill, catchy, pop-rap
+92, Heat Waves, Glass Animals, Indie Pop, 164, catchy, introspective, mellow
+93, Sorry, Justin Bieber, Pop, 100, catchy, tropical, upbeat
+94, Hotline Bling, Drake, Hip Hop, 135, mellow, catchy, pop-rap
+95, Shallow, Lady Gaga & Bradley Cooper, Soundtrack, 96, emotional, powerful, ballad
+96, Circles, Post Malone, Pop, 120, chill, catchy, introspective
+97, Bad Habits, Ed Sheeran, Pop, 126, catchy, upbeat, dance
+98, Save Your Tears, The Weeknd, Pop, 118, emotional, retro, catchy
+99, Memories, Maroon 5, Pop, 91, nostalgic, mellow, emotional
+100, Thriller, Michael Jackson, Pop, 118, iconic, spooky, dance
