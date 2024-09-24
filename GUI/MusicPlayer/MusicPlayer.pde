@@ -1,9 +1,10 @@
-SongDatabase ds = new SongDatabase();
 int stage=0;
+User us = new User();
+
 void setup() {
   size(800, 600);
   initialize();
-  ds.PrintlAll();
+  us.playlist();
 }
 
 void draw() {
@@ -53,7 +54,7 @@ void initialize() {
     String artist = SongInfo[2].trim();
     String genre = SongInfo[3].trim();
     String beatpm = SongInfo[4].trim();
-    ds.AddSong(id, title, artist, genre, beatpm);
+    us.ds.AddSong(id, title, artist, genre, beatpm);
   }
 }
 

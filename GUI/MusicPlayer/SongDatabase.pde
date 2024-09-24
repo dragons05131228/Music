@@ -31,17 +31,24 @@ class SongDatabase {
       Index=Index.sNext;
     }
   }
-  void SearchID(String num) {
+
+
+
+  Song SearchSong(String Att) {
     Index = First;
     while (Index!=null) {
-      if (Index.ID.equals( num)) {
-        println(Index.TITLE + Index.ID);
-        break;
+      if (Index.ID.equals(Att)||
+        Index.TITLE.equals(Att)||
+        Index.ARTIST.equals(Att)||
+        Index.GENRE.equals(Att)||
+        Index.BEATpm.equals(Att)) {
+        return Index;
       } else if (Index.sNext==null) {
         println("NotFound");
       } else {
         Index = Index.sNext;
       }
     }
+    return null;
   }
 }
