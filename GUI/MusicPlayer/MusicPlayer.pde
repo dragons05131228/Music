@@ -36,7 +36,10 @@ void initialize() {
     String artist = SongInfo[2].trim();
     String genre = SongInfo[3].trim();
     String beatpm = SongInfo[4].trim();
-    us.ds.AddSong(id, title, artist, genre, beatpm);
+    String tag1 = SongInfo[5].trim();
+    String tag2 = SongInfo[6].trim();
+    String tag3 = SongInfo[7].trim();
+    us.ds.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
   }
 }
 

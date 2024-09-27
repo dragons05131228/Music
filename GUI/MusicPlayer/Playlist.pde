@@ -13,24 +13,7 @@ class Playlist {
   }
 
   void AddSongPlaylist(String sAttribute) {
-    Song sTemp = database.SearchSong(sAttribute);
-    First = sTemp;
-    if (sTemp !=null) {
-     Song newSong = new Song(sTemp.ID,sTemp.TITLE,sTemp.ARTIST,sTemp.GENRE,sTemp.BEATpm);
-     newSong.sNext=null;
-      if(First == null){
-        First = newSong;
-      
-        Index=First;
-        Index.sNext=null;
-      }
-     else {
-      Song aSong = new Song(newSong.ID,newSong.TITLE,newSong.ARTIST,newSong.GENRE,newSong.BEATpm);
-      Index.sNext = aSong;
-      Index = aSong;
-      Index.sNext=null;
-    }
-    }
+    
   }
 
  void PrintlAll() {

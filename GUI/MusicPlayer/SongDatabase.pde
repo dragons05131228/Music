@@ -10,13 +10,13 @@ class SongDatabase {
 
 
 
-  void AddSong(String id, String title, String artist, String genre, String beatpm) {
+  void AddSong(String id, String title, String artist, String genre, String beatpm, String tag1, String tag2, String tag3) {
     if (First ==null) {
-      First = new Song(id, title, artist, genre, beatpm);
+      First = new Song(id, title, artist, genre, beatpm, tag1, tag2, tag3);
 
       Index=First;
     } else {
-      Song aSong = new Song(id, title, artist, genre, beatpm);
+      Song aSong = new Song(id, title, artist, genre, beatpm, tag1, tag2, tag3);
       Index.sNext = aSong;
       Index = aSong;
     }
