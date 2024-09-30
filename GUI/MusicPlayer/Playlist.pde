@@ -3,8 +3,7 @@ class Playlist {
   SongDatabase database;
 
   Song First;
-  Song Index;
-
+  
   Playlist pNext;
 
   int counter;
@@ -13,27 +12,36 @@ class Playlist {
   }
 
   void AddSongPlaylist(String sAttribute) {
-    Song sTemp = database.SearchSong(sAttribute);
-    First = sTemp;
-    if (sTemp !=null) {
-     Song newSong = new Song(sTemp.ID,sTemp.TITLE,sTemp.ARTIST,sTemp.GENRE,sTemp.BEATpm);
-     newSong.sNext=null;
-      if(First == null){
-        First = newSong;
-      
-        Index=First;
-        Index.sNext=null;
-      }
-     else {
-      Song aSong = new Song(newSong.ID,newSong.TITLE,newSong.ARTIST,newSong.GENRE,newSong.BEATpm);
-      Index.sNext = aSong;
-      Index = aSong;
-      Index.sNext=null;
-    }
-    }
+    Song Index;
+    Song sTemp = new Song(database.SearchSong(sAttribute).ID,
+    database.SearchSong(sAttribute).TITLE,
+    database.SearchSong(sAttribute).ARTIST,
+    database.SearchSong(sAttribute).GENRE,
+    database.SearchSong(sAttribute).BEATpm);
+if(First==null){
+  First = sTemp;
+}
+else{
+  Index = First;
+  while(Index.sNext!=null){
+    Index=Index.sNext;
   }
+    Index.sNext=sTemp;
+  }
+}
+  
+  void removeSong(String sAttribute){
+    Song Index;
+ Song sTemp = new Song(database.SearchSong(sAttribute).ID,
+    database.SearchSong(sAttribute).TITLE,
+    database.SearchSong(sAttribute).ARTIST,
+    database.SearchSong(sAttribute).GENRE,
+    database.SearchSong(sAttribute).BEATpm);
+  
+}
 
  void PrintlAll() {
+   Song Index;
     Index = First;
     while (Index!=null)
     {

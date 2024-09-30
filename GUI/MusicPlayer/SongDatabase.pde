@@ -37,11 +37,13 @@ class SongDatabase {
   Song SearchSong(String Att) {
     Index = First;
     while (Index!=null) {
-      if (Index.ID.equals(Att)||
-        Index.TITLE.equals(Att)||
-        Index.ARTIST.equals(Att)||
-        Index.GENRE.equals(Att)||
-        Index.BEATpm.equals(Att)) {
+      if (Index.ID.equals(Att)){
+        //||
+        //Index.TITLE.equals(Att)||
+        //Index.ARTIST.equals(Att)||
+        //Index.GENRE.equals(Att)||
+        //Index.BEATpm.equals(Att)
+        
         return Index;
       } else if (Index.sNext==null) {
         println("NotFound");

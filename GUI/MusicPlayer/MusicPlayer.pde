@@ -2,13 +2,13 @@ int stage=0;
 User us = new User();
 
 void setup() {
-  size(800, 600);
+  //size(800, 600);
   initialize();
   us.playlist();
 }
 
 void draw() {
-  userInterface();
+  //userInterface();
 }
 
 void userInterface()
