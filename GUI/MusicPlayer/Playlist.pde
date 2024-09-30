@@ -17,7 +17,10 @@ class Playlist {
     database.SearchSong(sAttribute).TITLE,
     database.SearchSong(sAttribute).ARTIST,
     database.SearchSong(sAttribute).GENRE,
-    database.SearchSong(sAttribute).BEATpm);
+    database.SearchSong(sAttribute).BEATpm,
+     database.SearchSong(sAttribute).tag1,
+      database.SearchSong(sAttribute).tag2,
+       database.SearchSong(sAttribute).tag3);
 if(First==null){
   First = sTemp;
 }
@@ -31,13 +34,32 @@ else{
 }
   
   void removeSong(String sAttribute){
-    Song Index;
- Song sTemp = new Song(database.SearchSong(sAttribute).ID,
+    if(First == null){
+      return;
+    }
+ Song sToRemove = new Song(database.SearchSong(sAttribute).ID,
     database.SearchSong(sAttribute).TITLE,
     database.SearchSong(sAttribute).ARTIST,
     database.SearchSong(sAttribute).GENRE,
-    database.SearchSong(sAttribute).BEATpm);
-  
+    database.SearchSong(sAttribute).BEATpm,
+     database.SearchSong(sAttribute).tag1,
+      database.SearchSong(sAttribute).tag2,
+       database.SearchSong(sAttribute).tag3);
+    if(sToRemove==null){
+      return;
+    }
+  if(First.ID.equals(sToRemove.ID)){
+    First = First.sNext;
+    return;
+  }
+      Song Index = First;
+      while(Index.sNext !=null){
+        if(Index.sNext.ID.equals(sToRemove.ID)){
+          Index.sNext = Index.sNext.sNext;
+          return;
+        }
+        Index=Index.sNext;
+      }
 }
 
  void PrintlAll() {

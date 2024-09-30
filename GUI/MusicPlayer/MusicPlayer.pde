@@ -7,6 +7,7 @@ void setup() {
   size(800, 1000);
   initialize();
   system.userLoginPage();
+  us.playlist();
 }
 
 void draw() {
