@@ -10,12 +10,13 @@ void setup() {
 }
 
 void draw() {
+
   if (stage==0)
   {
     userLoginPage();
   }
-}
 
+}
 void userLoginPage()
 {
   background(255);

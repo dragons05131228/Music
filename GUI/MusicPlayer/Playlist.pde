@@ -3,8 +3,7 @@ class Playlist {
   SongDatabase database;
 
   Song First;
-  Song Index;
-
+  
   Playlist pNext;
 
   int counter;
@@ -13,10 +12,36 @@ class Playlist {
   }
 
   void AddSongPlaylist(String sAttribute) {
-    
+    Song Index;
+    Song sTemp = new Song(database.SearchSong(sAttribute).ID,
+    database.SearchSong(sAttribute).TITLE,
+    database.SearchSong(sAttribute).ARTIST,
+    database.SearchSong(sAttribute).GENRE,
+    database.SearchSong(sAttribute).BEATpm);
+if(First==null){
+  First = sTemp;
+}
+else{
+  Index = First;
+  while(Index.sNext!=null){
+    Index=Index.sNext;
   }
+    Index.sNext=sTemp;
+  }
+}
+  
+  void removeSong(String sAttribute){
+    Song Index;
+ Song sTemp = new Song(database.SearchSong(sAttribute).ID,
+    database.SearchSong(sAttribute).TITLE,
+    database.SearchSong(sAttribute).ARTIST,
+    database.SearchSong(sAttribute).GENRE,
+    database.SearchSong(sAttribute).BEATpm);
+  
+}
 
  void PrintlAll() {
+   Song Index;
     Index = First;
     while (Index!=null)
     {
