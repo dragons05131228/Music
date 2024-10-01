@@ -67,7 +67,6 @@ else{
     Index = First;
     while (Index!=null)
     {
-      println(Index.ID);
       Index=Index.sNext;
     }
   }
