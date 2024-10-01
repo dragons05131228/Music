@@ -1,4 +1,4 @@
-int stage=0;
+int stage=-2;
 GUI system=new GUI();
 User us = new User();
 String username="admin";
@@ -8,13 +8,12 @@ float lastMouseX, lastMouseY;
 void setup() {
   size(800, 1000);
   initialize();
-  system.userLoginPage();
   us.playlist();
+  system.adminPage();
 }
 
 void draw() {
 
-  println(mouseX, mouseY);
   if (stage==-2)
   {
     adminPage();
@@ -70,6 +69,10 @@ void aLoginPage()
 void adminPage()
 {
   background(0);
+  system.display();
+  fill(255);
+  textSize(40);
+  text("User View", 400, 250);
 }
 
 void register()
@@ -106,6 +109,7 @@ void mouseReleased()
     {
       if (system.checkInfo())
       {
+        system.resetBoxes();
         stage=-2;
       }
     }
