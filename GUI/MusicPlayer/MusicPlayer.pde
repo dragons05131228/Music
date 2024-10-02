@@ -2,17 +2,20 @@ int stage=0;
 GUI system=new GUI();
 User us = new User();
 float lastMouseX, lastMouseY;
+String[] SongList;
 
 void setup() {
+  SongList = loadStrings("SongsDatabase.txt");
   size(800, 1000);
   initialize();
+ // us.ds.appendNewSongToFile();
+  //us.playlistPrint();
   system.userLoginPage();
-  us.playlist();
 }
 
 void draw() {
 
-  println(mouseX, mouseY);
+  // println(mouseX, mouseY);
   if (stage==-1)
   {
     aLoginPage();
@@ -67,7 +70,6 @@ void register()
 }
 
 void initialize() {
-  String[] SongList = loadStrings("SongsDatabase.txt");
 
   for (String line : SongList) {
     String[] SongInfo = line.split(",");

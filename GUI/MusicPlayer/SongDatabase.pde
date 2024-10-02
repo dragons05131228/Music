@@ -6,6 +6,7 @@ class SongDatabase {
 
 
   SongDatabase() {
+
   }
 
 
@@ -22,6 +23,21 @@ class SongDatabase {
     }
   }
 
+void appendNewSongToFile(){
+  Song s =  SearchSong("100");
+   AddSong(s.ID, s.TITLE,s.ARTIST, s.GENRE,s.BEATpm,s.tag1,s.tag2,s.tag3);
+  PrintWriter output;
+  output = createWriter("data/Songsdatabase.txt");
+  
+  if(SongList!=null){
+    for(String line:SongList){
+      output.println(line);
+    }
+  }
+  output.println(s.ID + ", " + s.TITLE +", " + s.ARTIST + ", " + s.GENRE + ", "+s.BEATpm+", "+s.tag1+", "+s.tag2 + ", " + s.tag3);
+  output.flush();
+  output.close();
+}
 
   void PrintlAll() {
     Index = First;
