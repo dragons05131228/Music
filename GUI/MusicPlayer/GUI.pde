@@ -10,6 +10,9 @@ class GUI
   {
   }
 
+  //BOX MODIFICATION
+  //---------------------------------------------------------------------------------------------
+  //---------------------------------------------------------------------------------------------
   void addBox(float x, float y, int rectSizeX, int rectSizeY, String bName, String type, color c, int stroke)
   {
     if (firstBox==null)
@@ -22,6 +25,21 @@ class GUI
       boxIterator.next=temp;
       boxIterator=temp;
     }
+  }
+
+  Box searchBox(String boxName)
+  {
+    boxIterator = firstBox;
+    while (boxIterator!=null) {
+      if (boxIterator.bName.equals(boxName)) {
+        return boxIterator;
+      } else if (boxIterator.next==null) {
+        println("NotFound");
+      } else {
+        boxIterator = boxIterator.next;
+      }
+    }
+    return null;
   }
   //USER PAGES
   //---------------------------------------------------------------------------------------------
@@ -46,7 +64,7 @@ class GUI
   void adminLoginPage()
   {
     system.addBox(330, 350, 300, 50, "aUserName", "Input", color(200), 255);
-    system.addBox(330, 420, 300, 50, "aPassWord", "Input", color(200), 255);
+    system.addBox(330, 420, 300, 50, "aPassword", "Input", color(200), 255);
     system.addBox(350, 490, 100, 40, "aLogin", "Submit", color(255), 0);
   }
 
@@ -118,8 +136,18 @@ class GUI
       temp.input=temp.input.substring(0, temp.input.length()-1);
   }
 
-  void checkInfo()
+  boolean checkInfo()
   {
+    if (stage==-1)
+    {
+      Box bUserName=searchBox("aUserName");
+      Box bPassword=searchBox("aPassword");
+      if (bUserName.input.equals(username)&&bPassword.input.equals(password))
+      {
+        return true;
+      }
+    }
+    return false;
   }
   //---------------------------------------------------------------------------------------------
   //---------------------------------------------------------------------------------------------

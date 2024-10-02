@@ -1,6 +1,8 @@
 int stage=0;
 GUI system=new GUI();
 User us = new User();
+String username="admin";
+String password="admin";
 float lastMouseX, lastMouseY;
 String[] SongList;
 
@@ -16,6 +18,11 @@ void setup() {
 void draw() {
 
   // println(mouseX, mouseY);
+  println(mouseX, mouseY);
+  if (stage==-2)
+  {
+    adminPage();
+  }
   if (stage==-1)
   {
     aLoginPage();
@@ -64,6 +71,11 @@ void aLoginPage()
   text("Submit", 400, 515);
 }
 
+void adminPage()
+{
+  background(0);
+}
+
 void register()
 {
   background(255);
@@ -93,6 +105,13 @@ void mouseReleased()
   {
     if (temp==null)return;
     println(temp.bName);
+    if (temp.bName=="aLogin")
+    {
+      if (system.checkInfo())
+      {
+        stage=-2;
+      }
+    }
   }
   if (stage==0)
   {
@@ -100,7 +119,10 @@ void mouseReleased()
     println(temp.bName);
     if (temp.type=="Submit")
     {
-      system.checkInfo();
+      if (system.checkInfo())
+      {
+        stage=2;
+      }
     }
     if (temp.bName.equals("adminLogin"))
     {
