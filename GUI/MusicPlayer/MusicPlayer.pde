@@ -10,23 +10,19 @@ void setup() {
   SongList = loadStrings("SongsDatabase.txt");
   size(800, 1000);
   initialize();
-<<<<<<< HEAD
-  us.playlist();
   system.adminPage();
-=======
  // us.ds.appendNewSongToFile();
   //us.playlistPrint();
   system.userLoginPage();
->>>>>>> main
 }
 
 void draw() {
 
-<<<<<<< HEAD
-=======
-  // println(mouseX, mouseY);
   println(mouseX, mouseY);
->>>>>>> main
+  if(stage==-3)
+  {
+    background(0);
+  }
   if (stage==-2)
   {
     adminPage();
@@ -113,6 +109,16 @@ void mouseReleased()
 {
   system.checkBox(mouseX, mouseY);
   Box temp=system.grabbedBox();
+  if(stage==-2)
+  {
+    if(temp.type == "null")
+    {
+      stage = -2;
+    } else if(temp.type == "viewUsers")
+    {
+      stage = -3;
+    }
+  }
   if (stage==-1)
   {
     if (temp==null)return;
