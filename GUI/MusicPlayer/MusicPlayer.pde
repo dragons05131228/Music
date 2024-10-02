@@ -4,16 +4,29 @@ User us = new User();
 String username="admin";
 String password="admin";
 float lastMouseX, lastMouseY;
+String[] SongList;
 
 void setup() {
+  SongList = loadStrings("SongsDatabase.txt");
   size(800, 1000);
   initialize();
+<<<<<<< HEAD
   us.playlist();
   system.adminPage();
+=======
+ // us.ds.appendNewSongToFile();
+  //us.playlistPrint();
+  system.userLoginPage();
+>>>>>>> main
 }
 
 void draw() {
 
+<<<<<<< HEAD
+=======
+  // println(mouseX, mouseY);
+  println(mouseX, mouseY);
+>>>>>>> main
   if (stage==-2)
   {
     adminPage();
@@ -81,7 +94,6 @@ void register()
 }
 
 void initialize() {
-  String[] SongList = loadStrings("SongsDatabase.txt");
 
   for (String line : SongList) {
     String[] SongInfo = line.split(",");
