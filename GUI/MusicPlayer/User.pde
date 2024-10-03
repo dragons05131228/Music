@@ -5,6 +5,7 @@ class User
   Playlist PFirst;
   Playlist PList;
   MusicPlayerSystem mps;
+  User uNext;
   
   String username;
   String password;

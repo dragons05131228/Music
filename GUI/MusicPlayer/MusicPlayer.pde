@@ -1,6 +1,6 @@
 int stage=0;
 GUI system=new GUI();
-User us = new User();
+//User us = new User();
 String username="admin";
 String password="admin";
 float lastMouseX, lastMouseY;

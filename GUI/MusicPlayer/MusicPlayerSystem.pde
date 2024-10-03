@@ -3,6 +3,8 @@ class MusicPlayerSystem
   Song First;
   Song Index;
   SongDatabase Database;
+  User firstUser;
+  User indexUser;
   
   MusicPlayerSystem()
   {
@@ -108,6 +110,15 @@ class MusicPlayerSystem
   
   void addUser()
   {
-    
+    if(firstUser == null)
+    {
+      User firstUser = new User();
+      indexUser = firstUser;
+    } else
+    {
+      User aUser = new User();
+      indexUser.uNext = aUser;
+      indexUser = aUser;
+    }
   }
 }
