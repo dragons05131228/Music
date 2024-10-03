@@ -16,7 +16,14 @@ void setup() {
 }
 
 void draw() {
+stages();
+}
 
+void UserLinkedList(){
+  
+}
+void stages(){
+  
   // println(mouseX, mouseY);
   println(mouseX, mouseY);
   if (stage==-2)
