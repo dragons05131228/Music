@@ -149,6 +149,51 @@ class GUI
     }
     return false;
   }
+
+  //GUI INTERACTIONS
   //---------------------------------------------------------------------------------------------
   //---------------------------------------------------------------------------------------------
+  void guiMouseReleased()
+  {
+    system.checkBox(mouseX, mouseY);
+    Box temp=system.grabbedBox();
+    if (stage==-1)
+    {
+      if (temp==null)return;
+      println(temp.bName);
+      if (temp.bName=="aLogin")
+      {
+        if (system.checkInfo())
+        {
+          stage=-2;
+        }
+      }
+    }
+    if (stage==0)
+    {
+      if (temp==null)return;
+      println(temp.bName);
+      if (temp.type=="Submit")
+      {
+        if (system.checkInfo())
+        {
+          stage=2;
+        }
+      }
+      if (temp.bName.equals("adminLogin"))
+      {
+        stage=-1;
+        system.resetBoxes();
+        system.adminLoginPage();
+      }
+      if (temp.bName.equals("Register"))
+      {
+        stage=1;
+        system.resetBoxes();
+      }
+    }
+    if (stage==1)
+    {
+    }
+  }
 }

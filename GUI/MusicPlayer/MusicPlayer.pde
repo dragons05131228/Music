@@ -10,20 +10,19 @@ void setup() {
   SongList = loadStrings("SongsDatabase.txt");
   size(800, 1000);
   initialize();
- // us.ds.appendNewSongToFile();
+  // us.ds.appendNewSongToFile();
   //us.playlistPrint();
   system.userLoginPage();
 }
 
 void draw() {
-stages();
+  stages();
 }
 
-void UserLinkedList(){
-  
+void UserLinkedList() {
 }
-void stages(){
-  
+void stages() {
+
   // println(mouseX, mouseY);
   println(mouseX, mouseY);
   if (stage==-2)
@@ -100,52 +99,13 @@ void initialize() {
     String tag1 = SongInfo[5].trim();
     String tag2 = SongInfo[6].trim();
     String tag3 = SongInfo[7].trim();
-    us.ds.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
+    //us.ds.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
   }
 }
 
 void mouseReleased()
 {
-  system.checkBox(mouseX, mouseY);
-  Box temp=system.grabbedBox();
-  if (stage==-1)
-  {
-    if (temp==null)return;
-    println(temp.bName);
-    if (temp.bName=="aLogin")
-    {
-      if (system.checkInfo())
-      {
-        stage=-2;
-      }
-    }
-  }
-  if (stage==0)
-  {
-    if (temp==null)return;
-    println(temp.bName);
-    if (temp.type=="Submit")
-    {
-      if (system.checkInfo())
-      {
-        stage=2;
-      }
-    }
-    if (temp.bName.equals("adminLogin"))
-    {
-      stage=-1;
-      system.resetBoxes();
-      system.adminLoginPage();
-    }
-    if (temp.bName.equals("Register"))
-    {
-      stage=1;
-      system.resetBoxes();
-    }
-  }
-  if (stage==1)
-  {
-  }
+  system.guiMouseReleased();
 }
 
 void keyReleased()
