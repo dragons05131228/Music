@@ -4,6 +4,8 @@ class User
   Playlist p;
   Playlist PFirst;
   Playlist PList;
+  MusicPlayerSystem mps;
+  
   String username;
   String password;
 
@@ -20,13 +22,13 @@ class User
     //p.AddSongPlaylist("30");
     //p.AddSongPlaylist("40");
     //p.AddSongPlaylist("50");
-    p.AddSongPlaylist("83");
-    p.AddSongPlaylist("83");
-    p.AddSongPlaylist("83");
+    mps.AddSongPlaylist("83");
+    mps.AddSongPlaylist("83");
+    mps.AddSongPlaylist("83");
 
     //p.PrintlAll();
     //p.removeSong("20");
-    p.removeSong("83");
+    mps.removeSong("83");
 
     p.PrintlAll();
   }

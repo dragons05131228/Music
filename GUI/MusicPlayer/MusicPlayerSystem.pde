@@ -2,7 +2,8 @@ class MusicPlayerSystem
 {
   Song First;
   Song Index;
-
+  SongDatabase Database;
+  
   MusicPlayerSystem()
   {
   }
@@ -103,5 +104,10 @@ class MusicPlayerSystem
       }
     }
     return null;
+  }
+  
+  void addUser()
+  {
+    
   }
 }
