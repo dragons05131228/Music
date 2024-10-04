@@ -3,9 +3,9 @@ class MusicPlayerSystem
   Song First;
   Song Index;
   SongDatabase Database;
-  User firstUser;
-  User indexUser;
-  
+  User FirstU;
+  User IndexU;
+
   MusicPlayerSystem()
   {
   }
@@ -39,7 +39,6 @@ class MusicPlayerSystem
   }
 
   void AddSongPlaylist(String sAttribute) {
-    Song Index;
     Song sTemp = new Song(SearchSong(sAttribute).ID,
       SearchSong(sAttribute).TITLE,
       SearchSong(sAttribute).ARTIST,
@@ -47,7 +46,7 @@ class MusicPlayerSystem
       SearchSong(sAttribute).BEATpm,
       SearchSong(sAttribute).tag1,
       SearchSong(sAttribute).tag2,
-       SearchSong(sAttribute).tag3);
+      SearchSong(sAttribute).tag3);
     if (First==null) {
       First = sTemp;
     } else {
@@ -88,6 +87,42 @@ class MusicPlayerSystem
     }
   }
 
+
+
+  void addUser(String name, String pw, String UID)
+  {
+    if (FirstU == null)
+    {
+      User firstUser = new User(name, pw, UID);
+      IndexU = firstUser;
+    } else
+    {
+      User aUser = new User(name, pw, UID);
+      IndexU.uNext = aUser;
+      IndexU = aUser;
+    }
+  }
+
+  void generateSuggestions(String UserID, String playlistID) {
+    IndexU=FirstU;
+    while (IndexU!=null) {
+      if (UserID != IndexU.UID) {
+        IndexU= IndexU.uNext;
+      }
+      else if(UserID==IndexU.UID){
+   //      IndexU.pFirst=FirstU;
+    while (IndexU!=null) {
+      if (UserID != IndexU.UID) {
+        IndexU= IndexU.uNext;
+      }
+      else if(UserID==IndexU.UID){
+        
+      }
+    }
+      }
+    }
+  }
+
   Song SearchSong(String Att) {
     Index = First;
     while (Index!=null) {
@@ -107,21 +142,4 @@ class MusicPlayerSystem
     }
     return null;
   }
-  
-  void addUser(String name, String pw)
-  {
-    if(firstUser == null)
-    {
-      User firstUser = new User(name, pw);
-      indexUser = firstUser;
-    } else
-    {
-      User aUser = new User(name, pw);
-      indexUser.uNext = aUser;
-      indexUser = aUser;
-    }
-  }
-  
-    
- 
 }

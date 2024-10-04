@@ -9,13 +9,15 @@ class User
   
   String username;
   String password;
+  String UID;
 
-  User(String name, String pw)
+  User(String name, String pw, String UID)
   {
     ds   = new SongDatabase();
     p = new Playlist(this.ds);
     username = name;
     password = pw;
+    this.UID = UID;
   }
 
   void playlistPrint() {
