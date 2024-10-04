@@ -108,17 +108,20 @@ class MusicPlayerSystem
     return null;
   }
   
-  void addUser()
+  void addUser(String name, String pw)
   {
     if(firstUser == null)
     {
-      User firstUser = new User();
+      User firstUser = new User(name, pw);
       indexUser = firstUser;
     } else
     {
-      User aUser = new User();
+      User aUser = new User(name, pw);
       indexUser.uNext = aUser;
       indexUser = aUser;
     }
   }
+  
+    
+ 
 }

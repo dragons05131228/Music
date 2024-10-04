@@ -10,10 +10,12 @@ class User
   String username;
   String password;
 
-  User()
+  User(String name, String pw)
   {
     ds   = new SongDatabase();
     p = new Playlist(this.ds);
+    username = name;
+    password = pw;
   }
 
   void playlistPrint() {
