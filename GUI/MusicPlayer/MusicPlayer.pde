@@ -100,6 +100,7 @@ void initialize() {
     String tag2 = SongInfo[6].trim();
     String tag3 = SongInfo[7].trim();
     //us.ds.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
+  //  us.ds.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
   }
 }
 
