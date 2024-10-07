@@ -7,7 +7,8 @@ class GUI
   boolean showPassword;
   boolean showError;
   int error;
-  String[] errors={ "Please Fill In The Missing Blanks", "Invalid Email", "Password Must Be A Minimum Of 8 Characters", "Passwords Are Not The Same", "Invalid Username", "Invalid Password"};
+  PrintWriter newUser;
+  String[] errors={ "Please Fill In The Missing Blanks", "Invalid Email", "Username Must Be A Minimum Of 5 Characters", "Password Must Be A Minimum Of 8 Characters", "Passwords Are Not The Same", "Invalid Username", "Invalid Password"};
 
   GUI()
   {
@@ -86,8 +87,8 @@ class GUI
   void regPageBoxes()
   {
     system.addBox(340, 330, 320, 50, "firstName", "Input", color(200), 0);
-    system.addBox(340, 400, 320, 50, "LastName", "Input", color(200), 0);
-    system.addBox(340, 470, 320, 50, "Email", "Input", color(200), 0);
+    system.addBox(340, 400, 320, 50, "lastName", "Input", color(200), 0);
+    system.addBox(340, 470, 320, 50, "email", "Input", color(200), 0);
     system.addBox(340, 540, 320, 50, "createUsername", "Input", color(200), 0);
     system.addBox(340, 610, 320, 50, "createPassword", "Input", color(200), 0);
     system.addBox(340, 680, 320, 50, "confirmPassword", "Input", color(200), 0);
@@ -353,25 +354,42 @@ class GUI
           {
             showError=true;
             error=0;
-          } else if (!searchBox("Email").input.contains("@")||!searchBox("Email").input.contains("."))
+          } else if (!searchBox("email").input.contains("@")||!searchBox("email").input.contains("."))
           {
             showError=true;
             error=1;
-          } else if (searchBox("createPassword").input.length()<8)
+          } else if (searchBox("createUsername").input.length()<5)
           {
             showError=true;
             error=2;
-          } else if (!searchBox("createPassword").input.equals(searchBox("confirmPassword").input))
+          } else if (searchBox("createPassword").input.length()<8)
           {
             showError=true;
             error=3;
+          } else if (!searchBox("createPassword").input.equals(searchBox("confirmPassword").input))
+          {
+            showError=true;
+            error=4;
           } else
+          {
             showError=false;
+            createUser();
+          }
         }
     }
   }
 
-  void mouseOver()
+  //CREATING NEW USER
+  void createUser()
   {
+    String[]info={searchBox("firstName").input, searchBox("lastName").input, searchBox("email").input, searchBox("createUsername").input, searchBox("createPassword").input};
+    newUser=createWriter("/data/Users/"+info[3]+".txt");
+
+    for (int i=0; i<info.length; i++)
+    {
+      newUser.println(info[i]);
+    }
+    newUser.flush();
+    newUser.close();
   }
 }

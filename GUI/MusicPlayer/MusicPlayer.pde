@@ -20,7 +20,6 @@ void setup() {
 }
 
 void draw() {
-  //println(mouseX, mouseY);
   system.stages();
 }
 
@@ -61,7 +60,7 @@ void keyTyped()
   if (temp==null)return;
   if (temp.type=="Input")
   {
-    if (keyCode!=SHIFT&&keyCode!=ALT&&keyCode!=CONTROL&&keyCode!=UP&&keyCode!=DOWN&&keyCode!=LEFT&&keyCode!=RIGHT&&key!=BACKSPACE&&keyCode!=TAB)
+    if (keyCode!=SHIFT&&keyCode!=ALT&&keyCode!=CONTROL&&keyCode!=UP&&keyCode!=DOWN&&keyCode!=LEFT&&keyCode!=RIGHT&&key!=BACKSPACE&&keyCode!=TAB&&keyCode!=ENTER)
       system.getInput(key);
     else if (key==BACKSPACE)
     {
