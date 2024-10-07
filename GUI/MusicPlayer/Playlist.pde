@@ -5,10 +5,11 @@ class Playlist {
   Song First;
   
   Playlist pNext;
-
+String PID;
   int counter;
-  Playlist(SongDatabase database) {
+  Playlist(SongDatabase database,String PID) {
     this.database=database;
+    this.PID = PID;
   }
 
   

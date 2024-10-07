@@ -94,26 +94,19 @@ class MusicPlayerSystem
 
 
   void generateSuggestions(String UserID, String playlistID) {
-    IndexU=FirstU;
-    while (IndexU!=null) {
-      if (UserID != IndexU.UID) {
-        IndexU= IndexU.uNext;
-      } else if (UserID==IndexU.UID) {
-        //      IndexU.pFirst=FirstU;
-        while (IndexU!=null) {
-          if (UserID != IndexU.UID) {
-            IndexU= IndexU.uNext;
-          } else if (UserID==IndexU.UID) {
-          }
-        }
-      }
-    }
+   User currUser = SearchUser(UserID);
+   Playlist currPlaylist = currUser.SearchPlaylist(playlistID);
+   if (currUser == null||currPlaylist==null){
+     return;
+   }
+   
+   Song currSong = currPlaylist.First;
   }
 
   Song SearchSong(String Att) {
     Index = First;
-    while (Index!=null) {
-      if (Index.ID.equals(Att)) {
+    while (IndexU!=null) {
+      if (IndexU.UID.equals(Att)) {
         //||
         //Index.TITLE.equals(Att)||
         //Index.ARTIST.equals(Att)||
@@ -121,10 +114,25 @@ class MusicPlayerSystem
         //Index.BEATpm.equals(Att)
 
         return Index;
-      } else if (Index.sNext==null) {
+      } else if (IndexU.uNext==null) {
         println("NotFound");
       } else {
-        Index = Index.sNext;
+        IndexU = IndexU.uNext;
+      }
+    }
+    return null;
+  }
+  
+    User SearchUser(String Att) {
+    IndexU = FirstU;
+    while (IndexU!=null) {
+      if (IndexU.UID.equals(Att)) {
+
+        return IndexU;
+      } else if (IndexU.uNext==null) {
+        println("NotFound");
+      } else {
+        IndexU = IndexU.uNext;
       }
     }
     return null;
