@@ -5,12 +5,12 @@ class Box
   String type;
   int len;
   int wid;
-  int stroke;
+  color stroke;
   color c;
   String input="";
   Box next;
 
-  Box(float x, float y, int rectSizeX, int rectSizeY, String bName, String type, color c, int stroke)
+  Box(float x, float y, int rectSizeX, int rectSizeY, String bName, String type, color c, color stroke)
   {
     pos=new PVector(x, y);
     len=rectSizeX;
@@ -39,10 +39,20 @@ class Box
       if (!bName.equals("Password")&&!bName.equals("aPassword"))
         text(input, pos.x+10, pos.y+0.5*wid+5);
       else
-        for (int i=0; i<input.length(); i++)
+      {
+        if (system.showPassword)
         {
-          text("*", pos.x+10+i*10, pos.y+0.5*wid+5);
-        }
+          text(input, pos.x+10, pos.y+0.5*wid+5);
+        } else
+          for (int i=0; i<input.length(); i++)
+          {
+            text("*", pos.x+10+i*10, pos.y+0.5*wid+5);
+          }
+      }
+    }
+    if (type=="Hover")
+    {
+      noFill();
     }
   }
 

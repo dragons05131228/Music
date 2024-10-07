@@ -5,6 +5,8 @@ class MusicPlayerSystem
   SongDatabase Database;
   User FirstU;
   User IndexU;
+  User firstUser;
+  User indexUser;
 
   MusicPlayerSystem()
   {
@@ -127,10 +129,9 @@ class MusicPlayerSystem
     }
     return null;
   }
-
   void addUser(String name, String pw, String UID)
   {
-    if (FirstU == null)
+    if (firstUser == null)
     {
       User FirstU = new User(name, pw, UID);
       IndexU = FirstU;
