@@ -89,36 +89,21 @@ class MusicPlayerSystem
 
 
 
-  void addUser(String name, String pw, String UID)
-  {
-    if (FirstU == null)
-    {
-      User firstUser = new User(name, pw, UID);
-      IndexU = firstUser;
-    } else
-    {
-      User aUser = new User(name, pw, UID);
-      IndexU.uNext = aUser;
-      IndexU = aUser;
-    }
-  }
+
 
   void generateSuggestions(String UserID, String playlistID) {
     IndexU=FirstU;
     while (IndexU!=null) {
       if (UserID != IndexU.UID) {
         IndexU= IndexU.uNext;
-      }
-      else if(UserID==IndexU.UID){
-   //      IndexU.pFirst=FirstU;
-    while (IndexU!=null) {
-      if (UserID != IndexU.UID) {
-        IndexU= IndexU.uNext;
-      }
-      else if(UserID==IndexU.UID){
-        
-      }
-    }
+      } else if (UserID==IndexU.UID) {
+        //      IndexU.pFirst=FirstU;
+        while (IndexU!=null) {
+          if (UserID != IndexU.UID) {
+            IndexU= IndexU.uNext;
+          } else if (UserID==IndexU.UID) {
+          }
+        }
       }
     }
   }
@@ -141,5 +126,33 @@ class MusicPlayerSystem
       }
     }
     return null;
+  }
+
+  void addUser(String name, String pw, String UID)
+  {
+    if (FirstU == null)
+    {
+      User FirstU = new User(name, pw, UID);
+      IndexU = FirstU;
+      PrintWriter uFile;
+      uFile = createWriter("data/Users/" + UID + ".txt");
+      uFile.println(name + ", " + pw + ", " + UID);
+      uFile.flush();
+      uFile.close();
+    } else
+    {
+      User aUser = new User(name, pw, UID);
+      IndexU.uNext = aUser;
+      IndexU = aUser;
+      createWriter("data/Users/" + UID + ".txt");
+      PrintWriter uFile;
+      uFile = createWriter("data/Users/" + UID + ".txt");
+      uFile.println(name + ", " + pw + ", " + UID);
+      uFile.flush();
+      uFile.close();
+    }
+  }
+  void setFirstUser()
+  {
   }
 }

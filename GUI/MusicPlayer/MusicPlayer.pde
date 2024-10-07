@@ -1,11 +1,10 @@
 int stage=0;
 GUI system=new GUI();
-//User us = new User();
 String username="admin";
 String password="admin";
 float lastMouseX, lastMouseY;
 String[] SongList;
-
+MusicPlayerSystem mps;
 void setup() {
   SongList = loadStrings("SongsDatabase.txt");
   size(800, 1000);
@@ -13,6 +12,10 @@ void setup() {
   // us.ds.appendNewSongToFile();
   //us.playlistPrint();
   system.userLoginPage();
+  mps = new MusicPlayerSystem();
+  mps.addUser("test", "test", "0");
+  mps.addUser("test1", "test1", "1");
+  mps.addUser("test2", "test2", "2");
 }
 
 void draw() {
