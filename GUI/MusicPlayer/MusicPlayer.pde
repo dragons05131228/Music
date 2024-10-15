@@ -1,14 +1,21 @@
+import java.util.*;
 int stage=0;
 GUI system=new GUI();
 String username="admin";
 String password="admin";
 float lastMouseX, lastMouseY;
 String[] SongList;
+User user1 = new User("user", "0", "1");
 MusicPlayerSystem mps;
 void setup() {
   SongList = loadStrings("SongsDatabase.txt");
   size(800, 1000);
   initialize();
+  
+     //user1.playlistPrint();
+
+    //user1.mps.generateSuggestions(user1.UID, user1.p.PID);
+
   //us.ds.appendNewSongToFile();
   //us.playlistPrint();
   system.userLoginBoxes();
@@ -17,6 +24,7 @@ void setup() {
   mps.addUser("test1", "test1", "1");
   mps.addUser("test2", "test2", "2");
   system.userLoginBoxes();
+
 }
 
 void draw() {
@@ -44,9 +52,8 @@ void initialize() {
     String tag1 = SongInfo[5].trim();
     String tag2 = SongInfo[6].trim();
     String tag3 = SongInfo[7].trim();
-    //us.ds.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
-    //  us.ds.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
-  }
+     user1.mps.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
+  } 
 }
 
 void mouseReleased()

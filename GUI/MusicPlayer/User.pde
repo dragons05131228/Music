@@ -1,24 +1,27 @@
 class User
 {
-  SongDatabase ds;
-  Playlist p;
+Playlist p;
   Playlist PFirst;
   Playlist PIndex;
   MusicPlayerSystem mps;
   User uNext;
   
+  Song LibFirst;
+  Song LibIndex;
   String username;
   String password;
   String UID;
 
   User(String name, String pw, String UID)
   {
-    ds   = new SongDatabase();
-    p = new Playlist(this.ds,str(1));
+    mps   = new MusicPlayerSystem();
+    p = new Playlist(this.mps,str(1));
     username = name;
     password = pw;
     this.UID = UID;
   }
+  
+  
  Playlist SearchPlaylist(String Att) {
     PIndex = PFirst;
     while (PIndex!=null) {
@@ -33,21 +36,20 @@ class User
     }
     return null;
   }
-  //void playlistPrint() {
-  //  //p.AddSongPlaylist("80");
-  //  //p.AddSongPlaylist("20");
-  //  //p.AddSongPlaylist("10");
-  //  //p.AddSongPlaylist("30");
-  //  //p.AddSongPlaylist("40");
-  //  //p.AddSongPlaylist("50");
-  //  mps.AddSongPlaylist("83");
-  //  mps.AddSongPlaylist("83");
-  //  mps.AddSongPlaylist("83");
-
-  //  //p.PrintlAll();
-  //  //p.removeSong("20");
-  //  mps.removeSong("83");
-
-  //  p.PrintlAll();
-  //}
+  
+  
+  void playlistPrint() {
+    
+    p.AddSongPlaylist("1");
+    p.AddSongPlaylist("2");
+    p.AddSongPlaylist("3");
+ p.AddSongPlaylist("4");
+    p.AddSongPlaylist("5");
+    p.AddSongPlaylist("6");
+     p.AddSongPlaylist("7");
+    p.AddSongPlaylist("8");
+    p.AddSongPlaylist("9");
+    //mps.removeSong("9");
+    p.PrintlAll();
+  }
 }
