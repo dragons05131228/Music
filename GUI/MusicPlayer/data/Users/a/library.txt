@@ -1,0 +1,5 @@
+5, Hotel California, Eagles, Rock, 75, classic, acoustic, iconic
+7, Shape of You, Ed Sheeran, Pop, 96, catchy, tropical, love
+15, Wonderwall, Oasis, Britpop, 87, nostalgic, acoustic, anthem
+19, Thunderstruck, AC/DC, Rock, 134, energetic, guitar, powerful
+22, Someone Like You, Adele, Pop, 67, emotional, piano, breakup

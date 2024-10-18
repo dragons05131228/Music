@@ -1,13 +1,19 @@
 class Playlist {
 
+<<<<<<< Updated upstream
   MusicPlayerSystem mp;
 
   Song First;
       Song Index;
 
+=======
+  SongDatabase database;
+  Song First;
+>>>>>>> Stashed changes
   Playlist pNext;
-String PID;
+  String PID;
   int counter;
+<<<<<<< Updated upstream
   Playlist(MusicPlayerSystem mp,String PID) {
     this.mp=mp;
     this.PID = PID;
@@ -47,13 +53,20 @@ boolean Contains(String songID){
 }
  void PrintlAll() {
    Song Index;
+=======
+  Playlist(SongDatabase database, String PID) {
+    this.database=database;
+    this.PID = PID;
+  }
+
+  void PrintAll() {
+    Song Index;
+>>>>>>> Stashed changes
     Index = First;
     while (Index!=null)
     {
- println(Index.ID);
+      println(Index.ID);
       Index=Index.sNext;
     }
   }
-
-  
 }

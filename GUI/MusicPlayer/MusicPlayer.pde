@@ -1,15 +1,20 @@
 import java.util.*;
 int stage=0;
+Set<String>usernames=new HashSet<String>();
 GUI system=new GUI();
-String username="admin";
-String password="admin";
 float lastMouseX, lastMouseY;
 String[] SongList;
 User user1 = new User("user", "0", "1");
 MusicPlayerSystem mps;
+int uFolderSize;
+File userFolder;
+File[] uFiles;
+float transy;
+SongDatabase ds=new SongDatabase();
 void setup() {
   SongList = loadStrings("SongsDatabase.txt");
   size(800, 1000);
+<<<<<<< Updated upstream
   initialize();
   
      //user1.playlistPrint();
@@ -19,23 +24,29 @@ void setup() {
   //us.ds.appendNewSongToFile();
   //us.playlistPrint();
   system.userLoginBoxes();
+=======
+>>>>>>> Stashed changes
   mps = new MusicPlayerSystem();
-  mps.addUser("test", "test", "0");
-  mps.addUser("test1", "test1", "1");
-  mps.addUser("test2", "test2", "2");
   system.userLoginBoxes();
+<<<<<<< Updated upstream
 
+=======
+  userFolder=new File(dataPath("/Users"));
+  uFiles=userFolder.listFiles();
+  ds.initDatabase();
+  UserLinkedList();
+>>>>>>> Stashed changes
 }
 
 void draw() {
+  background(255);
+  translate(0, transy);
   system.stages();
 }
 
-void UserLinkedList() {
-}
-
-void adminPage()
+void UserLinkedList()
 {
+<<<<<<< Updated upstream
   background(0);
 }
 
@@ -54,6 +65,25 @@ void initialize() {
     String tag3 = SongInfo[7].trim();
      user1.mps.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
   } 
+=======
+  for (int i=0; i<uFiles.length; i++)
+  {
+    //First Name, Last Name,Email,Username, Password, UID
+    File temp=new File(dataPath("/Users/"+uFiles[i].getName()));
+    File[]tempArray=temp.listFiles();
+    String name=temp.getName()+".txt";
+    for (int j=0; j<tempArray.length; j++)
+    {
+      if (tempArray[j].getName().equals(name))
+      {
+        String aUserInfo[]=loadStrings(tempArray[j]);
+        mps.addUser(aUserInfo[0].trim(), aUserInfo[1].trim(), aUserInfo[2].trim(), aUserInfo[3].trim(), aUserInfo[4].trim(), aUserInfo[5].trim());
+        usernames.add(aUserInfo[3]);
+        break;
+      }
+    }
+  }
+>>>>>>> Stashed changes
 }
 
 void mouseReleased()
@@ -65,7 +95,7 @@ void keyTyped()
 {
   Box temp=system.grabbedBox();
   if (temp==null)return;
-  if (temp.type=="Input")
+  if (temp.type.equals("Input"))
   {
     if (keyCode!=SHIFT&&keyCode!=ALT&&keyCode!=CONTROL&&keyCode!=UP&&keyCode!=DOWN&&keyCode!=LEFT&&keyCode!=RIGHT&&key!=BACKSPACE&&keyCode!=TAB&&keyCode!=ENTER)
       system.getInput(key);
@@ -74,4 +104,10 @@ void keyTyped()
       system.backspace();
     }
   }
+}
+void mouseWheel(MouseEvent event)
+{
+  float e=event.getCount();
+  if (stage==2)
+    transy+=e*40;
 }

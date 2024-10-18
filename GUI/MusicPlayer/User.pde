@@ -5,15 +5,23 @@ Playlist p;
   Playlist PIndex;
   MusicPlayerSystem mps;
   User uNext;
+<<<<<<< Updated upstream
   
   Song LibFirst;
   Song LibIndex;
+=======
+
+
+  String firstName, lastName, email;
+>>>>>>> Stashed changes
   String username;
   String password;
+
   String UID;
 
-  User(String name, String pw, String UID)
+  User(String firstName, String lastName, String email, String username, String password, String UID)
   {
+<<<<<<< Updated upstream
     mps   = new MusicPlayerSystem();
     p = new Playlist(this.mps,str(1));
     username = name;
@@ -23,6 +31,18 @@ Playlist p;
   
   
  Playlist SearchPlaylist(String Att) {
+=======
+    ds   = new SongDatabase();
+    p = new Playlist(this.ds, str(1));
+    this.username = username;
+    this.password = password;
+    this.firstName=firstName;
+    this.lastName=lastName;
+    this.email=email;
+    this.UID = UID;
+  }
+  Playlist SearchPlaylist(String Att) {
+>>>>>>> Stashed changes
     PIndex = PFirst;
     while (PIndex!=null) {
       if (PIndex.PID.equals(Att)) {

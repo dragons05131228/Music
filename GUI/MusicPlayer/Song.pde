@@ -1,7 +1,7 @@
 class Song {
 
   Song sNext;
-
+  Song next;
   int VIEWS = 0;
   String ID;
   String TITLE;
@@ -11,7 +11,7 @@ class Song {
   String tag1;
   String tag2;
   String tag3;
-  ArrayList<String>Meta=new ArrayList<String>();
+  Box button;
 
   Song (String ID, String TITLE, String ARTIST, String GENRE, String BEATpm, String tag1, String tag2, String tag3) {
     sNext = null;
@@ -28,7 +28,22 @@ class Song {
   void Update() {
   }
 
-  void DisplaySongs() {
-    //println(ID + ", " + TITLE + ", " + GENRE);
+  void display(int y)
+  {
+    textSize(18);
+    fill(0);
+    textAlign(CENTER);
+    text(TITLE+"\n"+"By: "+ARTIST+"\n", 210, y*70+300);
+    text(GENRE, 480, y*70+310);
+    text(BEATpm, 580, y*70+310);
+    if (!system.lib.contains(TITLE))
+    {
+      fill(0, 255, 0);
+      text("ADD TO LIBRARY", 690, y*70+310);
+    } else
+    {
+      fill( 255, 0, 0);
+      text("REMOVE FROM LIBRARY", 690, y*70+310);
+    }
   }
 }

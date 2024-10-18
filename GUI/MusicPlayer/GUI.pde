@@ -2,13 +2,13 @@ class GUI
 {
   Box firstBox;
   Box boxIterator;
-  User firstUser;
-  User userIterator;
   boolean showPassword;
   boolean showError;
+  boolean showMenu;
   int error;
-  PrintWriter newUser;
-  String[] errors={ "Please Fill In The Missing Blanks", "Invalid Email", "Username Must Be A Minimum Of 5 Characters", "Password Must Be A Minimum Of 8 Characters", "Passwords Are Not The Same", "Invalid Username", "Invalid Password"};
+  Set<String>lib=new HashSet<String>();
+
+  String[] errors={"Please Fill In The Missing Blanks", "Invalid Email", "Username Must Be A Minimum Of 5 Characters", "Password Must Be A Minimum Of 8 Characters", "Passwords Are Not The Same", "Invalid Username Or Password", "Username Already Exists"};
 
   GUI()
   {
@@ -20,25 +20,32 @@ class GUI
 
   void stages()
   {
-
-    if (stage==-2)
-    {
-      adminPage();
-    }
-    if (stage==-1)
-    {
-      aLoginPage();
-    }
     if (stage==0)
-    {
       uLoginPage();
-    }
     if (stage==1)
-    {
       registerPage();
-    }
+    if (stage==2)
+      userPage();
+    if (stage==3)
+      library();
+    if (stage==4)
+      playlists();
+    if (stage==5)
+      accountInfo();
+    if (stage==6)
+      logout();
+    if (stage==7)
+      createPlaylistPage();
   }
 
+  void logout()
+  {
+    stage=0;
+    resetBoxes();
+    userLoginBoxes();
+    lib.clear();
+    mps.reset();
+  }
   //BOX MODIFICATION
   //---------------------------------------------------------------------------------------------
   //---------------------------------------------------------------------------------------------
@@ -56,24 +63,18 @@ class GUI
     }
   }
 
-  Box searchBox(String boxName)
-  {
-    boxIterator = firstBox;
-    while (boxIterator!=null) {
-      if (boxIterator.bName.equals(boxName)) {
-        return boxIterator;
-      } else if (boxIterator.next==null) {
-        println("NotFound");
-      } else {
-        boxIterator = boxIterator.next;
-      }
-    }
-    return null;
-  }
   //USER BOXES
   //---------------------------------------------------------------------------------------------
   //---------------------------------------------------------------------------------------------
-
+  void menuBoxes()
+  {
+    system.addBox(20, 70, 50, 50, "Menu", "Submit", color(255), color(0));
+    system.addBox(0, 40, 300, 100, "Browse", "Submit", color(255, 255, 255, 0), color(255, 255, 255, 0));
+    system.addBox(0, 140, 300, 100, "Library", "Submit", color(255, 255, 255, 0), color(255, 255, 255, 0));
+    system.addBox(0, 240, 300, 100, "Playlists", "Submit", color(255, 255, 255, 0), color(255, 255, 255, 0));
+    system.addBox(0, 340, 300, 100, "AccountInfo", "Submit", color(255, 255, 255, 0), color(255, 255, 255, 0));
+    system.addBox(0, 440, 300, 100, "Logout", "Submit", color(255, 255, 255, 0), color(255, 255, 255, 0));
+  }
   void userLoginBoxes()
   {
     system.addBox(545, 480, 55, 50, "showPassword", "Hover", color(255, 255, 255, 0), color(255, 255, 255, 0));
@@ -81,7 +82,6 @@ class GUI
     system.addBox(200, 480, 400, 50, "Password", "Input", color(200), 0);
     system.addBox(350, 560, 100, 40, "Login", "Submit", color(240), 0);
     system.addBox(240, 670, 260, 30, "Register", "Submit", color(255, 255, 255, 0), color(255, 255, 255, 0));
-    system.addBox(650, 900, 100, 50, "adminLogin", "Submit", color(255), 0);
   }
 
   void regPageBoxes()
@@ -95,15 +95,61 @@ class GUI
     system.addBox(350, 800, 100, 40, "regComplete", "Submit", color(240), 0);
   }
 
+  void mainPageBoxes()
+  {
+    system.addBox(100, 70, 600, 50, "searchBox", "Input", color(200), color(0));
+    menuBoxes();
+  }
+
+  void playListBoxes()
+  {
+    menuBoxes();
+    system.addBox(600, 70, 150, 50, "createPlaylist", "Submit", color(255), color(0));
+  }
+
+  void libraryPageBoxes()
+  {
+    menuBoxes();
+  }
+
+  void cPlaylistBoxes()
+  {
+  }
   //USER DISPLAY
   //---------------------------------------------------------------------------------------------
   //---------------------------------------------------------------------------------------------
 
+  void displayMenu()
+  {
+    for (int i=0; i<3; i++)
+    {
+      fill(0);
+      rect(30, i*10+80, 30, 5);
+    }
+    if (showMenu==true)
+    {
+      stroke(0);
+      fill(255);
+      rect(0, transy, 300, 1000);
+      fill(0);
+      textSize(30);
+      textAlign(CENTER);
+      text("Hello "+mps.curUser.firstName+"!", 150, 35);
+      line(0, 40, 300, 40);
+      textAlign(CORNER);
+      text("Browse", 10, 100);
+      text("Library", 10, 200);
+      text("Playlists", 10, 300);
+      text("Account Info", 10, 400);
+      text("Logout", 10, 500);
+    }
+  }
+
   void uLoginPage()
   {
     background(255);
-    system.display();
     fill(0);
+    display();
     textAlign(CENTER);
     textSize(80);
     text("Music Player", 400, 200);
@@ -114,8 +160,8 @@ class GUI
     textSize(25);
     textAlign(CORNER);
     text("New User? Register Here", 250, 700);
+    stroke(0);
     line(250, 700, 500, 700);
-    text("Admin", 665, 930);
     textSize(20);
     text("SHOW", 545, 510);
     Box hover=system.hoverBox();
@@ -123,26 +169,19 @@ class GUI
     {
       if (hover.type.equals("Hover"))
       {
-        system.showPassword=true;
+        showPassword=true;
       }
     } else
-      system.showPassword=false;
+      showPassword=false;
+    if (showError==true)
+    {
+      textAlign(CENTER);
+      textSize(20);
+      fill(255, 0, 0);
+      text(errors[error], 400, 640);
+    }
   }
-  void aLoginPage()
-  {
-    background(0);
-    stroke(255);
-    textSize(60);
-    textAlign(CENTER);
-    fill(255);
-    text("Admin", 400, 200);
-    textSize(30);
-    textAlign(CORNER);
-    text("Username:\n\nPassword:", 180, 380);
-    system.display();
-    textSize(20);
-    text("Submit", 400, 515);
-  }
+
   void registerPage()
   {
     background(255);
@@ -150,7 +189,7 @@ class GUI
     textAlign(CENTER);
     fill(0);
     text("Registration Form", 400, 200);
-    system.display();
+    display();
     fill(0);
     textSize(20);
     text("Submit", 400, 825);
@@ -166,18 +205,71 @@ class GUI
 
   void userPage()
   {
+    background(255);
+    display();
+    textSize(20);
+    if (searchBox("searchBox").input.equals(""))
+    {
+      fill(255);
+      textAlign(CORNER);
+      text("Search for your favorite song, artist, or genre", 120, 100);
+    }
+    fill(0);
+    //text("Welcome " + mps.curUser.firstName+"!", 100, 400);
+    fill(255);
+    stroke(0);
+    for (int i=0; i<ds.totalSongs+1; i++)
+    {
+      rect(20, i*70+200, 380, 70);
+      rect(400, i*70+200, 160, 70);
+      rect(560, i*70+200, 40, 70);
+    }
+    stroke(0);
+    rect(600, 200, 180, 70);
+    textSize(18);
+    fill(0);
+    textAlign(CENTER);
+    text("Add/Remove Song", 690, 240);
+    text("Song Title and Song Artist", 210, 240);
+    text("Genre", 480, 240);
+    text("BPM", 580, 240);
+    ds.display();
+    displayMenu();
   }
 
-  //ADMIN PAGES
-  //---------------------------------------------------------------------------------------------
-  //---------------------------------------------------------------------------------------------
-  void adminLoginBoxes()
+  void playlists()
   {
-    system.addBox(330, 350, 300, 50, "aUserName", "Input", color(200), 255);
-    system.addBox(330, 420, 300, 50, "aPassword", "Input", color(200), 255);
-    system.addBox(350, 490, 100, 40, "aLogin", "Submit", color(255), 0);
+    background(255);
+    display();
+    textAlign(CENTER);
+    fill(0);
+    if (mps.curUser.PFirst==null)
+    {
+      textSize(40);
+      text("No Playlists Yet.\n Create One To View Them Here", 400, 400);
+    }
+    textSize(20);
+    text("Create Playlist", 675, 100);
+    displayMenu();
   }
 
+  void createPlaylistPage()
+  {
+    background(255);
+  }
+
+  void accountInfo()
+  {
+    background(255);
+  }
+
+  void library()
+  {
+    background(255);
+    display();
+    mps.curUser.libDisplay();
+    displayMenu();
+  }
   //DISPLAY
   //---------------------------------------------------------------------------------------------
   //---------------------------------------------------------------------------------------------
@@ -215,6 +307,21 @@ class GUI
     }
     return null;
   }
+  Box searchBox(String boxName)
+  {
+    boxIterator = firstBox;
+    while (boxIterator!=null) {
+      if (boxIterator.bName.equals(boxName)) {
+        return boxIterator;
+      } else if (boxIterator.next==null) {
+        break;
+      } else {
+        boxIterator = boxIterator.next;
+      }
+    }
+    return null;
+  }
+
   Box hoverBox()
   {
     boxIterator=firstBox;
@@ -228,10 +335,8 @@ class GUI
     }
     return null;
   }
-  void checkBox(float mousex, float mousey)
+  void checkBox()
   {
-    lastMouseX=mousex;
-    lastMouseY=mousey;
     boxIterator=firstBox;
     while ( boxIterator!=null)
     {
@@ -245,7 +350,7 @@ class GUI
     boxIterator=firstBox;
     while (boxIterator!=null)
     {
-      if (boxIterator.type!="Input")
+      if (!boxIterator.type.equals("Input"))
       {
         boxIterator=boxIterator.next;
         continue;
@@ -263,6 +368,38 @@ class GUI
     return true;
   }
 
+  boolean checkInfo(String userInfo, String passInfo)
+  {
+    String u=searchBox(userInfo).input;
+    String p=searchBox(passInfo).input;
+    if (stage==0)
+    {
+      if ((mps.UID(u)).equals("")||!p.equals(mps.SearchUser(mps.UID(u)).password))
+      {
+        error=5;
+        showError=true;
+        return false;
+      } else
+      {
+        resetBoxes();
+        mps.curUser=mps.SearchUser(mps.UID(u));
+        showError=false;
+        mainPageBoxes();
+        for (int i=0; i<uFiles.length; i++)
+        {
+          if (uFiles[i].getName().equals(u+".txt"))
+          {
+            File temp=uFiles[i];
+            String[] info=loadStrings(temp);
+            println(info[0]);
+            break;
+          }
+        }
+        return true;
+      }
+    }
+    return false;
+  }
   //RESETS
   //---------------------------------------------------------------------------------------------
   //---------------------------------------------------------------------------------------------
@@ -288,61 +425,34 @@ class GUI
       temp.input=temp.input.substring(0, temp.input.length()-1);
   }
 
-  boolean checkInfo()
-  {
-    if (stage==-1)
-    {
-      Box bUserName=searchBox("aUserName");
-      Box bPassword=searchBox("aPassword");
-      if (bUserName.input.equals(username)&&bPassword.input.equals(password))
-      {
-        return true;
-      }
-    }
-    return false;
-  }
-
   //GUI INTERACTIONS
   //---------------------------------------------------------------------------------------------
   //---------------------------------------------------------------------------------------------
   void guiMouseReleased()
   {
-    checkBox(mouseX, mouseY);
+    lastMouseX=mouseX;
+    lastMouseY=mouseY;
+    checkBox();
     Box temp=grabbedBox();
-    if (stage==-1)
-    {
-      if (temp==null)return;
-      println(temp.bName);
-      if (temp.bName=="aLogin")
-      {
-        if (checkInfo())
-        {
-          stage=-2;
-        }
-      }
-    }
     if (stage==0)
     {
       if (temp==null)return;
       println(temp.bName);
-      if (temp.type=="Submit")
+      if (temp.type.equals("Submit"))
       {
-        if (checkInfo())
+        if (checkInfo("Username", "Password"))
         {
           stage=2;
+          ds.setMainButton();
+          mps.setLib();
         }
-      }
-      if (temp.bName.equals("adminLogin"))
-      {
-        resetBoxes();
-        stage=-1;
-        adminLoginBoxes();
       }
       if (temp.bName.equals("Register"))
       {
         resetBoxes();
         stage=1;
         regPageBoxes();
+        showError=false;
       }
     }
     if (stage==1)
@@ -370,26 +480,86 @@ class GUI
           {
             showError=true;
             error=4;
+          } else if (usernames.contains(searchBox("createUsername").input))
+          {
+            showError=true;
+            error=6;
           } else
           {
             showError=false;
-            createUser();
+            userFolder=new File(dataPath("/Users"));
+            uFiles=userFolder.listFiles();
+            File newFolder=new File(dataPath("/Users/"+searchBox("createUsername").input));
+            newFolder.mkdirs();
+            String[]info={searchBox("firstName").input, searchBox("lastName").input, searchBox("email").input, searchBox("createUsername").input, searchBox("createPassword").input};
+            mps.createUser(info[0], info[1], info[2], info[3], info[4], str(uFiles.length));
+            resetBoxes();
+            mainPageBoxes();
+            ds.setMainButton();
+            stage=2;
           }
         }
     }
-  }
-
-  //CREATING NEW USER
-  void createUser()
-  {
-    String[]info={searchBox("firstName").input, searchBox("lastName").input, searchBox("email").input, searchBox("createUsername").input, searchBox("createPassword").input};
-    newUser=createWriter("/data/Users/"+info[3]+".txt");
-
-    for (int i=0; i<info.length; i++)
+    if (stage==2||searchBox("Menu")!=null)
     {
-      newUser.println(info[i]);
+      if (mouseX>300&&showMenu)
+        showMenu=false;
+      if (ds.grabbedSong()!=null)
+      {
+        Song a=ds.grabbedSong();
+        if (!lib.contains(a.TITLE))
+        {
+          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tag1, a.tag2, a.tag3);
+          mps.addToLib(t);
+          lib.add(a.TITLE);
+        } else
+        {
+          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tag1, a.tag2, a.tag3);
+          mps.removeFromLib(t);
+          lib.remove(a.TITLE);
+        }
+      }
+      if (grabbedBox()==null)return;
+      if (mouseX>0&&mouseX<300&&mouseY>40&&mouseY<140&&showMenu)
+      {
+        resetBoxes();
+        mainPageBoxes();
+        showMenu=false;
+        stage=2;
+      } else if (grabbedBox().bName.equals("Library")&&showMenu)
+      {
+        showMenu=false;
+        resetBoxes();
+        libraryPageBoxes();
+        stage=3;
+      } else if (grabbedBox().bName.equals("Playlists")&&showMenu)
+      {
+        showMenu=false;
+        resetBoxes();
+        playListBoxes();
+        stage=4;
+      } else if (grabbedBox().bName.equals("AccountInfo")&&showMenu)
+      {
+        showMenu=false;
+        resetBoxes();
+        stage=5;
+      } else if (grabbedBox().bName.equals("Logout")&&showMenu)
+      {
+        showMenu=false;
+        stage=6;
+      } else if (!showMenu)
+      {
+        if (grabbedBox().bName.equals("Menu"))
+          showMenu=true;
+      }
     }
-    newUser.flush();
-    newUser.close();
+    if (stage==4)
+    {
+      if (grabbedBox()==null)return;
+      if (grabbedBox().bName.equals("createPlaylist"))
+      {
+        stage=7;
+      }
+    }
   }
 }

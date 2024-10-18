@@ -26,12 +26,12 @@ class Box
     fill(c);
     stroke(stroke);
     rect(pos.x, pos.y, len, wid);
-    if (type=="Submit")
+    if (type.equals("Submit"))
     {
       textAlign(CENTER);
       fill(0);
     }
-    if (type=="Input")
+    if (type.equals("Input"))
     {
       fill(0);
       textSize(15);
@@ -50,7 +50,7 @@ class Box
           }
       }
     }
-    if (type=="Hover")
+    if (type.equals("Hover"))
     {
       noFill();
     }
@@ -58,21 +58,21 @@ class Box
 
   boolean mouseOver(float mousex, float mousey)
   {
-    if (mousex>pos.x&&mousex<pos.x+len&&mousey>pos.y&&mousey<pos.y+wid)
+    if (mousex>pos.x&&mousex<pos.x+len&&mousey>pos.y+transy&&mousey<pos.y+wid+transy)
       return true;
     return false;
   }
 
   void highlight(float mousex, float mousey)
   {
-    if (type=="Input")
+    if (!system.showMenu)
     {
-      if (mouseOver(mousex, mousey))
+      if (type=="Input")
       {
-        c=color(255);
-      } else
-      {
-        c=color(200);
+        if (mouseOver(mousex, mousey))
+          c=color(255);
+        else
+          c=color(200);
       }
     }
   }
