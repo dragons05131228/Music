@@ -1,0 +1,1000 @@
+1, Blinding Lights, The Weeknd, Pop, 171, retro, upbeat, synth
+2, Billie Jean, Michael Jackson, Pop, 117, iconic, dance, funky
+3, Smells Like Teen Spirit, Nirvana, Grunge, 117, rebellious, grunge, anthem
+4, Rolling in the Deep, Adele, Pop, 105, powerful, emotional, breakup
+5, Hotel California, Eagles, Rock, 75, classic, acoustic, iconic
+6, Bohemian Rhapsody, Queen, Rock, 144, epic, operatic, progressive
+7, Shape of You, Ed Sheeran, Pop, 96, catchy, tropical, love
+8, Stairway to Heaven, Led Zeppelin, Rock, 82, legendary, guitar, ballad
+9, Imagine, John Lennon, Pop, 75, peace, piano, anthem
+10, Uptown Funk, Mark Ronson ft. Bruno Mars, Funk, 115, groovy, dance, retro
+11, Lose Yourself, Eminem, Hip Hop, 171, intense, motivational, rap
+12, Sweet Child O' Mine, Guns N' Roses, Rock, 125, guitar, iconic, ballad
+13, Dancing Queen, ABBA, Disco, 100, classic, upbeat, dance
+14, Hotline Bling, Drake, Hip Hop, 134, catchy, mellow, pop-rap
+15, Wonderwall, Oasis, Britpop, 87, nostalgic, acoustic, anthem
+16, Clocks, Coldplay, Alternative, 131, piano, emotional, dreamy
+17, Happy, Pharrell Williams, Pop, 160, cheerful, upbeat, feel-good
+18, Hey Jude, The Beatles, Rock, 72, anthemic, sing-along, classic
+19, Thunderstruck, AC/DC, Rock, 134, energetic, guitar, powerful
+20, Despacito, Luis Fonsi ft. Daddy Yankee, Reggaeton, 89, summer, dance, Latin
+21, Can't Stop the Feeling!, Justin Timberlake, Pop, 113, fun, upbeat, dance
+22, Someone Like You, Adele, Pop, 67, emotional, piano, breakup
+23, Take On Me, A-ha, Synthpop, 169, retro, catchy, 80s
+24, Hips Don't Lie, Shakira, Latin Pop, 100, dance, catchy, Latin
+25, Back in Black, AC/DC, Rock, 94, powerful, guitar, anthemic
+26, Superstition, Stevie Wonder, Funk, 100, groovy, soulful, funky
+27, I Will Always Love You, Whitney Houston, Pop, 67, emotional, ballad, iconic
+28, Africa, Toto, Rock, 92, nostalgic, 80s, sing-along
+29, Lose Yourself to Dance, Daft Punk ft. Pharrell Williams, Funk, 100, groovy, electronic, retro
+30, Creep, Radiohead, Alternative Rock, 92, moody, grunge, introspective
+31, Seven Nation Army, The White Stripes, Rock, 124, guitar, anthemic, alternative
+32, Beat It, Michael Jackson, Rock, 139, energetic, guitar, dance
+33, Thinking Out Loud, Ed Sheeran, Pop, 79, romantic, acoustic, wedding
+34, Roxanne, The Police, Reggae Rock, 83, classic, rock, reggae
+35, Yesterday, The Beatles, Pop, 85, nostalgic, acoustic, ballad
+36, Bad Guy, Billie Eilish, Pop, 135, dark, catchy, bass-heavy
+37, Don't Stop Believin', Journey, Rock, 118, anthemic, sing-along, classic
+38, Time, Hans Zimmer, Soundtrack, 60, cinematic, orchestral, epic
+39, Bad Romance, Lady Gaga, Pop, 119, dance, catchy, anthemic
+40, Rolling Stone, The Rolling Stones, Rock, 113, classic, bluesy, rebellious
+41, Good 4 U, Olivia Rodrigo, Pop Punk, 170, angsty, energetic, breakup
+42, Lean On, Major Lazer & DJ Snake ft. MØ, EDM, 98, tropical, dance, summer
+43, Lose My Breath, Destiny's Child, R&B, 120, energetic, dance, powerful
+44, Let Her Go, Passenger, Indie Folk, 75, acoustic, emotional, ballad
+45, Radioactive, Imagine Dragons, Alternative, 136, powerful, electronic, rock
+46, Poker Face, Lady Gaga, Pop, 120, dance, catchy, upbeat
+47, Mr. Brightside, The Killers, Rock, 148, upbeat, anthemic, alternative
+48, Midnight City, M83, Synthpop, 105, atmospheric, electronic, driving
+49, Viva La Vida, Coldplay, Alternative, 138, orchestral, anthemic, epic
+50, Senorita, Shawn Mendes & Camila Cabello, Pop, 117, romantic, catchy, Latin
+51, Bulletproof, La Roux, Electropop, 123, upbeat, synth, catchy
+52, Redbone, Childish Gambino, R&B, 81, smooth, funky, soulful
+53,  Youngblood, 5 Seconds of Summer, Pop Rock, 120, energetic, catchy, pop
+54, Pumped Up Kicks, Foster the People, Indie Pop, 128, catchy, alternative, pop
+55, Take Me to Church, Hozier, Indie Rock, 129, emotional, soulful, powerful
+56, Heroes, David Bowie, Rock, 115, anthemic, epic, timeless
+57, We Will Rock You, Queen, Rock, 81, stomping, sing-along, iconic
+58, Titanium, David Guetta ft. Sia, EDM, 126, empowering, electronic, anthemic
+59, I Gotta Feeling, The Black Eyed Peas, Pop, 128, party, feel-good, dance
+60, Counting Stars, OneRepublic, Pop Rock, 122, upbeat, anthemic, acoustic
+61, Old Town Road, Lil Nas X ft. Billy Ray Cyrus, Country Rap, 136, viral, catchy, country
+62, Zombie, The Cranberries, Rock, 84, emotional, anthemic, alternative
+63, Royals, Lorde, Indie Pop, 85, minimalist, catchy, introspective
+64, Blurred Lines, Robin Thicke ft. Pharrell, R&B, 120, catchy, funky, controversial
+65, Wake Me Up, Avicii, EDM, 124, anthemic, summer, electronic
+66, Sweet Home Alabama, Lynyrd Skynyrd, Southern Rock, 98, classic, guitar, anthem
+67, Brown Eyed Girl, Van Morrison, Rock, 120, nostalgic, upbeat, classic
+68, Firework, Katy Perry, Pop, 124, empowering, anthemic, uplifting
+69, Don't Start Now, Dua Lipa, Disco, 124, groovy, upbeat, catchy
+70, Stay, The Kid LAROI & Justin Bieber, Pop, 170, catchy, emotional, pop
+71, Let It Be, The Beatles, Pop Rock, 72, timeless, piano, classic
+72, In the End, Linkin Park, Nu Metal, 105, emotional, angsty, rock
+73, Get Lucky, Daft Punk ft. Pharrell Williams, Funk, 116, groovy, dance, retro
+74, Feel It Still, Portugal. The Man, Alternative, 158, funky, upbeat, retro
+75, Eye of the Tiger, Survivor, Rock, 109, powerful, motivational, iconic
+76, Somebody Told Me, The Killers, Rock, 138, energetic, catchy, alternative
+77, Dreams, Fleetwood Mac, Rock, 120, classic, dreamy, iconic
+78, Shake It Off, Taylor Swift, Pop, 160, fun, upbeat, dance
+79, Riptide, Vance Joy, Indie Folk, 100, acoustic, catchy, summer
+80, Can't Feel My Face, The Weeknd, Pop, 108, catchy, upbeat, funky
+81, Levitating, Dua Lipa, Pop, 103, catchy, disco, fun
+82, Watermelon Sugar, Harry Styles, Pop, 95, summer, upbeat, romantic
+83, You Belong With Me, Taylor Swift, Pop, 130, cheerful, catchy, upbeat
+84, Yellow, Coldplay, Alternative, 174, dreamy, mellow, introspective
+85, Dark Horse, Katy Perry ft. Juicy J, Pop, 133, catchy, bass-heavy, dark
+86, Paradise, Coldplay, Pop Rock, 140, uplifting, anthemic, melodic
+87, All of Me, John Legend, R&B, 120, romantic, piano, ballad
+88, Stayin' Alive, Bee Gees, Disco, 104, groovy, classic, dance
+89, Rockstar, Post Malone ft. 21 Savage, Hip Hop, 160, dark, moody, trap
+90, The Less I Know the Better, Tame Impala, Psychedelic Rock, 118, groovy, retro, bass-heavy
+91, Sunflower, Post Malone & Swae Lee, Hip Hop, 90, chill, catchy, pop-rap
+92, Heat Waves, Glass Animals, Indie Pop, 164, catchy, introspective, mellow
+93, Sorry, Justin Bieber, Pop, 100, catchy, tropical, upbeat
+94, Animals, Maroon 5, Pop, 95, energetic, catchy, pop
+95, Shallow, Lady Gaga & Bradley Cooper, Soundtrack, 96, emotional, powerful, ballad
+96, Circles, Post Malone, Pop, 120, chill, catchy, introspective
+97, Bad Habits, Ed Sheeran, Pop, 126, catchy, upbeat, dance
+98, Save Your Tears, The Weeknd, Pop, 118, emotional, retro, catchy
+99, Memories, Maroon 5, Pop, 91, nostalgic, mellow, emotional
+100, Thriller, Michael Jackson, Pop, 118, iconic, spooky, dance
+101, I Want It That Way, Backstreet Boys, Pop, 99, nostalgic, boyband, ballad
+102, Numb, Linkin Park, Nu Metal, 110, angsty, electronic, rock
+103, Smooth, Santana ft. Rob Thomas, Rock, 116, Latin, guitar, groovy
+104, Toxic, Britney Spears, Pop, 143, catchy, dance, seductive
+105, Chasing Cars, Snow Patrol, Alternative Rock, 104, emotional, mellow, ballad
+106, Say My Name, Destiny's Child, R&B, 94, catchy, soulful, empowering
+107, Lose You To Love Me, Selena Gomez, Pop, 113, emotional, breakup, ballad
+108, Halo, Beyoncé, Pop, 84, powerful, emotional, ballad
+109, Uptown Girl, Billy Joel, Pop, 129, upbeat, classic, catchy
+110, Use Somebody, Kings of Leon, Alternative Rock, 70, anthemic, emotional, rock
+111, When Doves Cry, Prince, Pop, 127, classic, funky, 80s
+112, California Gurls, Katy Perry ft. Snoop Dogg, Pop, 125, summer, catchy, upbeat
+113, All Star, Smash Mouth, Alternative Rock, 104, upbeat, catchy, fun
+114, Everybody (Backstreet's Back), Backstreet Boys, Pop, 108, dance, boyband, catchy
+115, Somebody That I Used to Know, Gotye ft. Kimbra, Indie Pop, 129, emotional, breakup, duet
+116, Happy Together, The Turtles, Rock, 120, classic, upbeat, love
+117, I Wanna Dance with Somebody, Whitney Houston, Pop, 119, upbeat, dance, classic
+118, Radio Ga Ga, Queen, Rock, 113, anthemic, synth, classic
+119, Another Brick in the Wall, Pink Floyd, Rock, 104, rebellious, progressive, classic
+120, 99 Problems, Jay-Z, Hip Hop, 89, iconic, rap, gritty
+121, Can't Hold Us, Macklemore & Ryan Lewis, Hip Hop, 146, energetic, anthemic, upbeat
+122, Beautiful Day, U2, Rock, 136, uplifting, anthemic, rock
+123, SexyBack, Justin Timberlake, Pop, 117, dance, catchy, electronic
+124, Don't Speak, No Doubt, Rock, 76, emotional, breakup, ballad
+125, Moves like Jagger, Maroon 5 ft. Christina Aguilera, Pop, 128, dance, catchy, upbeat
+126, Single Ladies (Put a Ring on It), Beyoncé, Pop, 97, empowering, dance, catchy
+127, Crazy, Gnarls Barkley, Soul, 112, soulful, catchy, alternative
+128, No One, Alicia Keys, R&B, 90, soulful, emotional, ballad
+129, 7 Years, Lukas Graham, Pop, 120, introspective, emotional, storytelling
+130, Cheap Thrills, Sia ft. Sean Paul, Pop, 90, dancehall, catchy, upbeat
+131, Kryptonite, 3 Doors Down, Rock, 100, alternative, guitar, rock
+132, Sweet Dreams (Are Made of This), Eurythmics, Synthpop, 126, classic, synth, catchy
+133, A Thousand Miles, Vanessa Carlton, Pop, 95, piano, catchy, romantic
+134, Can't Get You Out of My Head, Kylie Minogue, Pop, 126, dance, catchy, upbeat
+135, Scar Tissue, Red Hot Chili Peppers, Rock, 89, alternative, guitar, mellow
+136, With or Without You, U2, Rock, 110, emotional, classic, anthemic
+137, I Kissed a Girl, Katy Perry, Pop, 130, catchy, controversial, upbeat
+138, Smooth Criminal, Michael Jackson, Pop, 118, energetic, iconic, dance
+139, Fireflies, Owl City, Synthpop, 90, dreamy, electronic, mellow
+140, Apologize, Timbaland ft. OneRepublic, Pop, 122, emotional, ballad, piano
+141, Treasure, Bruno Mars, Funk, 112, groovy, retro, catchy
+142, Drops of Jupiter, Train, Rock, 78, emotional, melodic, ballad
+143, Bring Me to Life, Evanescence, Rock, 96, powerful, gothic, rock
+144, Born This Way, Lady Gaga, Pop, 124, empowering, dance, catchy
+145, Bad Day, Daniel Powter, Pop, 76, emotional, piano, melodic
+146, Valerie, Mark Ronson ft. Amy Winehouse, Soul, 97, soulful, cover, upbeat
+147, We Are Young, fun. ft. Janelle Monáe, Indie Pop, 130, anthemic, catchy, upbeat
+148, I'm Yours, Jason Mraz, Pop, 76, acoustic, mellow, romantic
+149, Party Rock Anthem, LMFAO ft. Lauren Bennett, EDM, 130, party, dance, catchy
+150, Born in the U.S.A., Bruce Springsteen, Rock, 123, classic, anthemic, patriotic
+151, Take Me Out, Franz Ferdinand, Indie Rock, 104, energetic, guitar, catchy
+152, Closer, The Chainsmokers ft. Halsey, EDM, 95, catchy, duet, electronic
+153, Love Yourself, Justin Bieber, Pop, 100, acoustic, breakup, mellow
+154, Can't Stop, Red Hot Chili Peppers, Rock, 91, energetic, guitar, alternative
+155, Hello, Adele, Pop, 79, emotional, powerful, ballad
+156, Ho Hey, The Lumineers, Indie Folk, 85, acoustic, catchy, upbeat
+157, Hey Ya!, Outkast, Hip Hop, 158, energetic, catchy, dance
+158, Umbrella, Rihanna ft. Jay-Z, Pop, 87, catchy, R&B, mellow
+159, Castle on the Hill, Ed Sheeran, Pop, 135, nostalgic, upbeat, storytelling
+160, Under the Bridge, Red Hot Chili Peppers, Rock, 95, mellow, guitar, alternative
+161, Bad and Boujee, Migos ft. Lil Uzi Vert, Hip Hop, 127, trap, catchy, rap
+162, Paper Planes, M.I.A., Hip Hop, 86, catchy, alternative, electronic
+163, Feel Good Inc., Gorillaz, Alternative, 139, funky, electronic, rap
+164, Dynamite, BTS, Pop, 114, upbeat, dance, catchy
+165, Stressed Out, Twenty One Pilots, Alternative, 85, introspective, catchy, mellow
+166, Say So, Doja Cat, Pop, 111, disco, catchy, upbeat
+167, Unstoppable, Sia, Pop, 86, empowering, anthemic, powerful
+168, Location, Khalid, R&B, 89, chill, smooth, mellow
+169, Dance Monkey, Tones and I, Pop, 98, catchy, upbeat, viral
+170, Believer, Imagine Dragons, Alternative, 125, powerful, energetic, rock
+171, Love on Top, Beyoncé, R&B, 130, upbeat, soulful, romantic
+172, Ride, Twenty One Pilots, Alternative, 150, reggae, catchy, rock
+173, Love Me Like You Do, Ellie Goulding, Pop, 95, emotional, romantic, ballad
+174, Someone You Loved, Lewis Capaldi, Pop, 110, emotional, piano, ballad
+175, Shape of My Heart, Sting, Pop, 56, acoustic, introspective, mellow
+176, Rude, MAGIC!, Reggae Fusion, 72, reggae, catchy, love
+177, This Love, Maroon 5, Pop Rock, 95, catchy, upbeat, breakup
+178, The Scientist, Coldplay, Alternative, 148, emotional, piano, ballad
+179, Don't Stop Me Now, Queen, Rock, 156, energetic, upbeat, classic
+180, Sorry Not Sorry, Demi Lovato, Pop, 144, empowering, catchy, upbeat
+181, Wake Me Up When September Ends, Green Day, Alternative Rock, 105, emotional, guitar, ballad
+182, 7 rings, Ariana Grande, Pop, 140, catchy, trap, luxurious
+183, Sugar, Maroon 5, Pop, 120, catchy, upbeat, love
+184, One Dance, Drake ft. Wizkid & Kyla, Dancehall, 104, tropical, catchy, dance
+185, Ocean Eyes, Billie Eilish, Pop, 145, dreamy, mellow, emotional
+186, Ride, Lana Del Rey, Pop, 60, atmospheric, emotional, ballad
+187, Pompeii, Bastille, Indie Pop, 128, anthemic, catchy, upbeat
+188, Photograph, Ed Sheeran, Pop, 108, emotional, romantic, ballad
+189, Bad Liar, Selena Gomez, Pop, 90, catchy, minimalist, mellow
+190, Havana, Camila Cabello ft. Young Thug, Pop, 105, catchy, Latin, upbeat
+191, 24K Magic, Bruno Mars, Funk, 94, groovy, retro, catchy
+192, New Rules, Dua Lipa, Pop, 116, empowering, catchy, dance
+193, Thunder, Imagine Dragons, Alternative, 87, energetic, electronic, rock
+194, Break Free, Ariana Grande ft. Zedd, EDM, 130, dance, catchy, upbeat
+195, Summertime Sadness, Lana Del Rey, Pop, 125, atmospheric, melancholic, emotional
+196, Demons, Imagine Dragons, Alternative, 90, emotional, melodic, rock
+197, Grenade, Bruno Mars, Pop, 110, emotional, soulful, ballad
+198, Mirrors, Justin Timberlake, Pop, 77, romantic, emotional, ballad
+199, Bad Blood, Taylor Swift ft. Kendrick Lamar, Pop, 85, catchy, revenge, upbeat
+200, Sucker, Jonas Brothers, Pop, 138, catchy, upbeat, comeback
+201, Hey There Delilah, Plain White T's, Pop Rock, 104, acoustic, romantic, mellow
+202, What Makes You Beautiful, One Direction, Pop, 125, upbeat, catchy, boyband
+203, We Found Love, Rihanna ft. Calvin Harris, EDM, 128, dance, upbeat, catchy
+204, Chandelier, Sia, Pop, 87, powerful, emotional, anthemic
+205, One More Night, Maroon 5, Pop, 93, catchy, upbeat, pop
+206, Rockabye, Clean Bandit, EDM, 102, dance, emotional, pop
+207, Girls Like You, Maroon 5 ft. Cardi B, Pop, 125, catchy, mellow, pop
+208, Heathens, Twenty One Pilots, Alternative, 90, dark, moody, rock
+209, See You Again, Wiz Khalifa ft. Charlie Puth, Hip Hop, 80, emotional, tribute, soundtrack
+210, In My Feelings, Drake, Hip Hop, 77, catchy, viral, dance
+211, I Took a Pill in Ibiza, Mike Posner, Pop, 102, introspective, electronic, remix
+212, All About That Bass, Meghan Trainor, Pop, 134, catchy, upbeat, body-positive
+213, Stolen Dance, Milky Chance, Alternative, 114, mellow, catchy, indie
+214, Thinking Bout You, Frank Ocean, R&B, 82, soulful, emotional, mellow
+215, Without Me, Halsey, Pop, 103, emotional, catchy, breakup
+216, Summer Haze, The Solar Project, Chillwave, 90, laid-back, summery, mellow
+217, Chained to the Rhythm, Katy Perry ft. Skip Marley, Pop, 95, catchy, dance, pop
+218, Young Folks, Peter Bjorn and John, Indie Pop, 138, catchy, whistle, mellow
+219, Blank Space, Taylor Swift, Pop, 96, catchy, upbeat, breakup
+220, Wake Me Up Before You Go-Go, Wham!, Pop, 127, upbeat, dance, classic
+221, Levels, Avicii, EDM, 126, uplifting, electronic, dance
+222, Bangarang, Skrillex ft. Sirah, EDM, 110, energetic, electronic, dubstep
+223, Whatever It Takes, Imagine Dragons, Alternative, 90, energetic, electronic, rock
+224, Starboy, The Weeknd ft. Daft Punk, R&B, 93, catchy, electronic, moody
+225, Wrecking Ball, Miley Cyrus, Pop, 120, emotional, powerful, breakup
+226, Team, Lorde, Indie Pop, 100, catchy, introspective, minimalist
+227, Little Talks, Of Monsters and Men, Indie Folk, 105, upbeat, catchy, duet
+228, Some Nights, fun., Indie Pop, 108, anthemic, upbeat, catchy
+229, Locked Out of Heaven, Bruno Mars, Pop, 146, upbeat, funky, catchy
+230, Stay, Rihanna ft. Mikky Ekko, Pop, 112, emotional, ballad, duet
+231, Machine, Imagine Dragons, Alternative, 85, powerful, energetic, rock
+232, Somewhere Only We Know, Keane, Alternative Rock, 87, emotional, piano, melodic
+233, Maps, Maroon 5, Pop, 100, catchy, upbeat, pop
+234, Say You Won't Let Go, James Arthur, Pop, 88, romantic, acoustic, ballad
+235, Burn, Ellie Goulding, Pop, 87, catchy, electronic, upbeat
+236, Skyfall, Adele, Soundtrack, 75, cinematic, powerful, James Bond
+237, Electric Soul, Neon Pulse, Electro Funk, 115, funky, vibrant, dance
+238, Velvet Skies, Starbound, New Age, 72, peaceful, soft, celestial
+239, Work, Rihanna ft. Drake, Dancehall, 92, catchy, tropical, dance
+240, Skinny Love, Bon Iver, Indie Folk, 82, emotional, acoustic, mellow
+241, The Hills, The Weeknd, R&B, 113, dark, moody, bass-heavy
+242, Roar, Katy Perry, Pop, 90, empowering, upbeat, catchy
+243, Elastic Heart, Sia, Pop, 130, emotional, powerful, electronic
+244, Faded, Alan Walker, EDM, 90, atmospheric, electronic, melodic
+245, Mi Gente, J Balvin & Willy William, Reggaeton, 105, dance, Latin, catchy
+246, Heartbeat Away, Silver Echo, Pop, 108, romantic, catchy, pop
+247, Paris, The Chainsmokers, EDM, 100, mellow, electronic, pop
+248, Lost in the Echo, Static Maze, Alternative Rock, 124, introspective, powerful, rock
+249, Stay With Me, Sam Smith, Soul, 84, emotional, ballad, soulful
+250, Never Be the Same, Camila Cabello, Pop, 65, emotional, powerful, pop
+251, Ocean Drive, Coastline Journey, Indie Pop, 102, upbeat, breezy, summer
+252, Zero, Imagine Dragons, Alternative, 96, energetic, electronic, rock
+253, Young Dumb & Broke, Khalid, R&B, 80, chill, mellow, youthful
+254, Whispering Wind, Mellow Beats, Jazz, 93, smooth, jazzy, relaxing
+255, No Tears Left to Cry, Ariana Grande, Pop, 122, uplifting, catchy, dance
+256, Only Human, Jonas Brothers, Pop, 99, catchy, upbeat, reggae
+257, Happier, Marshmello ft. Bastille, EDM, 100, emotional, electronic, pop
+258, High Hopes, Panic! At The Disco, Alternative, 82, anthemic, uplifting, catchy
+259, On Top of the World, Imagine Dragons, Alternative, 105, upbeat, cheerful, rock
+260, Natural, Imagine Dragons, Alternative, 91, powerful, energetic, rock
+261, Lucid Dreams, Juice WRLD, Hip Hop, 84, emotional, melodic, rap
+262, Million Reasons, Lady Gaga, Pop, 64, emotional, ballad, powerful
+263, Thank U Next, Ariana Grande, Pop, 107, catchy, breakup, empowering
+264, It's Time, Imagine Dragons, Alternative, 105, anthemic, uplifting, rock
+265, Payphone, Maroon 5 ft. Wiz Khalifa, Pop, 110, catchy, breakup, pop
+266, Break My Heart, Dua Lipa, Pop, 113, disco, catchy, upbeat
+267, Physical, Dua Lipa, Pop, 147, energetic, retro, dance
+268, Starlight Serenade, The Astral Melody, Classical, 60, majestic, serene, orchestral
+269, Adore You, Harry Styles, Pop, 100, catchy, melodic, pop
+270, Señorita, Shawn Mendes & Camila Cabello, Pop, 117, romantic, catchy, Latin
+271, Therefore I Am, Billie Eilish, Pop, 94, moody, catchy, bass-heavy
+272, Lovely, Billie Eilish & Khalid, Pop, 114, emotional, mellow, duet
+273, Everything I Wanted, Billie Eilish, Pop, 120, introspective, mellow, emotional
+274, Rodeo, Lil Nas X ft. Cardi B, Hip Hop, 140, catchy, trap, rap
+275, Panini, Lil Nas X, Hip Hop, 154, catchy, trap, rap
+276, Wow., Post Malone, Hip Hop, 105, catchy, trap, rap
+277, Goodbyes, Post Malone ft. Young Thug, Hip Hop, 150, emotional, melodic, rap
+278, City Shadows, Urban Spectrum, Jazz Fusion, 98, groovy, dark, jazzy
+279, The Box, Roddy Ricch, Hip Hop, 146, trap, viral, rap
+280, Savage Love, Jason Derulo & Jawsh 685, Pop, 150, catchy, dancehall, viral
+281, Intentions, Justin Bieber ft. Quavo, Pop, 76, catchy, upbeat, pop
+282, Yummy, Justin Bieber, Pop, 138, catchy, upbeat, pop
+283, I Don't Care, Ed Sheeran & Justin Bieber, Pop, 102, catchy, upbeat, duet
+284, Perfect, Ed Sheeran, Pop, 63, romantic, ballad, wedding
+285, Galway Girl, Ed Sheeran, Pop, 100, catchy, upbeat, folk
+286, IDGAF, Dua Lipa, Pop, 98, empowering, catchy, pop
+287, Mood, 24kGoldn ft. Iann Dior, Hip Hop, 91, catchy, upbeat, rap
+288, In Your Eyes, The Weeknd, Pop, 98, retro, synth, catchy
+289, Heartless, The Weeknd, R&B, 98, dark, moody, bass-heavy
+290, Lunar Walk, Eclipse Phase, Ambient, 76, otherworldly, serene, ambient
+291, Peaches, Justin Bieber, R&B, 90, chill, catchy, mellow
+292, Montero (Call Me By Your Name), Lil Nas X, Hip Hop, 91, catchy, controversial, pop
+293, Kiss Me More, Doja Cat ft. SZA, Pop, 111, catchy, upbeat, R&B
+294, Traitor, Olivia Rodrigo, Pop, 100, emotional, breakup, ballad
+295, Deja Vu, Olivia Rodrigo, Pop, 117, introspective, catchy, breakup
+296, Drivers License, Olivia Rodrigo, Pop, 144, emotional, ballad, breakup
+297, Leave The Door Open, Bruno Mars, R&B, 74, soulful, retro, smooth
+298, Industry Baby, Lil Nas X ft. Jack Harlow, Hip Hop, 150, catchy, brass, rap
+299, Holy, Justin Bieber, Pop, 98, uplifting, romantic, pop
+300, Space Ghost Coast to Coast, Glass Animals, Indie Pop, 124, catchy, electronic, mellow
+301, Maple Leaf Rag, Scott Joplin, Ragtime, 92, instrumental, piano, classic
+302, Alexander's Ragtime Band, Irving Berlin, Ragtime, 100, upbeat, classic, popular
+303, Over There, George M. Cohan, Patriotic, 120, wartime, anthemic, energetic
+304, Swanee, Al Jolson, Traditional Pop, 96, upbeat, showtune, classic
+305, St. Louis Blues, W.C. Handy, Blues, 80, soulful, classic, jazz
+306, The Entertainer, Scott Joplin, Ragtime, 70, instrumental, piano, classic
+307, Ain't We Got Fun, Van & Schenck, Traditional Pop, 120, upbeat, fun, classic
+308, Toot Toot Tootsie (Goodbye), Al Jolson, Traditional Pop, 110, upbeat, showtune, classic
+309, After You've Gone, Marion Harris, Jazz, 85, soulful, emotional, classic
+310, Let Me Call You Sweetheart, Bing Crosby, Traditional Pop, 75, romantic, ballad, classic
+311, My Blue Heaven, Gene Austin, Traditional Pop, 80, mellow, romantic, classic
+312, I'm Forever Blowing Bubbles, Ben Selvin, Traditional Pop, 90, melodic, classic, ballad
+313, Yes! We Have No Bananas, Billy Jones, Novelty, 95, humorous, upbeat, classic
+314, Dardanella, Ben Selvin, Jazz, 70, instrumental, classic, mellow
+315, Whispering, Paul Whiteman, Jazz, 125, instrumental, upbeat, classic
+316, April Showers, Al Jolson, Traditional Pop, 80, melodic, classic, showtune
+317, Till We Meet Again, Charles Hart, Traditional Pop, 70, emotional, ballad, classic
+318, Rhapsody in Blue, George Gershwin, Classical, 80, instrumental, orchestral, innovative
+319, The Charleston, James P. Johnson, Jazz, 128, dance, upbeat, classic
+320, Baby Face, Jan Garber Orchestra, Jazz, 115, upbeat, dance, classic
+321, Chicago (That Toddlin' Town), Fred Fisher, Traditional Pop, 100, upbeat, city, classic
+322, It Had to Be You, Isham Jones, Jazz, 75, romantic, mellow, classic
+323, Some of These Days, Sophie Tucker, Jazz, 85, soulful, classic, emotional
+324, Tiger Rag, Original Dixieland Jazz Band, Jazz, 140, energetic, instrumental, classic
+325, You Made Me Love You, Al Jolson, Traditional Pop, 70, romantic, ballad, classic
+326, Look for the Silver Lining, Marion Harris, Jazz, 85, hopeful, melodic, classic
+327, I'm Just Wild About Harry, Eubie Blake, Jazz, 110, upbeat, showtune, classic
+328, Second Hand Rose, Fanny Brice, Traditional Pop, 95, comedic, showtune, classic
+329, Indian Love Call, Rudolph Friml, Operetta, 60, romantic, melodic, classic
+330, Avalon, Al Jolson, Traditional Pop, 105, upbeat, classic, showtune
+331, Oh! You Beautiful Doll, Billy Murray, Traditional Pop, 100, upbeat, romantic, classic
+332, Darktown Strutters' Ball, Original Dixieland Jazz Band, Jazz, 130, dance, upbeat, classic
+333, My Man, Fanny Brice, Traditional Pop, 70, emotional, ballad, classic
+334, How Ya Gonna Keep 'Em Down on the Farm, Nora Bayes, Traditional Pop, 95, upbeat, wartime, classic
+335, Sweet Georgia Brown, Ben Bernie, Jazz, 125, upbeat, instrumental, classic
+336, I'll See You in My Dreams, Isham Jones, Jazz, 80, romantic, mellow, classic
+337, I'm Sitting on Top of the World, Al Jolson, Traditional Pop, 105, upbeat, optimistic, classic
+338, Ol' Man River, Paul Robeson, Musical Theatre, 70, deep, soulful, classic
+339, A Good Man Is Hard to Find, Marion Harris, Blues, 85, soulful, emotional, classic
+340, Bye Bye Blackbird, Gene Austin, Jazz, 100, upbeat, melodic, classic
+341, Tea for Two, Marion Harris, Jazz, 115, upbeat, romantic, classic
+342, Carolina in the Morning, Al Jolson, Traditional Pop, 90, upbeat, melodic, classic
+343, Waka Waka, Shakira ft. Freshlyground, Pop, 128 BPM, upbeat, World Cup, African
+344, When the Saints Go Marching In, Louis Armstrong, Jazz, 110, upbeat, instrumental, classic
+345, Charleston, Arthur Gibbs, Jazz, 128, dance, energetic, classic
+346, Shine On Harvest Moon, Nora Bayes & Jack Norworth, Traditional Pop, 85, romantic, classic, duet
+347, Way Down Yonder in New Orleans, Peerless Quartet, Jazz, 100, upbeat, classic, city
+348, Moonlit Sonata, Lunar Harmony, Classical, 70, serene, timeless, orchestral
+349, Lovesick Blues, Emmett Miller, Country, 75, soulful, yodeling, classic
+350, Yes Sir That's My Baby, Ace Brigode, Jazz, 120, upbeat, dance, classic
+351, Dinah, Ethel Waters, Jazz, 115, upbeat, soulful, classic
+352, Blue Skies, Ben Selvin, Jazz, 80, optimistic, melodic, classic
+353, After the Ball, Charles K. Harris, Traditional Pop, 70, ballad, romantic, classic
+354, I Ain't Got Nobody, Marion Harris, Jazz, 95, soulful, bluesy, classic
+355, Let the Rest of the World Go By, Ernest R. Ball, Traditional Pop, 75, melodic, romantic, classic
+356, Livery Stable Blues, Original Dixieland Jazz Band, Jazz, 132, instrumental, energetic, classic
+357, Smiles, Joseph C. Smith's Orchestra, Jazz, 100, upbeat, instrumental, classic
+358, Rose Room, Art Hickman, Jazz, 105, instrumental, dance, classic
+359, Aurora Whisper, Northern Light, Ambient, 64, ethereal, ambient, celestial
+360, Dill Pickles Rag, Charles L. Johnson, Ragtime, 95, piano, instrumental, classic
+361, By the Light of the Silvery Moon, Billy Murray, Traditional Pop, 90, romantic, classic, melodic
+362, When Irish Eyes Are Smiling, Chauncey Olcott, Traditional Pop, 70, melodic, romantic, Irish
+363, For Me and My Gal, Van & Schenck, Traditional Pop, 100, upbeat, duet, classic
+364, If You Were the Only Girl, Henry Burr, Traditional Pop, 75, romantic, ballad, classic
+365, Mississippi Mud, Paul Whiteman, Jazz, 110, upbeat, dance, classic
+366, Chinatown My Chinatown, Louis Armstrong, Jazz, 95, instrumental, classic, melodic
+367, I Wonder Who's Kissing Her Now, Henry Burr, Traditional Pop, 80, sentimental, classic, ballad
+368, Japanese Sandman, Paul Whiteman, Jazz, 115, instrumental, exotic, classic
+369, Waiting for the Robert E. Lee, Al Jolson, Traditional Pop, 110, upbeat, dance, classic
+370, Three O'Clock in the Morning, Paul Whiteman, Jazz, 75, instrumental, mellow, classic
+371, My Melancholy Baby, Gene Austin, Jazz, 80, soulful, romantic, classic
+372, Oh! Susanna, Traditional, Folk, 90, classic, folk, sing-along
+373, Bill Bailey Won't You Please Come Home, Hughie Cannon, Jazz, 100, upbeat, classic, catchy
+374, Baby Won't You Please Come Home, Bessie Smith, Blues, 85, soulful, emotional, classic
+375, Crystal Visions, Prism Reflection, Electro Pop, 110, crystalline, shimmering, pop
+376, Copenhagen, Fletcher Henderson, Jazz, 130, instrumental, energetic, classic
+377, Moanin' Low, Libby Holman, Blues, 70, soulful, emotional, classic
+378, A Pretty Girl Is Like a Melody, John Steel, Traditional Pop, 80, melodic, romantic, classic
+379, Rose of Washington Square, Al Jolson, Traditional Pop, 95, upbeat, showtune, classic
+380, Blueberry Hill, Gene Austin, Jazz, 80, romantic, melodic, classic
+381, Sonny Boy, Al Jolson, Traditional Pop, 70, emotional, ballad, classic
+382, If I Had You, Rudy Vallée, Jazz, 90, romantic, melodic, classic
+383, Button Up Your Overcoat, Ruth Etting, Jazz, 115, upbeat, catchy, classic
+384, Ain't Misbehavin', Fats Waller, Jazz, 100, upbeat, piano, classic
+385, Makin' Whoopee, Eddie Cantor, Jazz, 105, humorous, upbeat, classic
+386, Star Dust, Hoagy Carmichael, Jazz, 70, instrumental, melodic, classic
+387, Get Happy, Ruth Etting, Jazz, 120, upbeat, energetic, classic
+388, Louisiana, Nat Shilkret, Jazz, 95, upbeat, melodic, classic
+389, Embraceable You, Ginger Rogers, Jazz, 80, romantic, melodic, classic
+390, Just a Gigolo, Irving Caesar, Jazz, 100, melodic, classic, sentimental
+391, Sweet Lorraine, Cliff Edwards, Jazz, 85, mellow, romantic, classic
+392, China Boy, Paul Whiteman, Jazz, 120, instrumental, energetic, classic
+393, Jeepers Creepers, Louis Armstrong, Jazz, 105, upbeat, catchy, classic
+394, Mean to Me, Ruth Etting, Jazz, 85, emotional, soulful, classic
+395, My Buddy, Henry Burr, Traditional Pop, 75, sentimental, classic, ballad
+396, 'Deed I Do, Ruth Etting, Jazz, 115, upbeat, romantic, classic
+397, Rockin' Chair, Louis Armstrong, Jazz, 80, mellow, classic, soulful
+398, Love Me or Leave Me, Ruth Etting, Jazz, 110, empowering, soulful, classic
+399, Back Water Blues, Bessie Smith, Blues, 70, soulful, emotional, classic
+400, Am I Blue?, Ethel Waters, Blues, 80, soulful, emotional, classic
+401, In the Mood, Glenn Miller, Big Band, 168, swing, instrumental, classic
+402, Boogie Woogie Bugle Boy, The Andrews Sisters, Swing, 160, upbeat, wartime, catchy
+403, White Christmas, Bing Crosby, Traditional Pop, 82, holiday, classic, mellow
+404, Take the "A" Train, Duke Ellington, Jazz, 138, instrumental, swing, classic
+405, Sentimental Journey, Doris Day, Traditional Pop, 124, nostalgic, melodic, classic
+406, You Are My Sunshine, Jimmie Davis, Country, 100, upbeat, classic, sing-along
+407, Don't Sit Under the Apple Tree, The Andrews Sisters, Swing, 150, upbeat, wartime, catchy
+408, Chattanooga Choo Choo, Glenn Miller, Big Band, 124, swing, upbeat, classic
+409, I'll Be Seeing You, Billie Holiday, Jazz, 66, sentimental, mellow, classic
+410, Nature Boy, Nat King Cole, Jazz, 72, mellow, romantic, classic
+411, Rum and Coca-Cola, The Andrews Sisters, Calypso, 136, upbeat, catchy, tropical
+412, As Time Goes By, Dooley Wilson, Traditional Pop, 64, romantic, classic, ballad
+413, I've Got a Gal in Kalamazoo, Glenn Miller, Big Band, 148, swing, upbeat, classic
+414, Paper Doll, The Mills Brothers, Vocal Jazz, 112, mellow, harmony, classic
+415, God Bless the Child, Billie Holiday, Jazz, 62, soulful, emotional, classic
+416, Moonlight Serenade, Glenn Miller, Big Band, 66, instrumental, romantic, classic
+417, I'll Never Smile Again, Tommy Dorsey ft. Frank Sinatra, Big Band, 80, mellow, romantic, classic
+418, Don't Get Around Much Anymore, Duke Ellington, Jazz, 108, swing, classic, instrumental
+419, Swinging on a Star, Bing Crosby, Traditional Pop, 120, upbeat, classic, melodic
+420, Perfidia, Benny Goodman, Big Band, 135, instrumental, swing, classic
+421, Tuxedo Junction, Glenn Miller, Big Band, 140, instrumental, swing, classic
+422, How High the Moon, Les Paul & Mary Ford, Jazz, 200, upbeat, guitar, classic
+423, Ac-Cent-Tchu-Ate the Positive, Johnny Mercer, Traditional Pop, 128, upbeat, positive, catchy
+424, All or Nothing at All, Frank Sinatra, Traditional Pop, 80, romantic, ballad, classic
+425, Frenesi, Artie Shaw, Big Band, 170, instrumental, swing, classic
+426, Straighten Up and Fly Right, Nat King Cole Trio, Jazz, 125, upbeat, catchy, classic
+427, La Vie en Rose, Édith Piaf, Chanson, 90, romantic, French, classic
+428, A Nightingale Sang in Berkeley Square, Vera Lynn, Traditional Pop, 66, romantic, wartime, classic
+429, One O'Clock Jump, Count Basie, Jazz, 140, instrumental, swing, classic
+430, Beat Me Daddy Eight to the Bar, The Andrews Sisters, Swing, 190, upbeat, piano, catchy
+431, I'll Walk Alone, Dinah Shore, Traditional Pop, 80, sentimental, wartime, classic
+432, It's Only a Paper Moon, Nat King Cole, Jazz, 128, upbeat, catchy, classic
+433, Boogie Woogie, Tommy Dorsey, Big Band, 160, instrumental, piano, swing
+434, I'll Get By (As Long As I Have You), Harry James, Big Band, 85, romantic, trumpet, classic
+435, Moonlight Cocktail, Glenn Miller, Big Band, 120, mellow, romantic, classic
+436, Worth It, Fifth Harmony ft. Kid Ink, Pop, 100 BPM, catchy, confident, dance
+437, G.I. Jive, Louis Jordan, Jump Blues, 140, upbeat, wartime, catchy
+438, I'll Be Home for Christmas, Bing Crosby, Traditional Pop, 82, holiday, sentimental, classic
+439, That Old Black Magic, Glenn Miller, Big Band, 130, swing, romantic, classic
+440, Shoo-Shoo Baby, The Andrews Sisters, Swing, 150, upbeat, catchy, wartime
+441, Skylark, Hoagy Carmichael, Jazz, 65, mellow, romantic, classic
+442, It's Been a Long Long Time, Harry James ft. Kitty Kallen, Big Band, 75, romantic, sentimental, classic
+443, Lover Man(Oh Where Can You Be?), Billie Holiday, Jazz, 65, emotional, soulful, classic
+444, Bei Mir Bist Du Schön, The Andrews Sisters, Swing, 200, upbeat, catchy, classic
+445, This Land Is Your Land, Woody Guthrie, Folk, 120, patriotic, acoustic, classic
+446, Choo Choo Ch'Boogie, Louis Jordan, Jump Blues, 170, upbeat, train, classic
+447, (I Love You) For Sentimental Reasons, Nat King Cole, Jazz, 97, romantic, mellow, classic
+448, Stardust, Artie Shaw, Big Band, 75, instrumental, romantic, classic
+449, Praise the Lord and Pass the Ammunition, Kay Kyser, Big Band, 120, wartime, upbeat, patriotic
+450, On the Atchison Topeka and the Santa Fe, Johnny Mercer, Traditional Pop, 130, upbeat, train, classic
+451, I Don't Want to Set the World on Fire, The Ink Spots, Vocal Jazz, 72, mellow, romantic, classic
+452, Boogie Woogie on St. Louis Blues, Earl Hines, Jazz, 190, piano, instrumental, classic
+453, Blues in the Night, Woody Herman, Jazz, 100, bluesy, instrumental, classic
+454, Let It Snow! Let It Snow! Let It Snow!, Vaughn Monroe, Traditional Pop, 94, holiday, upbeat, classic
+455, It's a Sin to Tell a Lie, Billie Holiday, Jazz, 105, mellow, classic, vocal
+456, Swing Shift, Ella Fitzgerald, Jazz, 160, swing, upbeat, classic
+457, My Prayer, The Ink Spots, Vocal Jazz, 70, romantic, mellow, classic
+458, Cow Cow Boogie, Ella Mae Morse, Western Swing, 132, upbeat, catchy, classic
+459, I Got It Bad (And That Ain't Good), Duke Ellington, Jazz, 60, bluesy, mellow, classic
+460, God Bless America, Kate Smith, Patriotic, 72, patriotic, anthemic, classic
+461, Tangerine, Jimmy Dorsey, Big Band, 135, instrumental, swing, classic
+462, Now or Never, Billie Holiday, Jazz, 82, emotional, soulful, classic
+463, Body and Soul, Coleman Hawkins, Jazz, 68, saxophone, instrumental, classic
+464, Is You Is or Is You Ain't My Baby, Louis Jordan, Jump Blues, 136, catchy, upbeat, classic
+465, Don't Fence Me In, Bing Crosby & The Andrews Sisters, Traditional Pop, 130, upbeat, western, classic
+466, You Always Hurt the One You Love, The Mills Brothers, Vocal Jazz, 65, sentimental, mellow, classic
+467, When You Wish Upon a Star, Cliff Edwards, Soundtrack, 90, dreamy, classic, Disney
+468, Blue Moon of Kentucky, Bill Monroe, Bluegrass, 120, classic, country, upbeat
+469, Walking the Floor Over You, Ernest Tubb, Country, 120, classic, honky-tonk, upbeat
+470, Cool Water, Sons of the Pioneers, Country, 80, western, harmony, classic
+471, Blues in the Night, Dinah Shore, Jazz, 100, bluesy, soulful, classic
+472, The Trolley Song, Judy Garland, Soundtrack, 138, upbeat, musical, classic
+473, I Can't Get Started, Bunny Berigan, Jazz, 68, trumpet, instrumental, classic
+474, The Nearness of You, Glenn Miller ft. Ray Eberle, Big Band, 66, romantic, mellow, classic
+475, Let There Be Love, Nat King Cole, Jazz, 122, romantic, mellow, classic
+476, Elmer's Tune, Glenn Miller, Big Band, 168, swing, instrumental, classic
+477, I've Heard That Song Before, Harry James ft. Helen Forrest, Big Band, 100, nostalgic, romantic, classic
+478, Lazy River, The Mills Brothers, Vocal Jazz, 88, mellow, harmony, classic
+479, Oh! What It Seemed to Be, Frank Sinatra, Traditional Pop, 80, romantic, ballad, classic
+480, A String of Pearls, Glenn Miller, Big Band, 130, instrumental, swing, classic
+481, Autumn Nocturne, Claude Thornhill, Jazz, 65, instrumental, mellow, classic
+482, In the Blue of Evening, Tommy Dorsey ft. Frank Sinatra, Big Band, 72, romantic, mellow, classic
+483, All the Things You Are, Artie Shaw, Jazz, 85, instrumental, melodic, classic
+484, Moonlight Becomes You, Bing Crosby, Traditional Pop, 72, romantic, mellow, classic
+485, Air Mail Special, Benny Goodman, Big Band, 210, instrumental, swing, classic
+486, Pistol Packin' Mama, Al Dexter, Country, 122, upbeat, western, classic
+487, You Made Me Love You, Harry James, Big Band, 82, trumpet, romantic, classic
+488, Let's Dance, Benny Goodman, Big Band, 190, swing, instrumental, classic
+489, Rustic Roads, The Green Folk, Folk, 92, earthy, nostalgic, acoustic
+490, Moonlight in Vermont, Margaret Whiting, Traditional Pop, 74, romantic, mellow, classic
+491, On the Sunny Side of the Street, Tommy Dorsey, Big Band, 115, upbeat, swing, classic
+492, Breaking Waves, Ocean Drive, Pop, 98, summery, upbeat, vibrant
+493, Opus One, Tommy Dorsey, Big Band, 160, instrumental, swing, classic
+494, It's Magic, Doris Day, Traditional Pop, 66, romantic, ballad, classic
+495, Over the Rainbow, Judy Garland, Soundtrack, 84, dreamy, classic, musical
+496, Let Me Call You Sweetheart, The Mills Brothers, Vocal Jazz, 70, romantic, harmony, classic
+497, The Anniversary Song, Al Jolson, Traditional Pop, 80, sentimental, waltz, classic
+498, Buttons and Bows, Dinah Shore, Traditional Pop, 100, upbeat, catchy, classic
+499, Quantum Leap, Futurewave, Synthwave, 128, futuristic, energetic, synth
+500, Underwater Echoes, Deep Blue, Ambient, 60, immersive, soothing, deep
+501, Rock Around the Clock, Bill Haley & His Comets, Rock & Roll, 180, upbeat, classic, dance
+502, Hound Dog, Elvis Presley, Rock & Roll, 174, energetic, iconic, classic
+503, Johnny B. Goode, Chuck Berry, Rock & Roll, 168, guitar, upbeat, classic
+504, Tutti Frutti, Little Richard, Rock & Roll, 180, energetic, piano, classic
+505, Peggy Sue, Buddy Holly, Rock & Roll, 160, catchy, guitar, classic
+506, Great Balls of Fire, Jerry Lee Lewis, Rock & Roll, 168, piano, energetic, classic
+507, Desert Mirage, Sands of Time, World Music, 102, exotic, rhythmic, hypnotic
+508, Summertime Blues, Eddie Cochran, Rockabilly, 166, energetic, youth, classic
+509, La Bamba, Ritchie Valens, Rock & Roll, 140, Latin, upbeat, classic
+510, Mack the Knife, Bobby Darin, Jazz, 84, classic, swing, storytelling
+511, At the Hop, Danny & The Juniors, Rock & Roll, 158, dance, upbeat, classic
+512, Why Do Fools Fall in Love, Frankie Lymon & The Teenagers, Doo-Wop, 172, youthful, upbeat, classic
+513, Lonely Teardrops, Jackie Wilson, R&B, 160, soulful, energetic, classic
+514, Chantilly Lace, The Big Bopper, Rock & Roll, 152, catchy, upbeat, classic
+515, Shout, The Isley Brothers, R&B, 128, energetic, dance, classic
+516, That'll Be the Day, Buddy Holly & The Crickets, Rock & Roll, 132, upbeat, guitar, classic
+517, Only You (And You Alone), The Platters, Doo-Wop, 80, romantic, ballad, classic
+518, Jailhouse Rock, Elvis Presley, Rock & Roll, 160, energetic, dance, classic
+519, Diana, Paul Anka, Pop, 93, romantic, teen, classic
+520, Long Tall Sally, Little Richard, Rock & Roll, 210, energetic, piano, classic
+521, Rockin' Robin, Bobby Day, Rock & Roll, 160, catchy, upbeat, classic
+522, Come Go with Me, The Del-Vikings, Doo-Wop, 140, harmony, upbeat, classic
+523, Stagger Lee, Lloyd Price, R&B, 145, storytelling, upbeat, classic
+524, Bye Bye Love, The Everly Brothers, Country, 115, harmony, breakup, classic
+525, Blueberry Hill, Fats Domino, R&B, 68, piano, romantic, classic
+526, Whole Lotta Shakin' Goin' On, Jerry Lee Lewis, Rock & Roll, 168, piano, energetic, classic
+527, Maybellene, Chuck Berry, Rock & Roll, 180, guitar, energetic, classic
+528, Dream Lover, Bobby Darin, Pop, 104, romantic, catchy, classic
+529, Tears on My Pillow, Little Anthony & The Imperials, Doo-Wop, 72, romantic, ballad, classic
+530, All I Have to Do Is Dream, The Everly Brothers, Pop, 115, harmony, romantic, classic
+531, Love Me Tender, Elvis Presley, Ballad, 72, romantic, mellow, classic
+532, Kansas City, Wilbert Harrison, R&B, 132, upbeat, city, classic
+533, Put Your Head on My Shoulder, Paul Anka, Pop, 114, romantic, teen, classic
+534, Wake Up Little Susie, The Everly Brothers, Rock & Roll, 174, upbeat, harmony, classic
+535, Ain't That a Shame, Fats Domino, R&B, 136, piano, upbeat, classic
+536, Heartbreak Hotel, Elvis Presley, Rock & Roll, 114, bluesy, iconic, classic
+537, Venus, Frankie Avalon, Pop, 121, romantic, teen, classic
+538, Poison Ivy, The Coasters, R&B, 132, catchy, storytelling, classic
+539, Since I Don't Have You, The Skyliners, Doo-Wop, 68, romantic, ballad, classic
+540, Sea of Love, Phil Phillips, Pop, 74, romantic, mellow, classic
+541, I'm Walkin', Fats Domino, R&B, 128, upbeat, piano, classic
+542, You Send Me, Sam Cooke, Soul, 92, romantic, smooth, classic
+543, Sixteen Tons, Tennessee Ernie Ford, Country, 89, bass, work song, classic
+544, Good Golly Miss Molly, Little Richard, Rock & Roll, 180, energetic, piano, classic
+545, Yakety Yak, The Coasters, R&B, 120, catchy, humorous, classic
+546, Peggy Sue Got Married, Buddy Holly, Rock & Roll, 130, storytelling, guitar, classic
+547, Chances Are, Johnny Mathis, Pop, 84, romantic, ballad, classic
+548, Get a Job, The Silhouettes, Doo-Wop, 152, catchy, upbeat, classic
+549, Sweet Little Sixteen, Chuck Berry, Rock & Roll, 168, guitar, energetic, classic
+550, Splish Splash, Bobby Darin, Rock & Roll, 160, upbeat, fun, classic
+551, Rock and Roll Music, Chuck Berry, Rock & Roll, 168, energetic, guitar, classic
+552, Mona Lisa, Nat King Cole, Jazz, 85, romantic, smooth, classic
+553, Personality, Lloyd Price, R&B, 125, upbeat, catchy, classic
+554, Donna, Ritchie Valens, Rock & Roll, 132, romantic, ballad, classic
+555, At Last, Etta James, Soul, 60, romantic, ballad, classic
+556, Lipstick on Your Collar, Connie Francis, Pop, 152, upbeat, breakup, classic
+557, Mr. Sandman, The Chordettes, Pop, 130, harmony, dreamy, classic
+558, Misty, Johnny Mathis, Jazz, 70, romantic, ballad, classic
+559, Sh-Boom, The Chords, Doo-Wop, 164, upbeat, harmony, classic
+560, I'm a Man, Bo Diddley, Blues, 105, guitar, raw, classic
+561, Love Potion No. 9, The Clovers, R&B, 126, catchy, storytelling, classic
+562, Peter Gunn Theme, Henry Mancini, Instrumental, 118, jazzy, theme, classic
+563, The Great Pretender, The Platters, Doo-Wop, 116, ballad, smooth, classic
+564, Stupid Cupid, Connie Francis, Pop, 175, upbeat, catchy, classic
+565, Cathy's Clown, The Everly Brothers, Pop, 128, harmony, breakup, classic
+566, Rebel Rouser, Duane Eddy, Instrumental, 140, guitar, surf, classic
+567, Rumble, Link Wray, Instrumental, 128, guitar, influential, classic
+568, Sleep Walk, Santo & Johnny, Instrumental, 68, steel guitar, dreamy, classic
+569, Tom Dooley, The Kingston Trio, Folk, 84, storytelling, acoustic, classic
+570, In the Still of the Night, The Five Satins, Doo-Wop, 52, romantic, harmony, classic
+571, Blue Moon, Elvis Presley, Rockabilly, 98, classic, mellow, cover
+572, Rock Island Line, Lonnie Donegan, Skiffle, 168, upbeat, acoustic, classic
+573, Sugartime, The McGuire Sisters, Pop, 152, upbeat, harmony, classic
+574, Memories Are Made of This, Dean Martin, Pop, 100, smooth, nostalgic, classic
+575, Lollipop, The Chordettes, Pop, 87, catchy, upbeat, classic
+576, Little Darlin', The Diamonds, Doo-Wop, 134, upbeat, harmony, classic
+577, When I Fall in Love, Nat King Cole, Jazz, 76, romantic, ballad, classic
+578, Young Love, Sonny James, Country, 96, romantic, teen, classic
+579, Just a Gigolo/I Ain't Got Nobody, Louis Prima, Jazz, 125, energetic, medley, classic
+580, Hernando's Hideaway, Archie Bleyer, Pop, 125, tango, catchy, classic
+581, Sixteen Candles, The Crests, Doo-Wop, 80, romantic, teen, classic
+582, Come Softly to Me, The Fleetwoods, Pop, 56, harmony, mellow, classic
+583, Lonely Boy, Paul Anka, Pop, 136, upbeat, teen, classic
+584, Love Letters in the Sand, Pat Boone, Pop, 118, romantic, mellow, classic
+585, Raunchy, Bill Justis, Instrumental, 144, saxophone, upbeat, classic
+586, It's Only Make Believe, Conway Twitty, Country, 140, ballad, romantic, classic
+587, Duke of Earl, Gene Chandler, Doo-Wop, 123, catchy, vocal, classic
+588, Blue Monday, Fats Domino, R&B, 136, piano, bluesy, classic
+589, A Teenager in Love, Dion & The Belmonts, Doo-Wop, 95, teen, romantic, classic
+590, The Twist, Chubby Checker, Rock & Roll, 160, dance, catchy, classic
+591, Smoke Gets in Your Eyes, The Platters, Doo-Wop, 76, romantic, ballad, classic
+592, The Battle of New Orleans, Johnny Horton, Country, 130, storytelling, upbeat, classic
+593, Don't Be Cruel, Elvis Presley, Rock & Roll, 115, upbeat, classic, iconic
+594, Whole Lotta Loving, Fats Domino, R&B, 140, piano, upbeat, classic
+595, Skyline Dreams, Urban Shadows, Indie Rock, 110, atmospheric, urban, reflective
+596, Frost Patterns, Winter Whisper, New Age, 78, crystalline, peaceful, ambient
+597, Rock and Roll Is Here to Stay, Danny & The Juniors, Rock & Roll, 150, upbeat, dance, classic
+598, All Shook Up, Elvis Presley, Rock & Roll, 142, energetic, classic, iconic
+599, Blue Suede Shoes, Elvis Presley, Rock & Roll, 96, guitar, upbeat, cover
+600, Tequila, The Champs, Instrumental, 172, saxophone, upbeat, classic
+601, Twilight Pulse, Evening Star, Chillwave, 90, chill, dusky, electronic
+602, (I Can't Get No) Satisfaction, The Rolling Stones, Rock, 136, energetic, iconic, guitar
+603, Respect, Aretha Franklin, Soul, 115, empowering, classic, soulful
+604, Good Vibrations, The Beach Boys, Rock, 132, psychedelic, innovative, harmony
+605, Like a Rolling Stone, Bob Dylan, Folk Rock, 95, storytelling, influential, classic
+606, My Girl, The Temptations, Soul, 104, romantic, Motown, classic
+607, Purple Haze, Jimi Hendrix, Rock, 114, psychedelic, guitar, iconic
+608, A Whiter Shade of Pale, Procol Harum, Psychedelic Rock, 74, melancholic, organ, classic
+609, California Dreamin', The Mamas & The Papas, Folk Rock, 108, harmony, classic, melancholic
+610, Light My Fire, The Doors, Rock, 120, psychedelic, organ, classic
+611, Stand by Me, Ben E. King, Soul, 120, romantic, classic, soulful
+612, Paint It Black, The Rolling Stones, Rock, 159, dark, sitar, classic
+613, All Along the Watchtower, Jimi Hendrix, Rock, 116, guitar, cover, classic
+614, The Sound of Silence, Simon & Garfunkel, Folk Rock, 98, melancholic, acoustic, classic
+615, House of the Rising Sun, The Animals, Rock, 78, storytelling, dark, classic
+616, You Really Got Me, The Kinks, Rock, 138, energetic, guitar, proto-metal
+617, I Heard It Through the Grapevine, Marvin Gaye, Soul, 121, classic, Motown, soulful
+618, Ring of Fire, Johnny Cash, Country, 105, classic, mariachi, iconic
+619, Sunshine of Your Love, Cream, Rock, 123, guitar, riff, classic
+620, Unchained Melody, The Righteous Brothers, Pop, 65, romantic, ballad, soulful
+621, Can't Help Falling in Love, Elvis Presley, Pop, 99, romantic, ballad, classic
+622, A Day in the Life, The Beatles, Rock, 77, experimental, psychedelic, classic
+623, Vortex Shadows, Spiral Depth, Progressive Rock, 142, intense, complex, dynamic
+624, The Times They Are A-Changin', Bob Dylan, Folk, 170, protest, acoustic, classic
+625, Mrs. Robinson, Simon & Garfunkel, Folk Rock, 96, catchy, soundtrack, classic
+626, What a Wonderful World, Louis Armstrong, Jazz, 72, uplifting, classic, mellow
+627, Born to Be Wild, Steppenwolf, Rock, 143, energetic, motorcycle, classic
+628, Proud Mary, Creedence Clearwater Revival, Rock, 120, energetic, river, classic
+629, (Sittin' On) The Dock of the Bay, Otis Redding, Soul, 104, mellow, classic, soulful
+630, Break On Through (To the Other Side), The Doors, Rock, 143, psychedelic, energetic, classic
+631, Gimme Shelter, The Rolling Stones, Rock, 103, intense, dark, classic
+632, Somebody to Love, Jefferson Airplane, Psychedelic Rock, 122, energetic, female-vocals, classic
+633, White Room, Cream, Rock, 164, psychedelic, guitar, classic
+634, Subterranean Homesick Blues, Bob Dylan, Folk Rock, 139, energetic, lyrical, classic
+635, Whole Lotta Love, Led Zeppelin, Rock, 140, guitar, riff, classic
+636, River Deep – Mountain High, Ike & Tina Turner, Soul, 130, powerful, energetic, classic
+637, The Weight, The Band, Rock, 75, storytelling, classic, folk-rock
+638, For What It's Worth, Buffalo Springfield, Rock, 99, protest, mellow, classic
+639, Oh Pretty Woman, Roy Orbison, Rock, 130, catchy, guitar, classic
+640, Under the Boardwalk, The Drifters, Soul, 115, nostalgic, mellow, classic
+641, I Want to Hold Your Hand, The Beatles, Rock, 140, upbeat, catchy, classic
+642, Son of a Preacher Man, Dusty Springfield, Soul, 93, soulful, catchy, classic
+643, Twist and Shout, The Beatles, Rock, 125, energetic, cover, classic
+644, Space Oddity, David Bowie, Rock, 82, storytelling, atmospheric, classic
+645, Time of the Season, The Zombies, Rock, 123, psychedelic, catchy, classic
+646, Knock on Wood, Eddie Floyd, Soul, 130, energetic, soulful, classic
+647, Crying, Roy Orbison, Pop, 96, emotional, ballad, classic
+648, Both Sides Now, Joni Mitchell, Folk, 72, introspective, acoustic, classic
+649, Reach Out I'll Be There, The Four Tops, Soul, 107, uplifting, Motown, classic
+650, Mustang Sally, Wilson Pickett, Soul, 115, energetic, soulful, classic
+651, Spinning Wheel Blood, Sweat & Tears, Rock, 107, jazzy, brass, classic
+652, Green Onions, Booker T. & the M.G.'s, Soul, 145, instrumental, organ, classic
+653, She's Not There, The Zombies, Rock, 133, catchy, organ, classic
+654, Bad Moon Rising, Creedence Clearwater Revival, Rock, 179, energetic, guitar, classic
+655, I Got You (I Feel Good), James Brown, Soul, 142, energetic, funky, classic
+656, My Generation, The Who, Rock, 134, rebellious, energetic, classic
+657, Miserlou, Dick Dale, Surf Rock, 99, instrumental, guitar, classic
+658, In the Midnight Hour, Wilson Pickett, Soul, 112, energetic, soulful, classic
+659, Runaway, Del Shannon, Rock, 134, catchy, falsetto, classic
+660, When a Man Loves a Woman, Percy Sledge, Soul, 72, romantic, ballad, classic
+661, Eight Miles High, The Byrds, Rock, 125, psychedelic, guitar, classic
+662, We Gotta Get Out of This Place, The Animals, Rock, 131, rebellious, energetic, classic
+663, A Change Is Gonna Come, Sam Cooke, Soul, 65, soulful, powerful, classic
+664, Papa's Got a Brand New Bag, James Brown, Soul, 128, funky, energetic, classic
+665, Wouldn't It Be Nice, The Beach Boys, Pop, 122, upbeat, harmony, classic
+666, The Letter, The Box Tops, Rock, 145, energetic, soulful, classic
+667, Georgia on My Mind, Ray Charles, Soul, 98, soulful, ballad, classic
+668, Eleanor Rigby, The Beatles, Rock, 138, orchestral, melancholic, classic
+669, People Get Ready, The Impressions, Soul, 104, uplifting, gospel, classic
+670, Born Under a Bad Sign, Albert King, Blues, 104, guitar, bluesy, classic
+671, Suzanne, Leonard Cohen, Folk, 122, poetic, acoustic, classic
+672, Foxy Lady, Jimi Hendrix, Rock, 90, guitar, energetic, classic
+673, Then He Kissed Me, The Crystals, Pop, 131, romantic, girl-group, classic
+674, Baby Love, The Supremes, Soul, 123, Motown, catchy, classic
+675, Walk on By, Dionne Warwick, Soul, 120, romantic, ballad, classic
+676, Be My Baby, The Ronettes, Pop, 123, girl-group, romantic, classic
+677, Runaround Sue, Dion, Rock & Roll, 153, catchy, upbeat, classic
+678, It's Now or Never, Elvis Presley, Pop, 100, romantic, ballad, classic
+679, Surfin' U.S.A., The Beach Boys, Rock, 160, surf, upbeat, classic
+680, Downtown, Petula Clark, Pop, 120, catchy, city, classic
+681, Daydream Believer, The Monkees, Pop, 125, upbeat, catchy, classic
+682, I Got You Babe, Sonny & Cher, Pop, 104, duet, romantic, classic
+683, Can't Take My Eyes Off You, Frankie Valli, Pop, 125, romantic, catchy, classic
+684, Sugar Sugar, The Archies, Pop, 124, catchy, upbeat, classic
+685, Do You Believe in Magic, The Lovin' Spoonful, Rock, 128, upbeat, catchy, classic
+686, I'm a Believer, The Monkees, Pop, 168, upbeat, catchy, classic
+687, In My Life, The Beatles, Rock, 103, nostalgic, melodic, classic
+688, Build Me Up Buttercup, The Foundations, Pop, 138, upbeat, catchy, classic
+689, Ain't No Mountain High Enough, Marvin Gaye & Tammi Terrell, Soul, 104, uplifting, duet, classic
+690, I Want You Back, The Jackson 5, Soul, 98, upbeat, Motown, classic
+691, Pinball Wizard, The Who, Rock, 152, energetic, guitar, classic
+692, Blackbird, The Beatles, Folk, 94, acoustic, melodic, classic
+693, Hey Joe, Jimi Hendrix, Rock, 84, guitar, energetic, classic
+694, Can't Find My Way Home, Blind Faith, Rock, 82, acoustic, soulful, classic
+695, Piece of My Heart, Janis Joplin, Rock, 152, powerful, soulful, classic
+696, Time Has Come Today, The Chambers Brothers, Rock, 130, psychedelic, energetic, classic
+697, Crimson and Clover, Tommy James & The Shondells, Rock, 89, psychedelic, melodic, classic
+698, The Tracks of My Tears, Smokey Robinson & The Miracles, Soul, 121, emotional, Motown, classic
+699, I Say a Little Prayer, Aretha Franklin, Soul, 104, soulful, uplifting, classic
+700, Sunshine Superman, Donovan, Psychedelic Rock, 108, mellow, catchy, classic
+701, Dream On, Aerosmith, Rock, 82, classic, ballad, powerful
+702, Paranoid, Black Sabbath, Metal, 164, heavy, energetic, iconic
+703, Wish You Were Here, Pink Floyd, Progressive Rock, 60, mellow, guitar, emotional
+704, Smoke on the Water, Deep Purple, Rock, 114, guitar, riff, classic
+705, American Pie, Don McLean, Folk Rock, 140, storytelling, classic, nostalgic
+706, Let's Stay Together, Al Green, Soul, 103, romantic, smooth, classic
+707, No Woman No Cry, Bob Marley & The Wailers, Reggae, 79, mellow, soulful, classic
+708, London Calling, The Clash, Punk Rock, 136, energetic, rebellious, iconic
+709, Sultans of Swing, Dire Straits, Rock, 149, guitar, melodic, classic
+710, More Than a Feeling, Boston, Rock, 109, melodic, guitar, classic
+711, Layla, Derek and the Dominos, Rock, 115, guitar, iconic, passionate
+712, Kashmir, Led Zeppelin, Rock, 83, epic, guitar, powerful
+713, Highway to Hell, AC/DC, Rock, 116, energetic, guitar, classic
+714, Go Your Own Way, Fleetwood Mac, Rock, 136, breakup, energetic, classic
+715, Lean on Me, Bill Withers, Soul, 73, uplifting, soulful, classic
+716, September, Earth Wind & Fire, Funk, 126, upbeat, dance, classic
+717, I Will Survive, Gloria Gaynor, Disco, 117, empowering, dance, classic
+718, Anarchy in the U.K., Sex Pistols, Punk Rock, 152, rebellious, energetic, iconic
+719, Walk on the Wild Side, Lou Reed, Rock, 106, storytelling, mellow, classic
+720, Tiny Dancer, Elton John, Pop Rock, 72, melodic, piano, classic
+721, Don't Stop 'Til You Get Enough, Michael Jackson, Disco, 120, dance, upbeat, funky
+722, Bridge Over Troubled Water, Simon & Garfunkel, Folk Rock, 84, emotional, ballad, classic
+723, Your Song, Elton John, Pop, 68, romantic, piano, classic
+724, Black Dog, Led Zeppelin, Rock, 82, energetic, guitar, classic
+725, Boogie Wonderland, Earth Wind & Fire, Disco, 131, dance, upbeat, funky
+726, Let's Get It On, Marvin Gaye, Soul, 82, romantic, soulful, classic
+727, Tangled Up in Blue, Bob Dylan, Folk Rock, 112, storytelling, acoustic, classic
+728, Brown Sugar, The Rolling Stones, Rock, 127, energetic, guitar, classic
+729, Heart of Gold, Neil Young, Folk Rock, 84, acoustic, mellow, classic
+730, Maggie May, Rod Stewart, Rock, 130, storytelling, energetic, classic
+731, Free Bird, Lynyrd Skynyrd, Southern Rock, 90, epic, guitar, classic
+732, Wild World, Cat Stevens, Folk Rock, 123, acoustic, melodic, classic
+733, War Pigs, Black Sabbath, Metal, 90, heavy, political, classic
+734, Living for the City, Stevie Wonder, Soul, 99, social-commentary, soulful, classic
+735, Riders on the Storm, The Doors, Rock, 130, atmospheric, psychedelic, classic
+736, Blitzkrieg Bop, Ramones, Punk Rock, 176, energetic, raw, classic
+737, Brick House, The Commodores, Funk, 105, groovy, dance, classic
+738, Rock and Roll All Nite, Kiss, Rock, 143, energetic, anthem, classic
+739, Barracuda, Heart, Rock, 137, energetic, guitar, classic
+740, Just the Way You Are, Billy Joel, Pop, 85, romantic, mellow, classic
+741, Message in a Bottle, The Police, Rock, 150, energetic, guitar, classic
+742, Piano Man, Billy Joel, Pop, 179, storytelling, piano, classic
+743, Take It Easy, Eagles, Rock, 138, mellow, guitar, classic
+744, Sweet Emotion, Aerosmith, Rock, 100, groovy, guitar, classic
+745, Walk This Way, Aerosmith, Rock, 109, energetic, guitar, classic
+746, Life on Mars?, David Bowie, Rock, 121, melodic, piano, classic
+747, ABC, The Jackson 5, Soul, 174, upbeat, catchy, Motown
+748, Jolene, Dolly Parton, Country, 110, emotional, storytelling, classic
+749, Highway Star, Deep Purple, Rock, 162, energetic, guitar, classic
+750, American Woman, The Guess Who, Rock, 92, energetic, guitar, classic
+751, Black Magic Woman, Santana, Rock, 126, guitar, Latin, classic
+752, Simple Man, Lynyrd Skynyrd, Southern Rock, 61, melodic, guitar, classic
+753, Landslide, Fleetwood Mac, Rock, 132, acoustic, emotional, classic
+754, Don't Stop, Fleetwood Mac, Rock, 114, upbeat, motivational, classic
+755, Rebel Rebel, David Bowie, Rock, 121, guitar, iconic, classic
+756, The Chain, Fleetwood Mac, Rock, 160, powerful, guitar, classic
+757, Psycho Killer, Talking Heads, Rock, 122, quirky, bassline, classic
+758, Sir Duke, Stevie Wonder, Soul, 106, upbeat, horns, classic
+759, Isn't She Lovely, Stevie Wonder, Soul, 110, joyful, harmonica, classic
+760, Rocket Man, Elton John, Rock, 72, melodic, space-themed, classic
+761, All Right Now, Free, Rock, 120, energetic, guitar, classic
+762, Killing Me Softly with His Song, Roberta Flack, Soul, 84, emotional, ballad, classic
+763, We Are Family, Sister Sledge, Disco, 119, dance, upbeat, classic
+764, Stuck in the Middle with You, Stealers Wheel, Rock, 124, catchy, upbeat, classic
+765, Long Train Runnin', The Doobie Brothers, Rock, 114, energetic, guitar, classic
+766, American Girl, Tom Petty and the Heartbreakers, Rock, 114, energetic, guitar, classic
+767, No More Mr. Nice Guy, Alice Cooper, Rock, 103, energetic, guitar, classic
+768, Brass in Pocket, The Pretenders, Rock, 100, catchy, female-vocals, classic
+769, Crazy Little Thing Called Love, Queen, Rock, 163, upbeat, catchy, classic
+770, Rhiannon, Fleetwood Mac, Rock, 144, mystical, melodic, classic
+771, Boys Don't Cry, The Cure, Post-Punk, 156, catchy, melancholic, classic
+772, What's Going On, Marvin Gaye, Soul, 104, social-commentary, soulful, classic
+773, Shine On You Crazy Diamond, Pink Floyd, Progressive Rock, 60, atmospheric, epic, classic
+774, Lola, The Kinks, Rock, 135, storytelling, catchy, classic
+775, Miss You, The Rolling Stones, Rock, 110, groovy, disco-influenced, classic
+776, We Are the Champions, Queen, Rock, 63, anthemic, powerful, classic
+777, Comfortably Numb, Pink Floyd, Rock, 127, atmospheric, guitar, classic
+778, You Ain't Seen Nothing Yet, Bachman-Turner Overdrive, Rock, 123, energetic, guitar, classic
+779, Silent Symphony, Quiet Ensemble, Classical, 76, somber, orchestral, deep
+780, Turn the Page, Bob Seger, Rock, 94, storytelling, melodic, classic
+781, Come Sail Away, Styx, Rock, 77, melodic, epic, classic
+782, The Joker, Steve Miller Band, Rock, 82, catchy, guitar, classic
+783, Long Cool Woman (In a Black Dress), The Hollies, Rock, 132, energetic, guitar, classic
+784, Wonderful Tonight, Eric Clapton, Rock, 96, romantic, mellow, classic
+785, We're an American Band, Grand Funk Railroad, Rock, 128, energetic, guitar, classic
+786, Old Time Rock & Roll, Bob Seger, Rock, 126, energetic, nostalgic, classic
+787, Mamma Mia, ABBA, Pop, 137, catchy, upbeat, classic
+788, The Boys Are Back in Town, Thin Lizzy, Rock, 93, energetic, guitar, classic
+789, Carry On Wayward Son, Kansas, Rock, 122, epic, guitar, classic
+790, Feels Like the First Time, Foreigner, Rock, 130, energetic, guitar, classic
+791, Don't Fear the Reaper, Blue Öyster Cult, Rock, 128, melodic, atmospheric, classic
+792, Dust in the Wind, Kansas, Rock, 94, acoustic, melancholic, classic
+793, Surrender, Cheap Trick, Rock, 134, energetic, catchy, classic
+794, I Wanna Be Sedated, Ramones, Punk Rock, 164, energetic, raw, classic
+795, Love Hurts, Nazareth, Rock, 91, emotional, ballad, classic
+796, Black Betty, Ram Jam, Rock, 120, energetic, guitar, classic
+797, Baker Street, Gerry Rafferty, Rock, 92, saxophone, melodic, classic
+798, Ever Fallen in Love, Buzzcocks, Punk Rock, 139, energetic, catchy, classic
+799, Cascade Melody, Mountain Stream, New Age, 82, flowing, natural, soothing
+800, Renegade, Styx, Rock, 145, energetic, guitar, classic
+801, Livin' on a Prayer, Bon Jovi, Rock, 123, anthemic, energetic, classic
+802, Every Rose Has Its Thorn, Poison, Rock, 76, ballad, emotional, classic
+803, Don't You (Forget About Me), Simple Minds, Rock, 111, anthemic, 80s, classic
+804, Tainted Love, Soft Cell, Synthpop, 145, catchy, dance, 80s
+805, Careless Whisper, George Michael, Pop, 153, saxophone, romantic, classic
+806, Girls Just Want to Have Fun, Cyndi Lauper, Pop, 120, upbeat, empowering, catchy
+807, In the Air Tonight, Phil Collins, Rock, 95, atmospheric, drum-solo, classic
+808, Everybody Wants to Rule the World, Tears for Fears, Pop, 116, catchy, synth, 80s
+809, Take My Breath Away, Berlin, Pop, 94, romantic, ballad, soundtrack
+810, Like a Virgin, Madonna, Pop, 118, iconic, catchy, 80s
+811, Material Girl, Madonna, Pop, 137, catchy, upbeat, 80s
+812, Walking on Sunshine, Katrina and The Waves, Pop, 110, upbeat, cheerful, catchy
+813, Jessie's Girl, Rick Springfield, Rock, 132, catchy, upbeat, classic
+814, Come On Eileen, Dexys Midnight Runners, Pop, 107, upbeat, fiddle, catchy
+815, Hungry Like the Wolf, Duran Duran, Pop, 127, catchy, synth, 80s
+816, Time After Time, Cyndi Lauper, Pop, 95, emotional, ballad, classic
+817, Down Under, Men at Work, Pop, 107, catchy, flute, classic
+818, Bette Davis Eyes, Kim Carnes, Pop, 117, synth, raspy, classic
+819, Karma Chameleon, Culture Club, Pop, 178, catchy, colorful, 80s
+820, The Final Countdown, Europe, Rock, 118, epic, synth, anthem
+821, Pour Some Sugar on Me, Def Leppard, Rock, 123, energetic, anthem, catchy
+822, Crazy Train, Ozzy Osbourne, Metal, 138, guitar, energetic, classic
+823, Take Me Home Tonight, Eddie Money, Rock, 132, duet, catchy, classic
+824, I Love Rock 'n' Roll, Joan Jett & The Blackhearts, Rock, 95, energetic, anthem, classic
+825, You Spin Me Round (Like a Record), Dead or Alive, Pop, 128, dance, catchy, 80s
+826, Addicted to Love, Robert Palmer, Rock, 114, catchy, guitar, classic
+827, True, Spandau Ballet, Pop, 98, romantic, ballad, smooth
+828, Thunder Echo, Storm Chasers, Heavy Metal, 130, powerful, electric, wild
+829, 99 Luftballons, Nena, Pop, 96, German, catchy, anti-war
+830, Call Me, Blondie, Rock, 142, energetic, catchy, classic
+831, Video Killed the Radio Star, The Buggles, Synthpop, 132, synth, nostalgic, classic
+832, Blue Monday, New Order, Synthpop, 130, electronic, dance, influential
+833, Heaven Is a Place on Earth, Belinda Carlisle, Pop, 123, upbeat, catchy, romantic
+834, Summer of '69, Bryan Adams, Rock, 139, nostalgic, guitar, anthem
+835, We Built This City, Starship, Rock, 122, catchy, synth, 80s
+836, Walk Like an Egyptian, The Bangles, Pop, 104, catchy, upbeat, fun
+837, (I Just) Died in Your Arms, Cutting Crew, Pop, 109, emotional, ballad, classic
+838, Keep On Loving You, REO Speedwagon, Rock, 83, romantic, ballad, classic
+839, Sledgehammer, Peter Gabriel, Rock, 97, funky, energetic, innovative
+840, Everybody Have Fun Tonight, Wang Chung, Pop, 123, upbeat, dance, party
+841, Relax, Frankie Goes to Hollywood, Pop, 116, dance, controversial, bold
+842, I Ran (So Far Away), A Flock of Seagulls, Synthpop, 146, catchy, atmospheric, 80s
+843, She Drives Me Crazy, Fine Young Cannibals, Pop, 101, catchy, unique, classic
+844, Fight for Your Right, Beastie Boys, Hip Hop, 129, rebellious, energetic, party
+845, Jump, Van Halen, Rock, 130, energetic, synth, iconic
+846, Sharp Dressed Man, ZZ Top, Rock, 125, guitar, stylish, classic
+847, Sister Christian, Night Ranger, Rock, 101, ballad, powerful, emotional
+848, Crimson Jazz, Red Quartet, Jazz, 94, deep, sultry, classic
+849, Here I Go Again, Whitesnake, Rock, 91, powerful, ballad, classic
+850, Violet Dawn, Lunar Echoes, Classical, 66, peaceful, soothing, elegant
+851, Love Shack, The B-52's, Pop, 134, upbeat, party, fun
+852, Owner of a Lonely Heart, Yes, Rock, 125, progressive, synth, innovative
+853, I Melt with You, Modern English, Pop, 152, romantic, upbeat, classic
+854, Under the Milky Way, The Church, Rock, 102, atmospheric, melodic, alternative
+855, Don't Dream It's Over, Crowded House, Pop, 82, melodic, emotional, classic
+856, Head Over Heels, Tears for Fears, Pop, 123, melodic, synth, emotional
+857, In a Big Country, Big Country, Rock, 104, energetic, guitar, anthemic
+858, Situation, Yazoo, Synthpop, 125, electronic, dance, catchy
+859, West End Girls, Pet Shop Boys, Synthpop, 113, urban, synth, cool
+860, Der Kommissar, After the Fire, Rock, 137, catchy, 80s, synth
+861, Don't Get Me Wrong, The Pretenders, Rock, 98, upbeat, catchy, classic
+862, Electric Avenue, Eddy Grant, Reggae, 126, energetic, catchy, urban
+863, The Safety Dance, Men Without Hats, Synthpop, 101, catchy, dance, quirky
+864, Our House, Madness, Ska, 124, catchy, upbeat, family
+865, Cum On Feel the Noize, Quiet Riot, Rock, 162, energetic, anthem, classic
+866, Venus, Bananarama, Pop, 124, dance, catchy, cover
+867, Broken Wings, Mr. Mister, Pop, 95, emotional, ballad, smooth
+868, Drive, The Cars, Rock, 85, emotional, ballad, synth
+869, Need You Tonight, INXS, Rock, 110, catchy, funky, seductive
+870, Heat of the Moment, Asia, Rock, 126, energetic, catchy, classic
+871, Higher Love, Steve Winwood, Pop, 103, uplifting, soulful, classic
+872, Voices Carry, 'Til Tuesday, Pop, 132, emotional, female-vocals, classic
+873, Rock Me Amadeus, Falco, Pop, 148, German, catchy, unique
+874, Obsession, Animotion, Pop, 128, catchy, synth, 80s
+875, Red Red Wine, UB40, Reggae, 90, mellow, cover, smooth
+876, Don't Forget Me (When I'm Gone), Glass Tiger, Pop, 111, catchy, melodic, classic
+877, The Promise, When in Rome, Synthpop, 117, romantic, 80s, classic
+878, Sunday Bloody Sunday, U2, Rock, 103, political, energetic, powerful
+879, Solar Flares, Starbound, Electronic, 140, explosive, radiant, energetic
+880, It's My Life, Talk Talk, Synthpop, 123, melodic, synth, classic
+881, She Blinded Me with Science, Thomas Dolby, Synthpop, 123, quirky, electronic, 80s
+882, Just Like Heaven, The Cure, Rock, 150, romantic, melodic, classic
+883, Never Gonna Give You Up, Rick Astley, Pop, 113, catchy, dance, meme
+884, Sweet Love, Anita Baker, Soul, 86, romantic, smooth, classic
+885, Funkytown, Lipps Inc., Disco, 122, dance, funky, classic
+886, Come on Eileen, Dexys Midnight Runners, Pop, 107, upbeat, fiddle, catchy
+887, All Night Long (All Night), Lionel Richie, Pop, 123, upbeat, dance, festive
+888, Fast Car, Tracy Chapman, Folk, 104, storytelling, emotional, classic
+889, Back on the Chain Gang, The Pretenders, Rock, 141, melodic, guitar, classic
+890, I Want to Break Free, Queen, Rock, 127, catchy, synth, liberation
+891, Here Comes the Rain Again, Eurythmics, Synthpop, 108, atmospheric, melodic, classic
+892, Forgotten Pathways, Old World, Folk, 105, ancient, mysterious, instrumental
+893, If You Leave, Orchestral Manoeuvres in the Dark, Synthpop, 132, emotional, melodic, classic
+894, Cars, Gary Numan, Synthpop, 128, electronic, synth, classic
+895, Don't You Want Me, The Human League, Synthpop, 117, catchy, duet, classic
+896, Under Pressure, Queen & David Bowie, Rock, 113, iconic, bassline, collaboration
+897, Raspberry Beret, Prince, Pop, 121, catchy, funk, classic
+898, Beds Are Burning, Midnight Oil, Rock, 126, political, energetic, classic
+899, Jack & Diane, John Mellencamp, Rock, 116, storytelling, melodic, classic
+900, Ocean Pulse, Deep Blue, Chillout, 95, calming, fluid, ambient
+901, Losing My Religion, R.E.M., Alternative Rock, 125, introspective, mandolin, classic
+902, Enter Sandman, Metallica, Metal, 123, heavy, guitar, iconic
+903, ...Baby One More Time, Britney Spears, Pop, 93, catchy, debut, iconic
+904, No Scrubs, TLC, R&B, 100, empowering, catchy, classic
+905, Wannabe, Spice Girls, Pop, 110, upbeat, catchy, girl-power
+906, Iris, Goo Goo Dolls, Alternative Rock, 112, emotional, ballad, romantic
+907, Bittersweet Symphony, The Verve, Alternative Rock, 85, orchestral, melodic, anthemic
+908, Basket Case, Green Day, Punk Rock, 176, energetic, guitar, classic
+909, Torn, Natalie Imbruglia, Pop, 104, emotional, ballad, cover
+910, Black Hole Sun, Soundgarden, Grunge, 78, psychedelic, guitar, classic
+911, Killing Me Softly, Fugees, Hip Hop, 92, soulful, cover, classic
+912, Gangsta's Paradise, Coolio ft. L.V., Hip Hop, 80, storytelling, soulful, classic
+913, My Heart Will Go On, Celine Dion, Pop, 99, emotional, ballad, soundtrack
+914, Digital Heartbeat, Neon Pulse, Synthwave, 128, synthetic, vibrant, pulsating
+915, Jeremy, Pearl Jam, Grunge, 109, storytelling, intense, classic
+916, Vogue, Madonna, Pop, 116, dance, iconic, fashion
+917, You Oughta Know, Alanis Morissette, Alternative Rock, 94, angsty, powerful, classic
+918, Ironic, Alanis Morissette, Alternative Rock, 91, storytelling, catchy, classic
+919, Tearin' Up My Heart, *NSYNC, Pop, 98, catchy, boyband, dance
+920, MMMBop, Hanson, Pop, 104, catchy, upbeat, youthful
+921, Californication, Red Hot Chili Peppers, Alternative Rock, 96, melodic, guitar, classic
+922, Baby Got Back, Sir Mix-A-Lot, Hip Hop, 128, humorous, bass, catchy
+923, Genie in a Bottle, Christina Aguilera, Pop, 84, catchy, debut, classic
+924, Black or White, Michael Jackson, Pop, 115, catchy, message, classic
+925, The Sign, Ace of Base, Pop, 97, catchy, upbeat, classic
+926, Virtual Insanity, Jamiroquai, Funk, 124, groovy, catchy, innovative
+927, Macarena, Los Del Rio, Latin Pop, 103, dance, catchy, party
+928, One Week, Barenaked Ladies, Pop Rock, 114, fast-paced, catchy, fun
+929, I Don't Want to Miss a Thing, Aerosmith, Rock, 90, emotional, ballad, soundtrack
+930, Un-Break My Heart, Toni Braxton, R&B, 55, emotional, ballad, classic
+931, What Is Love, Haddaway, Eurodance, 124, dance, catchy, 90s
+932, I'll Be Missing You, Puff Daddy & Faith Evans ft. 112, Hip Hop, 112, tribute, emotional, sample
+933, Quit Playing Games (With My Heart), Backstreet Boys, Pop, 96, boyband, romantic, classic
+934, Tubthumping, Chumbawamba, Rock, 104, anthemic, upbeat, catchy
+935, You Get What You Give, New Radicals, Alternative Rock, 117, uplifting, catchy, classic
+936, Jump Around, House of Pain, Hip Hop, 107, energetic, party, classic
+937, Ice Ice Baby, Vanilla Ice, Hip Hop, 115, catchy, sample, classic
+938, Waterfalls, TLC, R&B, 85, meaningful, soulful, classic
+939, Give It Away, Red Hot Chili Peppers, Alternative Rock, 92, energetic, funky, classic
+940, Killing in the Name, Rage Against the Machine, Metal, 94, rebellious, heavy, political
+941, My Name Is, Eminem, Hip Hop, 90, humorous, controversial, debut
+942, No Diggity, Blackstreet ft. Dr. Dre, R&B, 88, smooth, catchy, classic
+943, Around the World, Daft Punk, House, 121, electronic, dance, repetitive
+944, Regulate, Warren G ft. Nate Dogg, Hip Hop, 94, storytelling, G-funk, classic
+945, Come As You Are, Nirvana, Grunge, 120, moody, guitar, classic
+946, Runaway Train, Soul Asylum, Alternative Rock, 80, emotional, melancholic, classic
+947, 1979, The Smashing Pumpkins, Alternative Rock, 125, nostalgic, melodic, classic
+948, Everlong, Foo Fighters, Alternative Rock, 158, energetic, guitar, classic
+949, Don't Look Back in Anger, Oasis, Britpop, 82, anthemic, melodic, classic
+950, Karma Police, Radiohead, Alternative Rock, 85, melancholic, melodic, classic
+951, Nothing Compares 2 U, Sinéad O'Connor, Pop, 60, emotional, ballad, classic
+952, Two Princes, Spin Doctors, Rock, 104, upbeat, catchy, classic
+953, All I Wanna Do, Sheryl Crow, Pop, 120, upbeat, catchy, classic
+954, The Freshmen, The Verve Pipe, Alternative Rock, 96, melancholic, storytelling,catchy
+955, Jump, Kris Kross, Hip Hop, 102, catchy, youthful, energetic
+956, Shine, Collective Soul, Alternative Rock, 124, guitar, melodic, classic
+957, Lullaby, Shawn Mullins, Pop, 86, storytelling, mellow, classic
+958, Barbie Girl, Aqua, Pop, 130, catchy, dance, novelty
+959, I Try, Macy Gray, Soul, 96, raspy, soulful, classic
+960, Are You Gonna Go My Way, Lenny Kravitz, Rock, 127, energetic, guitar, classic
+961, Loser, Beck, Alternative Rock, 85, quirky, slacker, classic
+962, Lightning Crashes, Live, Alternative Rock, 80, emotional, powerful, classic
+963, Cannonball, The Breeders, Alternative Rock, 112, catchy, bassline, classic
+964, My Own Worst Enemy, Lit, Rock, 104, energetic, catchy, classic
+965, Walking in Memphis, Marc Cohn, Pop, 100, storytelling, piano, classic
+966, Runaway, The Corrs, Pop, 85, melodic, Irish, classic
+967, Save Tonight, Eagle-Eye Cherry, Pop Rock, 95, catchy, melodic, classic
+968, Creep, TLC, R&B, 92, smooth, soulful, classic
+969, Black Velvet, Alannah Myles, Rock, 92, soulful, bluesy, classic
+970, Believe, Cher, Pop, 133, dance, autotune, catchy
+971, Praise You, Fatboy Slim, Electronic, 108, sample-heavy, dance, classic
+972, One Headlight, The Wallflowers, Rock, 120, melodic, guitar, classic
+973, Sunny Came Home, Shawn Colvin, Folk Rock, 92, storytelling, melodic, classic
+974, Canyon Whispers, Sands of Time, World Music, 120, earthy, expansive, natural
+975, What’s Up?, 4 Non Blondes, Rock, 136, powerful, vocals, classic
+976, Bitter Sweet Symphony, The Verve, Alternative Rock, 85, orchestral, melodic, anthemic
+977, Deep Sea Reverie, Deep Blue, Chillout, 82, deep, reflective, underwater
+978, Criminal, Fiona Apple, Alternative Rock, 86, emotional, piano, classic
+979, Fade Into You, Mazzy Star, Alternative Rock, 104, dreamy, melancholic, classic
+980, No Rain, Blind Melon, Alternative Rock, 105, melodic, uplifting, classic
+981, Polar Glow, Cold Summit, Ambient, 74, shimmering, cold, serene
+982, Closing Time, Semisonic, Alternative Rock, 94, melodic, catchy, classic
+983, Sex and Candy, Marcy Playground, Alternative Rock, 105, mellow, catchy, classic
+984, Only Wanna Be with You, Hootie & the Blowfish, Pop Rock, 96, upbeat, catchy, classic
+985, Slide, Goo Goo Dolls, Alternative Rock, 104, melodic, guitar, classic
+986, Kiss from a Rose, Seal, Pop, 134, romantic, ballad, classic
+987, Today, The Smashing Pumpkins, Alternative Rock, 76, melodic, guitar, classic
+988, All Apologies, Nirvana, Grunge, 112, melancholic, acoustic, classic
+989, Interstate Love Song, Stone Temple Pilots, Alternative Rock, 92, guitar, melodic, classic
+990, Sober, Tool, Metal, 83, dark, progressive, intense
+991, Ancient Winds, Ancient Echoes, World Music, 96, spiritual, airy, mystical
+992, Tennessee, Arrested Development, Hip Hop, 100, soulful, conscious, classic
+993, Everlong (Acoustic Version), Foo Fighters, Alternative Rock, 158, emotional, acoustic, classic
+994, Nuthin' but a 'G' Thang, Dr. Dre ft. Snoop Dogg, Hip Hop, 94, smooth, G-funk, classic
+995, Glacial Harmony, Cold Summit, Ambient, 70, crisp, ethereal, minimalist
+996, Circuit Dreams, Neon Pulse, Synthwave, 132, dynamic, electric, energetic
+997, Desert Serenade, Sands of Time, World Music, 110, rhythmic, soulful, exotic
+998, When I Come Around, Green Day, Punk Rock, 98, energetic, guitar, classic
+999, Buddy Holly, Weezer, Alternative Rock, 121, catchy, upbeat, classic
+1000, The Impression That I Get, The Mighty Mighty Bosstones, Ska Punk, 102, energetic, horns, classic
