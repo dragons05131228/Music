@@ -4,35 +4,35 @@ class MusicPlayerSystem
   Song Index;
   User FirstU;
   User IndexU;
-<<<<<<< Updated upstream
   User firstUser;
   User indexUser;
   Set<String> genreTracker = new HashSet<>();
-
-=======
   User curUser;
   PrintWriter newUser;
->>>>>>> Stashed changes
+  boolean loadSongStats = false;
+  String[] songStatIDs = new String[99];
+  float eventTimer;
 
   MusicPlayerSystem()
   {
+    eventTimer = millis();
   }
 
-   void AddSong(String id, String title, String artist, String genre, String beatpm, String tag1, String tag2, String tag3) {
+  void AddSong(String id, String title, String artist, String genre, String beatpm, String tag1, String tag2, String tag3, String views) {
     if (First ==null) {
-      First = new Song(id, title, artist, genre, beatpm, tag1, tag2, tag3);
+      First = new Song(id, title, artist, genre, beatpm, tag1, tag2, tag3, views);
 
       Index=First;
     } else {
-      Song aSong = new Song(id, title, artist, genre, beatpm, tag1, tag2, tag3);
+      Song aSong = new Song(id, title, artist, genre, beatpm, tag1, tag2, tag3, views);
       Index.sNext = aSong;
       Index = aSong;
     }
-   }
+  }
 
   void appendNewSongToFile() {
     Song s = SearchSong("100");
-    AddSong(s.ID, s.TITLE, s.ARTIST, s.GENRE, s.BEATpm, s.tag1, s.tag2, s.tag3);
+    AddSong(s.ID, s.TITLE, s.ARTIST, s.GENRE, s.BEATpm, s.tag1, s.tag2, s.tag3, s.views);
     PrintWriter output;
     output = createWriter("data/Songsdatabase.txt");
 
@@ -59,7 +59,8 @@ class MusicPlayerSystem
       SearchSong(sAttribute).BEATpm,
       SearchSong(sAttribute).tag1,
       SearchSong(sAttribute).tag2,
-      SearchSong(sAttribute).tag3);
+      SearchSong(sAttribute).tag3,
+      SearchSong(sAttribute).views);
     if (sToRemove==null) {
       return;
     }
@@ -83,7 +84,6 @@ class MusicPlayerSystem
 
 
   void generateSuggestions(String UserID, String playlistID) {
-<<<<<<< Updated upstream
     // Find the current user
     User currUser = user1;
     while (currUser != null && !currUser.UID.equals(UserID)) {
@@ -135,81 +135,84 @@ class MusicPlayerSystem
       }
     } else {
       println("No suggestions available for " + currUser.username + ".");
-=======
-    User currUser = SearchUser(UserID);
-    Playlist currPlaylist = currUser.SearchPlaylist(playlistID);
-    if (currUser == null||currPlaylist==null) {
-      return;
-    }
-
-    Song currSong = currPlaylist.First;
-  }
-
-  Song SearchSong(String Att) {
-    Index = First;
-    while (IndexU!=null) {
-      if (IndexU.UID.equals(Att)) {
-        //||
-        //Index.TITLE.equals(Att)||
-        //Index.ARTIST.equals(Att)||
-        //Index.GENRE.equals(Att)||
-        //Index.BEATpm.equals(Att)
-
-        return Index;
-      } else if (IndexU.uNext==null) {
-        continue;
-      } else {
-        IndexU = IndexU.uNext;
+      User currUser = SearchUser(UserID);
+      Playlist currPlaylist = currUser.SearchPlaylist(playlistID);
+      if (currUser == null||currPlaylist==null) {
+        return;
       }
->>>>>>> Stashed changes
+
+      Song currSong = currPlaylist.First;
     }
   }
-<<<<<<< Updated upstream
+
+    Song SearchSong(String Att) {
+      Index = First;
+      while (IndexU!=null) {
+        if (IndexU.UID.equals(Att)) {
+          //||
+          //Index.TITLE.equals(Att)||
+          //Index.ARTIST.equals(Att)||
+          //Index.GENRE.equals(Att)||
+          //Index.BEATpm.equals(Att)
+
+          return Index;
+        } else if (IndexU.uNext==null) {
+          continue;
+        } else {
+          IndexU = IndexU.uNext;
+        }
+      }
+    }
     boolean mathcesGenreOrArtist(Song song, String[] genres, int genreCount, String[]artist, int artistCount) {
       for (int i=0; i<genreCount; i++) {
         if (song.GENRE.equals(genres[i])) {
           return true;
         }
       }
-      for (int i=0; i<artistCount; i++) {
-        if (song.ARTIST.equals(artist[i])) {
-          return true;
-        }
+    
+    
+    for (int i=0; i<artistCount; i++) {
+      if (song.ARTIST.equals(artist[i])) {
+        return true;
       }
-      return false;
     }
-    Song SearchSong(String Att) {
-      Index = First;
-      while (Index!=null) {
-        if (Index.ID.equals(Att)) {
+    return false;
+  }
+  
+  Song SearchSong(String Att) {
+    Index = First;
+    while (Index!=null) {
+      if (Index.ID.equals(Att)) {
 
-          return Index;
-        } else if (Index.sNext==null) {
-          println("NotFound");
-        } else {
-          Index = Index.sNext;
-        }
+        return Index;
+      } else if (Index.sNext==null) {
+        println("NotFound");
+      } else {
+        Index = Index.sNext;
       }
-      return null;
     }
+    return null;
+  }
 
-    User SearchUser(String Att) {
-      IndexU = FirstU;
-      while (IndexU!=null) {
-        if (IndexU.UID.equals(Att)) {
+  User SearchUser(String Att) {
+    IndexU = FirstU;
+    while (IndexU!=null) {
+      if (IndexU.UID.equals(Att)) {
 
-          return IndexU;
-        } else if (IndexU.uNext==null) {
-          println("NotFound");
-        } else {
-          IndexU = IndexU.uNext;
-        }
+        return IndexU;
+      } else if (IndexU.uNext==null) {
+        println("NotFound");
+      } else {
+        IndexU = IndexU.uNext;
       }
-      return null;
     }
-    void addUser(String name, String pw, String UID)
+    return null;
+  }
+  void addUser(String name, String pw, String UID)
+  {
+    if (firstUser == null)
     {
-      if (firstUser == null)
+        if (firstUser == null)
       {
         User FirstU = new User(name, pw, UID);
         IndexU = FirstU;
@@ -229,146 +232,203 @@ class MusicPlayerSystem
         uFile.println(name + ", " + pw + ", " + UID);
         uFile.flush();
         uFile.close();
-=======
-
-  String UID(String Username)
-  {
-    IndexU=FirstU;
-    while (IndexU!=null)
-    {
-      if (IndexU.username.equals(Username))
-      {
-        return IndexU.UID;
-      } else
-      {
-        IndexU=IndexU.uNext;
-      }
-    }
-    return "";
-  }
-
-  User SearchUser(String userID) {
-    IndexU = FirstU;
-    while (IndexU!=null) {
-      if (IndexU.UID.equals(userID)) {
-        return IndexU;
-      } else if (IndexU.uNext==null) {
-        println("NotFound");
-      } else {
-        IndexU = IndexU.uNext;
->>>>>>> Stashed changes
       }
     }
   }
-<<<<<<< Updated upstream
-=======
-  void createUser(String firstName, String lastName, String email, String username, String password, String UID)
-  {
-    println(UID);
-    String[]info={firstName, lastName, email, username, password, UID};
-    newUser=createWriter("/data/Users/"+username+"/"+username+".txt");
-    for (int i=0; i<info.length; i++)
-    {
-      newUser.println(info[i]);
-    }
-    newUser.flush();
-    newUser.close();
-    addUser(info[0], info[1], info[2], info[3], info[4], UID);
-  }
-
-  void addUser(String firstName, String lastName, String email, String username, String password, String UID)
-  {
-    if (FirstU==null)
-    {
-      User newUser=new User(firstName, lastName, email, username, password, UID);
-      curUser=newUser;
-      FirstU=newUser;
-    } else
-    {
-      IndexU=FirstU;
-      while (IndexU!=null)
+      String UID(String Username)
       {
-        if (IndexU.uNext==null)
+        IndexU=FirstU;
+        while (IndexU!=null)
+        {
+          if (IndexU.username.equals(Username))
+          {
+            return IndexU.UID;
+          } else
+          {
+            IndexU=IndexU.uNext;
+          }
+        }
+        return "";
+      }
+
+      User SearchUser(String userID) {
+        IndexU = FirstU;
+        while (IndexU!=null) {
+          if (IndexU.UID.equals(userID)) {
+            return IndexU;
+          } else if (IndexU.uNext==null) {
+            println("NotFound");
+          } else {
+            IndexU = IndexU.uNext;
+          }
+        }
+      }
+      void createUser(String firstName, String lastName, String email, String username, String password, String UID)
+      {
+        println(UID);
+        String[]info={firstName, lastName, email, username, password, UID};
+        newUser=createWriter("/data/Users/"+username+"/"+username+".txt");
+        for (int i=0; i<info.length; i++)
+        {
+          newUser.println(info[i]);
+        }
+        newUser.flush();
+        newUser.close();
+        addUser(info[0], info[1], info[2], info[3], info[4], UID);
+      }
+
+      void addUser(String firstName, String lastName, String email, String username, String password, String UID)
+      {
+        if (FirstU==null)
         {
           User newUser=new User(firstName, lastName, email, username, password, UID);
           curUser=newUser;
-          IndexU.uNext=newUser;
-          break;
+          FirstU=newUser;
         } else
         {
-          IndexU=IndexU.uNext;
+          IndexU=FirstU;
+          while (IndexU!=null)
+          {
+            if (IndexU.uNext==null)
+            {
+              User newUser=new User(firstName, lastName, email, username, password, UID);
+              curUser=newUser;
+              IndexU.uNext=newUser;
+              break;
+            } else
+            {
+              IndexU=IndexU.uNext;
+            }
+          }
         }
       }
-    }
-  }
 
-  void editInfo()
-  {
-  }
-
-  void addToLib(Song s)
-  {
-    curUser.addLib(s);
-    PrintWriter library;
-    File temp;
-    temp=new File(dataPath("/Users/"+curUser.username+"/library.txt"));
-    String[]songsInLib=loadStrings(temp);
-    library=createWriter(dataPath("/Users/"+curUser.username+"/library.txt"));
-    if (songsInLib!=null)
-      for (int i=0; i<songsInLib.length; i++)
+      void editInfo()
       {
-        library.println(songsInLib[i]);
       }
-    library.println(s.ID+", " +s.TITLE+", " +s.ARTIST+", "+s.GENRE+", "+s.BEATpm+", "+s.tag1+", "+s.tag2+", "+s.tag3);
-    library.flush();
-    library.close();
-  }
 
-  void removeFromLib(Song s)
-  {
-    curUser.removeLib(s);
-    PrintWriter library;
-    File temp;
-    temp=new File(dataPath("/Users/"+curUser.username+"/library.txt"));
-    String[]songsInLib=loadStrings(temp);
-    for (int i=0; i<songsInLib.length; i++)
-    {
-      String []info=songsInLib[i].split(",");
-      String title=info[1].trim();
-      String artist=info[2].trim();
-      if (s.TITLE.equals(title)&&s.ARTIST.equals(artist))
+      void addToLib(Song s)
       {
-        songsInLib[i]="";
+        curUser.addLib(s);
+        PrintWriter library;
+        File temp;
+        temp=new File(dataPath("/Users/"+curUser.username+"/library.txt"));
+        String[]songsInLib=loadStrings(temp);
         library=createWriter(dataPath("/Users/"+curUser.username+"/library.txt"));
-        for (int j=0; j<songsInLib.length; j++)
-        {
-          if (!songsInLib[j].equals(""))
-            library.println(songsInLib[j]);
-        }
+        if (songsInLib!=null)
+          for (int i=0; i<songsInLib.length; i++)
+          {
+            library.println(songsInLib[i]);
+          }
+        library.println(s.ID+", " +s.TITLE+", " +s.ARTIST+", "+s.GENRE+", "+s.BEATpm+", "+s.tag1+", "+s.tag2+", "+s.tag3);
         library.flush();
         library.close();
-        break;
       }
-    }
-  }
 
-  void setLib()
-  {
-    File curUserLib=new File(dataPath("/Users/"+curUser.username+"/library.txt"));
-    String[]userLibSongs=loadStrings(curUserLib);
-    if (userLibSongs!=null)
-      for (String p : userLibSongs)
+      void removeFromLib(Song s)
       {
-        String[]sAttributes=p.split(",");
-        Song temp=new Song(sAttributes[0].trim(), sAttributes[1].trim(), sAttributes[2].trim(), sAttributes[3].trim(), sAttributes[4].trim(), sAttributes[5].trim(), sAttributes[6].trim(), sAttributes[7].trim()) ;
-        curUser.addLib(temp);
-        system.lib.add(sAttributes[1].trim());
+        curUser.removeLib(s);
+        PrintWriter library;
+        File temp;
+        temp=new File(dataPath("/Users/"+curUser.username+"/library.txt"));
+        String[]songsInLib=loadStrings(temp);
+        for (int i=0; i<songsInLib.length; i++)
+        {
+          String []info=songsInLib[i].split(",");
+          String title=info[1].trim();
+          String artist=info[2].trim();
+          if (s.TITLE.equals(title)&&s.ARTIST.equals(artist))
+          {
+            songsInLib[i]="";
+            library=createWriter(dataPath("/Users/"+curUser.username+"/library.txt"));
+            for (int j=0; j<songsInLib.length; j++)
+            {
+              if (!songsInLib[j].equals(""))
+                library.println(songsInLib[j]);
+            }
+            library.flush();
+            library.close();
+            break;
+          }
+        }
       }
-  }
 
-  void reset()
+      void setLib()
+      {
+        File curUserLib=new File(dataPath("/Users/"+curUser.username+"/library.txt"));
+        String[]userLibSongs=loadStrings(curUserLib);
+        if (userLibSongs!=null)
+          for (String p : userLibSongs)
+          {
+            String[]sAttributes=p.split(",");
+            Song temp=new Song(sAttributes[0].trim(), sAttributes[1].trim(), sAttributes[2].trim(), sAttributes[3].trim(), sAttributes[4].trim(), sAttributes[5].trim(), sAttributes[6].trim(), sAttributes[7].trim()) ;
+            curUser.addLib(temp);
+            system.lib.add(sAttributes[1].trim());
+          }
+      }
+
+      void reset()
+      {
+        curUser.libraryFirst=null;
+      }
+    
+    
+    //This code was just hanging out here I'm not sure which method it belongs in
+    //User FirstU = new User(name, pw, UID);
+    //IndexU = FirstU;
+    //PrintWriter uFile;
+    //uFile = createWriter("data/Users/" + UID + ".txt");
+    //uFile.println(name + ", " + pw + ", " + UID);
+    //uFile.flush();
+    //uFile.close();
+    //else
+    
+{
+  User aUser = new User(name, pw, UID);
+  IndexU.uNext = aUser;
+  IndexU = aUser;
+  createWriter("data/Users/" + UID + ".txt");
+  PrintWriter uFile;
+  uFile = createWriter("data/Users/" + UID + ".txt");
+  uFile.println(name + ", " + pw + ", " + UID);
+  uFile.flush();
+  uFile.close();
+}
+}
+void eventGeneration()
+{
+  if (eventTimer - millis() <= -5000)
   {
-    curUser.libraryFirst=null;
+    String requestingUser = str(random(int(100)));
+    //if(requestingUser != currentUser)
+    addViews();
+
+    eventTimer = millis();
   }
 }
->>>>>>> Stashed changes
+
+void addViews()
+{
+  PrintWriter stats;
+  stats = createWriter("data/songStats.txt");
+  Index = First;
+  String newViews;
+  //println(vals.length);
+  while (Index!=null)
+  {
+    newViews = str(int(random(100)));
+    Index.views = str(int(Index.views) + int(newViews));
+    //println(Index.views + " " + Index.ID);
+    stats.println(Index.views);
+    if (Index == null)
+    {
+      break;
+    }
+    println(Index.views);
+    Index = Index.sNext;
+  }
+
+  stats.flush();
+  stats.close();
+  songStatIDs = loadStrings("data/songStats.txt");
+}
