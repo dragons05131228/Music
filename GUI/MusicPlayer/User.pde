@@ -1,19 +1,15 @@
 class User
 {
-Playlist p;
+  SongDatabase ds;
+  Playlist p;
   Playlist PFirst;
   Playlist PIndex;
-  MusicPlayerSystem mps;
   User uNext;
-<<<<<<< Updated upstream
-  
-  Song LibFirst;
-  Song LibIndex;
-=======
+  Song libraryFirst;
+  Song libraryIndex;
 
 
   String firstName, lastName, email;
->>>>>>> Stashed changes
   String username;
   String password;
 
@@ -21,17 +17,6 @@ Playlist p;
 
   User(String firstName, String lastName, String email, String username, String password, String UID)
   {
-<<<<<<< Updated upstream
-    mps   = new MusicPlayerSystem();
-    p = new Playlist(this.mps,str(1));
-    username = name;
-    password = pw;
-    this.UID = UID;
-  }
-  
-  
- Playlist SearchPlaylist(String Att) {
-=======
     ds   = new SongDatabase();
     p = new Playlist(this.ds, str(1));
     this.username = username;
@@ -41,12 +26,11 @@ Playlist p;
     this.email=email;
     this.UID = UID;
   }
+
   Playlist SearchPlaylist(String Att) {
->>>>>>> Stashed changes
     PIndex = PFirst;
     while (PIndex!=null) {
       if (PIndex.PID.equals(Att)) {
-
         return PIndex;
       } else if (PIndex.pNext==null) {
         println("NotFound");
@@ -56,20 +40,93 @@ Playlist p;
     }
     return null;
   }
-  
-  
-  void playlistPrint() {
-    
-    p.AddSongPlaylist("1");
-    p.AddSongPlaylist("2");
-    p.AddSongPlaylist("3");
- p.AddSongPlaylist("4");
-    p.AddSongPlaylist("5");
-    p.AddSongPlaylist("6");
-     p.AddSongPlaylist("7");
-    p.AddSongPlaylist("8");
-    p.AddSongPlaylist("9");
-    //mps.removeSong("9");
-    p.PrintlAll();
+
+  void addLib(Song s)
+  {
+    if (libraryFirst==null)
+    {
+      println("True");
+      libraryFirst=s;
+      libraryIndex=libraryFirst;
+    } else
+    {
+      libraryIndex=libraryFirst;
+      while (libraryIndex!=null)
+      {
+        if (libraryIndex.next==null)
+        {
+          libraryIndex.next=s;
+          break;
+        } else
+          libraryIndex=libraryIndex.next;
+      }
+    }
+  }
+
+  void removeLib(Song s)
+  {
+    libraryIndex=libraryFirst;
+    while (libraryIndex!=null)
+    {
+      if (compare(libraryFirst, s))
+      {
+        removeFirst();
+        break;
+      } else if (libraryIndex.next==null&&compare(libraryIndex, s))
+      {
+        removeLast();
+        break;
+      } else if (compare(libraryIndex.next, s))
+      {
+        libraryIndex.next=libraryIndex.next.next;
+        break;
+      } else
+        libraryIndex=libraryIndex.next;
+    }
+  }
+  void removeFirst()
+  {
+    libraryIndex=libraryFirst.next;
+    libraryFirst=null;
+    libraryFirst=libraryIndex;
+  }
+
+  void removeLast()
+  {
+    libraryIndex=libraryFirst;
+    while (libraryIndex!=null)
+    {
+      if (libraryIndex.next.next==null)
+
+        break;
+      else
+        libraryIndex=libraryIndex.next;
+    }
+    libraryIndex.next=null;
+  }
+
+  boolean compare(Song one, Song two)
+  {
+    if (one.TITLE.equals(two.TITLE)&&one.ARTIST.equals(two.ARTIST))
+      return true;
+    return false;
+  }
+
+  void libDisplay()
+  {
+    libraryIndex=libraryFirst;
+    if (libraryIndex==null)
+      println("null");
+    else
+      println("working");
+    int posy=0;
+    while (libraryIndex!=null)
+    {
+      //libraryIndex.button.display();
+      textAlign(CORNER);
+      libraryIndex.display(300*posy+130);
+      posy++;
+      libraryIndex=libraryIndex.next;
+    }
   }
 }
