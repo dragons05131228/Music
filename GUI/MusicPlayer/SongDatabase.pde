@@ -48,10 +48,19 @@ class SongDatabase {
   {
     String[] files=loadStrings("SongsDatabase.txt");
     totalSongs=files.length;
+     String[] initViews = new String[1000];
+     int index=0;
+  for(String line : songStats)
+  {
+    String[] songStats = line.split(",");
+    String views = songStats[0].trim();
+    initViews[index] = views;
+    index++;
+  }
     for (int i=0; i<files.length; i++)
     {
       String p[]=files[i].split(",");
-      Song temp=new Song(p[0].trim(), p[1].trim(), p[2].trim(), p[3].trim(), p[4].trim(), p[5].trim(), p[6].trim(), p[7].trim());
+      Song temp=new Song(p[0].trim(), p[1].trim(), p[2].trim(), p[3].trim(), p[4].trim(), p[5].trim(), p[6].trim(), p[7].trim(), initViews[i]);
       add(temp);
     }
   }

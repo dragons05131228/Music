@@ -509,12 +509,12 @@ class GUI
         Song a=ds.grabbedSong();
         if (!lib.contains(a.TITLE))
         {
-          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tag1, a.tag2, a.tag3);
+          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tag1, a.tag2, a.tag3, a.views);
           mps.addToLib(t);
           lib.add(a.TITLE);
         } else
         {
-          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tag1, a.tag2, a.tag3);
+          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tag1, a.tag2, a.tag3, a.views);
           mps.removeFromLib(t);
           lib.remove(a.TITLE);
         }

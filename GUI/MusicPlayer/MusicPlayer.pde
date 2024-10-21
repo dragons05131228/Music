@@ -3,8 +3,8 @@ int stage=0;
 Set<String>usernames=new HashSet<String>();
 GUI system=new GUI();
 float lastMouseX, lastMouseY;
-String[] SongList;
-//String[] Song
+String[] songList;
+String[] songStats;
 User user1 = new User("user", "0", "1", "test", "test", "test");
 MusicPlayerSystem mps;
 int uFolderSize;
@@ -13,7 +13,7 @@ File[] uFiles;
 float transy;
 SongDatabase ds=new SongDatabase();
 void setup() {
-  SongList = loadStrings("SongsDatabase.txt");
+  songList = loadStrings("SongsDatabase.txt");
   size(800, 1000);
   initialize();
   
@@ -45,17 +45,18 @@ void UserLinkedList()
 
 
 void initialize() {
+ 
   
-  for (String line : SongList) {
-    String[] SongInfo = line.split(",");
-    String id = SongInfo[0].trim();
-    String title = SongInfo[1].trim();
-    String artist = SongInfo[2].trim();
-    String genre = SongInfo[3].trim();
-    String beatpm = SongInfo[4].trim();
-    String tag1 = SongInfo[5].trim();
-    String tag2 = SongInfo[6].trim();
-    String tag3 = SongInfo[7].trim();
+  for (String line : songList) {
+    String[] songInfo = line.split(",");
+    String id = songInfo[0].trim();
+    String title = songInfo[1].trim();
+    String artist = songInfo[2].trim();
+    String genre = songInfo[3].trim();
+    String beatpm = songInfo[4].trim();
+    String tag1 = songInfo[5].trim();
+    String tag2 = songInfo[6].trim();
+    String tag3 = songInfo[7].trim();
     //user1.mps.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
   } 
   for (int i=0; i<uFiles.length; i++)

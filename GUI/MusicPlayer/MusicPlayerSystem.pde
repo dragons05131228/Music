@@ -10,7 +10,7 @@ class MusicPlayerSystem
   User curUser;
   PrintWriter newUser;
   boolean loadSongStats = false;
-  String[] songStatIDs = new String[99];
+  String[] songStatIDs = new String[1000];
   float eventTimer;
 
   MusicPlayerSystem()
@@ -30,21 +30,21 @@ class MusicPlayerSystem
     }
   }
 
-  void appendNewSongToFile() {
-    Song s = SearchSong("100");
-    AddSong(s.ID, s.TITLE, s.ARTIST, s.GENRE, s.BEATpm, s.tag1, s.tag2, s.tag3, s.views);
-    PrintWriter output;
-    output = createWriter("data/Songsdatabase.txt");
+  //void appendNewSongToFile() {
+  //  Song s = SearchSong("100");
+  //  AddSong(s.ID, s.TITLE, s.ARTIST, s.GENRE, s.BEATpm, s.tag1, s.tag2, s.tag3, s.views);
+  //  PrintWriter output;
+  //  output = createWriter("data/Songsdatabase.txt");
 
-    if (SongList!=null) {
-      for (String line : SongList) {
-        output.println(line);
-      }
-    }
-    output.println(s.ID + ", " + s.TITLE +", " + s.ARTIST + ", " + s.GENRE + ", "+s.BEATpm+", "+s.tag1+", "+s.tag2 + ", " + s.tag3);
-    output.flush();
-    output.close();
-  }
+  //  if (SongList!=null) {
+  //    for (String line : SongList) {
+  //      output.println(line);
+  //    }
+  //  }
+  //  output.println(s.ID + ", " + s.TITLE +", " + s.ARTIST + ", " + s.GENRE + ", "+s.BEATpm+", "+s.tag1+", "+s.tag2 + ", " + s.tag3);
+  //  output.flush();
+  //  output.close();
+  //}
 
 
 
@@ -177,19 +177,20 @@ class MusicPlayerSystem
     return null;
   }
 
-  //User SearchUser(String Att) {
-  //  IndexU = FirstU;
-  //  while (IndexU!=null) {
-  //    if (IndexU.UID.equals(Att)) {
+  User SearchUser(String Att) {
+    IndexU = FirstU;
+    while (IndexU!=null) {
+      if (IndexU.UID.equals(Att)) {
 
-  //      return IndexU;
-  //    } else if (IndexU.uNext==null) {
-  //      println("NotFound");
-  //    } else {
-  //      IndexU = IndexU.uNext;
-  //    }
-  //  }
-  //}
+        return IndexU;
+      } else if (IndexU.uNext==null) {
+        println("NotFound");
+      } else {
+        IndexU = IndexU.uNext;
+      }
+    }
+    return null;
+  }
 
   String UID(String Username)
   {
@@ -301,14 +302,26 @@ class MusicPlayerSystem
   void setLib()
   {
     File curUserLib=new File(dataPath("/Users/"+curUser.username+"/library.txt"));
+    int index = 0;
     String[]userLibSongs=loadStrings(curUserLib);
+    String[] initViews = new String[1000];
     if (userLibSongs!=null)
+        for(String line : songStats)
+      {
+        
+        String[] songStats = line.split(",");
+        String views = songStats[0].trim();
+        initViews[index] = views;
+        index++;
+      }
+      index = 0;
       for (String p : userLibSongs)
       {
         String[]sAttributes=p.split(",");
-        Song temp = new Song(sAttributes[0].trim(), sAttributes[1].trim(), sAttributes[2].trim(), sAttributes[3].trim(), sAttributes[4].trim(), sAttributes[5].trim(), sAttributes[6].trim(), sAttributes[7].trim()) ;
+        Song temp = new Song(sAttributes[0].trim(), sAttributes[1].trim(), sAttributes[2].trim(), sAttributes[3].trim(), sAttributes[4].trim(), sAttributes[5].trim(), sAttributes[6].trim(), sAttributes[7].trim(), initViews[index] );
         curUser.addLib(temp);
         system.lib.add(sAttributes[1].trim());
+        index++;
       }
   }
 
