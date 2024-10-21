@@ -1,19 +1,13 @@
 class Playlist {
 
-<<<<<<< Updated upstream
   MusicPlayerSystem mp;
-
   Song First;
-      Song Index;
-
-=======
+  Song Index;
   SongDatabase database;
-  Song First;
->>>>>>> Stashed changes
   Playlist pNext;
   String PID;
   int counter;
-<<<<<<< Updated upstream
+  
   Playlist(MusicPlayerSystem mp,String PID) {
     this.mp=mp;
     this.PID = PID;
@@ -27,7 +21,8 @@ class Playlist {
       mp.SearchSong(sAttribute).BEATpm,
       mp.SearchSong(sAttribute).tag1,
       mp.SearchSong(sAttribute).tag2,
-      mp.SearchSong(sAttribute).tag3);
+      mp.SearchSong(sAttribute).tag3,
+      mp.SearchSong(sAttribute).views);
     if (First==null) {
       First = sTemp;
     } else {
@@ -53,20 +48,17 @@ boolean Contains(String songID){
 }
  void PrintlAll() {
    Song Index;
-=======
-  Playlist(SongDatabase database, String PID) {
-    this.database=database;
-    this.PID = PID;
-  }
-
-  void PrintAll() {
-    Song Index;
->>>>>>> Stashed changes
-    Index = First;
+   Index = First;
     while (Index!=null)
     {
       println(Index.ID);
       Index=Index.sNext;
     }
+ }  
+    
+    Playlist(SongDatabase database, String PID) {
+    this.database=database;
+    this.PID = PID;
   }
+
 }

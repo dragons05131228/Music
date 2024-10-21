@@ -4,7 +4,8 @@ Set<String>usernames=new HashSet<String>();
 GUI system=new GUI();
 float lastMouseX, lastMouseY;
 String[] SongList;
-User user1 = new User("user", "0", "1");
+//String[] Song
+User user1 = new User("user", "0", "1", "test", "test", "test");
 MusicPlayerSystem mps;
 int uFolderSize;
 File userFolder;
@@ -14,7 +15,6 @@ SongDatabase ds=new SongDatabase();
 void setup() {
   SongList = loadStrings("SongsDatabase.txt");
   size(800, 1000);
-<<<<<<< Updated upstream
   initialize();
   
      //user1.playlistPrint();
@@ -24,18 +24,12 @@ void setup() {
   //us.ds.appendNewSongToFile();
   //us.playlistPrint();
   system.userLoginBoxes();
-=======
->>>>>>> Stashed changes
   mps = new MusicPlayerSystem();
   system.userLoginBoxes();
-<<<<<<< Updated upstream
-
-=======
   userFolder=new File(dataPath("/Users"));
   uFiles=userFolder.listFiles();
   ds.initDatabase();
   UserLinkedList();
->>>>>>> Stashed changes
 }
 
 void draw() {
@@ -46,13 +40,12 @@ void draw() {
 
 void UserLinkedList()
 {
-<<<<<<< Updated upstream
   background(0);
 }
 
 
 void initialize() {
-
+  
   for (String line : SongList) {
     String[] SongInfo = line.split(",");
     String id = SongInfo[0].trim();
@@ -63,9 +56,8 @@ void initialize() {
     String tag1 = SongInfo[5].trim();
     String tag2 = SongInfo[6].trim();
     String tag3 = SongInfo[7].trim();
-     user1.mps.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
+    //user1.mps.AddSong(id, title, artist, genre, beatpm, tag1, tag2, tag3);
   } 
-=======
   for (int i=0; i<uFiles.length; i++)
   {
     //First Name, Last Name,Email,Username, Password, UID
@@ -83,7 +75,6 @@ void initialize() {
       }
     }
   }
->>>>>>> Stashed changes
 }
 
 void mouseReleased()

@@ -11,9 +11,10 @@ class Song {
   String tag1;
   String tag2;
   String tag3;
+  String views;
   Box button;
 
-  Song (String ID, String TITLE, String ARTIST, String GENRE, String BEATpm, String tag1, String tag2, String tag3) {
+  Song (String ID, String TITLE, String ARTIST, String GENRE, String BEATpm, String tag1, String tag2, String tag3, String views) {
     sNext = null;
     this.ID = ID;
     this.TITLE = TITLE;
@@ -23,6 +24,7 @@ class Song {
     this.tag1 = tag1;
     this.tag2 = tag2;
     this.tag3 = tag3;
+    this.views = views;
   }
 
   void Update() {
