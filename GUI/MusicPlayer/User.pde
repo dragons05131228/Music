@@ -120,12 +120,18 @@ class User
     else
       println("working");
     int posy=0;
+    int posx=0;
     while (libraryIndex!=null)
     {
       //libraryIndex.button.display();
       textAlign(CORNER);
-      libraryIndex.display(300*posy+130);
-      posy++;
+      libraryIndex.display(posx*370+40, 300*posy+130);
+      posx++;
+      if (posx==2)
+      {
+        posy++;
+        posx=0;
+      }
       libraryIndex=libraryIndex.next;
     }
   }

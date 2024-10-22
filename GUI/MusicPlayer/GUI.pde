@@ -307,6 +307,7 @@ class GUI
     }
     return null;
   }
+
   Box searchBox(String boxName)
   {
     boxIterator = firstBox;
@@ -434,6 +435,8 @@ class GUI
     lastMouseY=mouseY;
     checkBox();
     Box temp=grabbedBox();
+
+    
     if (stage==0)
     {
       if (temp==null)return;
@@ -509,12 +512,12 @@ class GUI
         Song a=ds.grabbedSong();
         if (!lib.contains(a.TITLE))
         {
-          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tag1, a.tag2, a.tag3, a.views);
+          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tags[0], a.tags[1], a.tags[2], a.views);
           mps.addToLib(t);
           lib.add(a.TITLE);
         } else
         {
-          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tag1, a.tag2, a.tag3, a.views);
+          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tags[0], a.tags[1], a.tags[2], a.views);
           mps.removeFromLib(t);
           lib.remove(a.TITLE);
         }

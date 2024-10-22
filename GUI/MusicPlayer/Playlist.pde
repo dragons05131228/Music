@@ -7,21 +7,21 @@ class Playlist {
   Playlist pNext;
   String PID;
   int counter;
-  
-  Playlist(MusicPlayerSystem mp,String PID) {
+
+  Playlist(MusicPlayerSystem mp, String PID) {
     this.mp=mp;
     this.PID = PID;
   }
-  
+
   void AddSongPlaylist(String sAttribute) {
     Song sTemp = new Song(mp.SearchSong(sAttribute).ID,
       mp.SearchSong(sAttribute).TITLE,
-     mp.SearchSong(sAttribute).ARTIST,
+      mp.SearchSong(sAttribute).ARTIST,
       mp.SearchSong(sAttribute).GENRE,
       mp.SearchSong(sAttribute).BEATpm,
-      mp.SearchSong(sAttribute).tag1,
-      mp.SearchSong(sAttribute).tag2,
-      mp.SearchSong(sAttribute).tag3,
+      mp.SearchSong(sAttribute).tags[0],
+      mp.SearchSong(sAttribute).tags[1],
+      mp.SearchSong(sAttribute).tags[2],
       mp.SearchSong(sAttribute).views);
     if (First==null) {
       First = sTemp;
@@ -33,32 +33,31 @@ class Playlist {
       Index.sNext=sTemp;
     }
   }
-  
-  
- 
-boolean Contains(String songID){
-  Index = First;
-  while(Index != null){
-    if(Index.ID.equals(songID)){
-      return true;
+
+
+
+  boolean Contains(String songID) {
+    Index = First;
+    while (Index != null) {
+      if (Index.ID.equals(songID)) {
+        return true;
+      }
+      Index = Index.sNext;
     }
-    Index = Index.sNext;
+    return false;
   }
-  return false;
-}
- void PrintlAll() {
-   Song Index;
-   Index = First;
+  void PrintlAll() {
+    Song Index;
+    Index = First;
     while (Index!=null)
     {
       println(Index.ID);
       Index=Index.sNext;
     }
- }  
-    
-    Playlist(SongDatabase database, String PID) {
+  }
+
+  Playlist(SongDatabase database, String PID) {
     this.database=database;
     this.PID = PID;
   }
-
 }

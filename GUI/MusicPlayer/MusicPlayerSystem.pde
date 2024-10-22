@@ -9,7 +9,6 @@ class MusicPlayerSystem
   Set<String> genreTracker = new HashSet<>();
   User curUser;
   PrintWriter newUser;
-  boolean loadSongStats = false;
   String[] songStatIDs = new String[1000];
   float eventTimer;
 
@@ -32,7 +31,7 @@ class MusicPlayerSystem
 
   //void appendNewSongToFile() {
   //  Song s = SearchSong("100");
-  //  AddSong(s.ID, s.TITLE, s.ARTIST, s.GENRE, s.BEATpm, s.tag1, s.tag2, s.tag3, s.views);
+  //  AddSong(s.ID, s.TITLE, s.ARTIST, s.GENRE, s.BEATpm, s.tags[0], s.tags[1], s.tags[2], s.views);
   //  PrintWriter output;
   //  output = createWriter("data/Songsdatabase.txt");
 
@@ -57,9 +56,9 @@ class MusicPlayerSystem
       SearchSong(sAttribute).ARTIST,
       SearchSong(sAttribute).GENRE,
       SearchSong(sAttribute).BEATpm,
-      SearchSong(sAttribute).tag1,
-      SearchSong(sAttribute).tag2,
-      SearchSong(sAttribute).tag3,
+      SearchSong(sAttribute).tags[0],
+      SearchSong(sAttribute).tags[1],
+      SearchSong(sAttribute).tags[2],
       SearchSong(sAttribute).views);
     if (sToRemove==null) {
       return;
@@ -85,7 +84,7 @@ class MusicPlayerSystem
 
   void generateSuggestions(String UserID, String playlistID) {
     // Find the current user
-    User currUser = user1;
+    User currUser = FirstU;
     while (currUser != null && !currUser.UID.equals(UserID)) {
       currUser = currUser.uNext;
     }
@@ -105,11 +104,17 @@ class MusicPlayerSystem
     // Step 1: Analyze genres and artists in the given playlist
     Set<String> genresInPlaylist = new HashSet<>();
     Set<String> artistsInPlaylist = new HashSet<>();
+    Set<String> tagsInPlaylist = new HashSet<>();
     Song currSong = currPlaylist.First;
 
     while (currSong != null) {
       genresInPlaylist.add(currSong.GENRE);
       artistsInPlaylist.add(currSong.ARTIST);
+
+      for (String tag : currSong.tags) {
+        tagsInPlaylist.add(tag);
+      }
+
       currSong = currSong.sNext;
     }
 
@@ -266,7 +271,7 @@ class MusicPlayerSystem
       {
         library.println(songsInLib[i]);
       }
-    library.println(s.ID+", " +s.TITLE+", " +s.ARTIST+", "+s.GENRE+", "+s.BEATpm+", "+s.tag1+", "+s.tag2+", "+s.tag3);
+    library.println(s.ID+", " +s.TITLE+", " +s.ARTIST+", "+s.GENRE+", "+s.BEATpm+", "+s.tags[0]+", "+s.tags[1]+", "+s.tags[2]);
     library.flush();
     library.close();
   }
@@ -306,23 +311,23 @@ class MusicPlayerSystem
     String[]userLibSongs=loadStrings(curUserLib);
     String[] initViews = new String[1000];
     if (userLibSongs!=null)
-        for(String line : songStats)
+      for (String line : songStats)
       {
-        
+
         String[] songStats = line.split(",");
         String views = songStats[0].trim();
         initViews[index] = views;
         index++;
       }
-      index = 0;
-      for (String p : userLibSongs)
-      {
-        String[]sAttributes=p.split(",");
-        Song temp = new Song(sAttributes[0].trim(), sAttributes[1].trim(), sAttributes[2].trim(), sAttributes[3].trim(), sAttributes[4].trim(), sAttributes[5].trim(), sAttributes[6].trim(), sAttributes[7].trim(), initViews[index] );
-        curUser.addLib(temp);
-        system.lib.add(sAttributes[1].trim());
-        index++;
-      }
+    index = 0;
+    for (String p : userLibSongs)
+    {
+      String[]sAttributes=p.split(",");
+      Song temp = new Song(sAttributes[0].trim(), sAttributes[1].trim(), sAttributes[2].trim(), sAttributes[3].trim(), sAttributes[4].trim(), sAttributes[5].trim(), sAttributes[6].trim(), sAttributes[7].trim(), initViews[index] );
+      curUser.addLib(temp);
+      system.lib.add(sAttributes[1].trim());
+      index++;
+    }
   }
 
   void reset()

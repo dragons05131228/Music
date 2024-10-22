@@ -8,10 +8,9 @@ class Song {
   String ARTIST;
   String GENRE;
   String BEATpm;
-  String tag1;
-  String tag2;
-  String tag3;
+  String[] tags = new String[3];
   String views;
+  String similarities;
   Box button;
 
   Song (String ID, String TITLE, String ARTIST, String GENRE, String BEATpm, String tag1, String tag2, String tag3, String views) {
@@ -21,31 +20,47 @@ class Song {
     this.ARTIST = ARTIST;
     this. GENRE = GENRE;
     this.BEATpm = BEATpm;
-    this.tag1 = tag1;
-    this.tag2 = tag2;
-    this.tag3 = tag3;
+    tags[0] = tag1;
+    tags[1] = tag2;
+    tags[2] = tag3;
     this.views = views;
+    similarities = "";
   }
 
   void Update() {
   }
 
-  void display(int y)
+  void display(int x, int y)
   {
-    textSize(18);
+    String newString="";
+    textSize(20);
     fill(0);
-    textAlign(CENTER);
-    text(TITLE+"\n"+"By: "+ARTIST+"\n", 210, y*70+300);
-    text(GENRE, 480, y*70+310);
-    text(BEATpm, 580, y*70+310);
-    if (!system.lib.contains(TITLE))
+    if (ARTIST.length()>17)
     {
-      fill(0, 255, 0);
-      text("ADD TO LIBRARY", 690, y*70+310);
+      String[]split=ARTIST.split(" ");
+      for (int i=0; i<split.length; i++)
+      {
+        newString+=split[i]+" ";
+        if (i==2)
+          newString+="\n";
+      }
+      text(TITLE+"\n\n"+"By: "+newString+"\n\n"+GENRE, x+160, y+50);
     } else
     {
-      fill( 255, 0, 0);
-      text("REMOVE FROM LIBRARY", 690, y*70+310);
+      text(TITLE+"\n\n"+"By: "+ARTIST+"\n\n"+GENRE, x+160, y+50);
+    }
+    if (stage==2&&!system.lib.contains(TITLE))
+    {
+      text("ADD TO LIBRARY", x+200, y+220);
+    } else if (stage==2)
+    {
+      text("IN LIBRARY", x+200, y+220);
+    } else if (stage==3)
+    {
+      if (mps.curUser.PFirst!=null)
+      {
+        text("ADD TO PLAYLIST", x+200, y+220);
+      }
     }
   }
 }
