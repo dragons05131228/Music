@@ -1,5 +1,24 @@
 5, Hotel California, Eagles, Rock, 75, classic, acoustic, iconic
 7, Shape of You, Ed Sheeran, Pop, 96, catchy, tropical, love
-15, Wonderwall, Oasis, Britpop, 87, nostalgic, acoustic, anthem
 19, Thunderstruck, AC/DC, Rock, 134, energetic, guitar, powerful
 22, Someone Like You, Adele, Pop, 67, emotional, piano, breakup
+221, Levels, Avicii, EDM, 126, uplifting, electronic, dance
+2, Billie Jean, Michael Jackson, Pop, 117, iconic, dance, funky
+15, Wonderwall, Oasis, Britpop, 87, nostalgic, acoustic, anthem
+1, Blinding Lights, The Weeknd, Pop, 171, retro, upbeat, synth
+730, Maggie May, Rod Stewart, Rock, 130, storytelling, energetic, classic
+944, Regulate, Warren G ft. Nate Dogg, Hip Hop, 94, storytelling, G-funk, classic
+506, Great Balls of Fire, Jerry Lee Lewis, Rock & Roll, 168, piano, energetic, classic
+900, Ocean Pulse, Deep Blue, Chillout, 95, calming, fluid, ambient
+284, Perfect, Ed Sheeran, Pop, 63, romantic, ballad, wedding
+734, Living for the City, Stevie Wonder, Soul, 99, social-commentary, soulful, classic
+258, High Hopes, Panic! At The Disco, Alternative, 82, anthemic, uplifting, catchy
+900, Ocean Pulse, Deep Blue, Chillout, 95, calming, fluid, ambient
+69, Don't Start Now, Dua Lipa, Disco, 124, groovy, upbeat, catchy
+332, Darktown Strutters' Ball, Original Dixieland Jazz Band, Jazz, 130, dance, upbeat, classic
+437, G.I. Jive, Louis Jordan, Jump Blues, 140, upbeat, wartime, catchy
+677, Runaround Sue, Dion, Rock & Roll, 153, catchy, upbeat, classic
+38, Time, Hans Zimmer, Soundtrack, 60, cinematic, orchestral, epic
+927, Macarena, Los Del Rio, Latin Pop, 103, dance, catchy, party
+826, Addicted to Love, Robert Palmer, Rock, 114, catchy, guitar, classic
+194, Break Free, Ariana Grande ft. Zedd, EDM, 130, dance, catchy, upbeat

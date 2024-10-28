@@ -18,7 +18,6 @@ class SongDatabase {
   void display()
   {
     Index=First;
-    int posx=0;
     int posy=0;
 
     while (Index!=null)
@@ -26,13 +25,8 @@ class SongDatabase {
 
       textAlign(CORNER);
       Index.button.display();
-      Index.display(posx*370+40, 300*posy+130);
-      posx++;
-      if (posx==2)
-      {
-        posy++;
-        posx=0;
-      }
+      Index.display(posy);
+      posy++;
       Index=Index.next;
     }
   }
@@ -54,18 +48,10 @@ class SongDatabase {
   {
     String[] files=loadStrings("SongsDatabase.txt");
     totalSongs=files.length;
-    String[] initViews = new String[1000];
-    String[] songStats = loadStrings("songStats.txt");
-    for (int i=0; i<initViews.length; i++)
-    {
-      String tempStats[] = songStats[i].split(",");
-      String views = tempStats[0].trim();
-      initViews[i] = views;
-    }
     for (int i=0; i<files.length; i++)
     {
       String p[]=files[i].split(",");
-      Song temp=new Song(p[0].trim(), p[1].trim(), p[2].trim(), p[3].trim(), p[4].trim(), p[5].trim(), p[6].trim(), p[7].trim(), initViews[i]);
+      Song temp=new Song(p[0].trim(), p[1].trim(), p[2].trim(), p[3].trim(), p[4].trim(), p[5].trim(), p[6].trim(), p[7].trim(), null);
       add(temp);
     }
   }
@@ -73,17 +59,11 @@ class SongDatabase {
   void setMainButton()
   {
     Index=First;
-    int posx=0;
     int posy=0;
     while (Index!=null)
     {
-      Index.button=new Box(posx*370+215, 300*posy+325, 180, 40, "AddSong", "Submit", color(255), color(0));
-      posx++;
-      if (posx==2)
-      {
-        posy++;
-        posx=0;
-      }
+      Index.button=new Box(600, 70*posy+270, 180, 70, "AddSong", "Submit", color(255), color(0));
+      posy++;
       Index=Index.next;
     }
   }

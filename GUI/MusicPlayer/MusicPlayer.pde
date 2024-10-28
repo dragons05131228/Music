@@ -13,7 +13,7 @@ float transy;
 SongDatabase ds=new SongDatabase();
 
 void setup() {
-  songStats = new String[1000];
+  songStats = loadStrings("songStats.txt");
   songList = loadStrings("SongsDatabase.txt");
   size(800, 1000);
   system.userLoginBoxes();
@@ -21,6 +21,8 @@ void setup() {
   userFolder=new File(dataPath("/Users"));
   uFiles=userFolder.listFiles();
   ds.initDatabase();
+  mps.initAdds();
+  mps.checkAdds();
   UserLinkedList();
 }
 
@@ -28,11 +30,12 @@ void draw() {
   background(255);
   translate(0, transy);
   system.stages();
+  mps.eventGeneration();
 }
 
 void UserLinkedList()
 {
-for (int i=0; i<uFiles.length; i++)
+  for (int i=0; i<uFiles.length; i++)
   {
     //First Name, Last Name,Email,Username, Password, UID
     File temp=new File(dataPath("/Users/"+uFiles[i].getName()));
@@ -72,10 +75,18 @@ void keyTyped()
       system.backspace();
     }
   }
+  if (temp.type.equals("numBox"))
+  {
+    if (key=='1'||key=='2'||key=='3'||key=='4'||key=='5'||key=='6'||key=='7'||key=='8'||key=='9'||key=='0')
+    {
+      system.getInput(key);
+    }
+  }
 }
 void mouseWheel(MouseEvent event)
 {
+  if (stage<2||system.showMenu)return;
   float e=event.getCount();
-  if (stage==2)
-    transy+=e*40;
+  transy=constrain(transy, -1000000, -40);
+  transy+=e*40;
 }

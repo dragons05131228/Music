@@ -17,13 +17,13 @@ class MusicPlayerSystem
     eventTimer = millis();
   }
 
-  void AddSong(String id, String title, String artist, String genre, String beatpm, String tag1, String tag2, String tag3, String views) {
+  void AddSong(String id, String title, String artist, String genre, String beatpm, String tag1, String tag2, String tag3, String adds) {
     if (First ==null) {
-      First = new Song(id, title, artist, genre, beatpm, tag1, tag2, tag3, views);
+      First = new Song(id, title, artist, genre, beatpm, tag1, tag2, tag3, adds);
 
       Index=First;
     } else {
-      Song aSong = new Song(id, title, artist, genre, beatpm, tag1, tag2, tag3, views);
+      Song aSong = new Song(id, title, artist, genre, beatpm, tag1, tag2, tag3, adds);
       Index.sNext = aSong;
       Index = aSong;
     }
@@ -59,7 +59,7 @@ class MusicPlayerSystem
       SearchSong(sAttribute).tags[0],
       SearchSong(sAttribute).tags[1],
       SearchSong(sAttribute).tags[2],
-      SearchSong(sAttribute).views);
+      SearchSong(sAttribute).adds);
     if (sToRemove==null) {
       return;
     }
@@ -82,71 +82,235 @@ class MusicPlayerSystem
 
 
 
-  void generateSuggestions(String UserID, String playlistID) {
-    // Find the current user
-    User currUser = FirstU;
-    while (currUser != null && !currUser.UID.equals(UserID)) {
-      currUser = currUser.uNext;
-    }
+   //void generateSuggestions(String UserID, String playlistID) {
+   // // Find the current user
+   // User currUser = user1;
+   // while (currUser != null && !currUser.UID.equals(UserID)) {
+   //   currUser = currUser.uNext;
+   // }
 
-    Playlist currPlaylist;
-    if (currUser != null) {
-      currPlaylist = currUser.p;
-    } else {
-      currPlaylist = null;
-    }
+   // Playlist currPlaylist;
+   // if (currUser != null) {
+   //   currPlaylist = currUser.p;
+   // } else {
+   //   println("User or Playlist not found.");
+   //   return; // User or Playlist not found
+   // }
 
-    if (currUser == null || currPlaylist == null) {
-      println("User or Playlist not found.");
-      return; // User or Playlist not found
-    }
+   // // Step 1: Analyze genres, BEATpms, and tags in the given playlist
+   // Set<String> genresInPlaylist = new HashSet<>();
+   // Set<String> artistsInPlaylist = new HashSet<>();
+   // Set<String> tagsInPlaylist = new HashSet<>();
+   // Set<Integer> BEATpmsInPlaylist = new HashSet<>();
+   // Song currSong = currPlaylist.First;
 
-    // Step 1: Analyze genres and artists in the given playlist
-    Set<String> genresInPlaylist = new HashSet<>();
-    Set<String> artistsInPlaylist = new HashSet<>();
-    Set<String> tagsInPlaylist = new HashSet<>();
-    Song currSong = currPlaylist.First;
+   // while (currSong != null) {
+   //   genresInPlaylist.add(currSong.GENRE);
+   //   artistsInPlaylist.add(currSong.ARTIST);
 
-    while (currSong != null) {
-      genresInPlaylist.add(currSong.GENRE);
-      artistsInPlaylist.add(currSong.ARTIST);
+   //   // Convert BEATpm to integer and check if it's in range
+   //   int BEATpm = Integer.parseInt(currSong.BEATpm);
 
-      for (String tag : currSong.tags) {
-        tagsInPlaylist.add(tag);
-      }
+   //   BEATpmsInPlaylist.add(BEATpm);
 
-      currSong = currSong.sNext;
-    }
 
-    // Step 2: Look for similar songs in the user's library
-    Set<Song> suggestedSongs = new HashSet<>();
-    currSong = First;
+   //   for (String tag : currSong.tags) {
+   //     tagsInPlaylist.add(tag);
+   //   }
+   //   currSong = currSong.sNext;
+   // }
 
-    while (currSong != null) {
-      // Suggest if song is not in the playlist and matches genre or artist
-      if (!currPlaylist.Contains(currSong.ID) &&
-        (genresInPlaylist.contains(currSong.GENRE) ||
-        artistsInPlaylist.contains(currSong.ARTIST))) {
-        suggestedSongs.add(currSong);
-      }
-      currSong = currSong.sNext;
-    }
+   // // Step 2: Look for similar songs in the user's library
+   // Set<Song> suggestedSongs = new HashSet<>();
+   // currSong = First; // Assuming 'First' points to the first song in the user's library
 
-    // Step 3: Print suggestions
-    if (!suggestedSongs.isEmpty()) {
+   // while (currSong != null) {
+   //   if (!currPlaylist.Contains(currSong.ID)) {
+   //     StringBuilder similarities = new StringBuilder();
+   //     int matchCount = 0;
+
+   //     // Check for matching genre
+   //     if (genresInPlaylist.contains(currSong.GENRE)) {
+   //       similarities.append("Genre: ").append(currSong.GENRE);
+   //       matchCount++;
+   //       currSong.wgt = currSong.wgt+40;
+   //     }
+
+   //     // Check for matching artist
+   //     //if (artistsInPlaylist.contains(currSong.ARTIST)) {
+   //     //    if (similarities.length() > 0) {
+   //     //        similarities.append(", ");
+   //     //    }
+   //     //    similarities.append("Artist: ").append(currSong.ARTIST);
+   //     //    matchCount++;
+   //     //    currSong.wgt = currSong.wgt+10;
+   //     //}
+
+   //     // Check for matching BEATpm
+   //     int currBEATpm = Integer.parseInt(currSong.BEATpm);
+   //     for (Integer BEATpm : BEATpmsInPlaylist) {
+   //       if (currBEATpm >= BEATpm - 10 && currBEATpm <= BEATpm + 10) {
+   //         if (similarities.length() > 0) {
+   //           similarities.append(", ");
+   //         }
+   //         similarities.append("BEATpm: ").append(currSong.BEATpm); // Ensure BEATpm is added here
+   //         matchCount++;
+   //              int diff;
+   //             if(BEATpm<=currBEATpm){
+   //              diff = (  currBEATpm - BEATpm);
+   //             }
+   //             else{
+   //               diff = (BEATpm - currBEATpm);
+   //             }
+   //          currSong.wgt += 30-diff;
+   
+   //         break; // Stop after the first match
+   //       }
+   //     }
+
+   //     // Check for matching tags
+   //     if (currSong.tags != null) {
+   //       for (String tag : currSong.tags) {
+   //         if (tagsInPlaylist.contains(tag)) {
+   //           if (similarities.length() > 0) {
+   //             similarities.append(", ");
+   //           }
+   //           similarities.append("Tag: ").append(tag);
+   //           matchCount++;
+   //           currSong.wgt = currSong.wgt+10;
+   //         }
+   //       }
+   //     }
+
+   //     // If there are 2 or more matches, add the song to the suggested list
+   //     if (matchCount >= 2&&currSong.wgt>=60) {
+   //       currSong.similarities = similarities.toString();
+   //       suggestedSongs.add(currSong);
+   //     }
+   //   }
+   //   currSong = currSong.sNext; // Move to the next song
+   // }
+
+   // // Step 3: Look for songs in other users' playlists
+   // User otherUser = user1; // Start from the first user
+   // while (otherUser != null) {
+   //   if (!otherUser.UID.equals(UserID)) { // Exclude the current user
+   //     Playlist otherPlaylist = otherUser.p; // Get the other user's playlist
+   //     Song otherSong = otherPlaylist.First; // Start from the first song in the other user's playlist
+
+   //     while (otherSong != null) {
+   //       if (!currPlaylist.Contains(otherSong.ID)) {
+   //         StringBuilder similarities = new StringBuilder();
+   //         int matchCount = 0;
+
+   //         // Check for matching genre
+   //         if (genresInPlaylist.contains(otherSong.GENRE)) {
+   //           similarities.append("Genre: ").append(otherSong.GENRE);
+   //           matchCount++;
+   //           otherSong.wgt = otherSong.wgt+ 40;
+   //         }
+
+   //         // Check for matching artist
+   //         //if (artistsInPlaylist.contains(otherSong.ARTIST)) {
+   //         //    if (similarities.length() > 0) {
+   //         //        similarities.append(", ");
+   //         //    }
+   //         //    similarities.append("Artist: ").append(otherSong.ARTIST);
+   //         //    matchCount++;
+   //         //}
+
+   //         // Check for matching BEATpm
+   //         int otherBEATpm = Integer.parseInt(otherSong.BEATpm);
+   //         for (Integer BEATpm : BEATpmsInPlaylist) {
+   //           if (otherBEATpm >= BEATpm - 10 && otherBEATpm <= BEATpm + 10) {
+   //             if (similarities.length() > 0) {
+   //               similarities.append(", ");
+   //             }
+   //             similarities.append("BEATpm: ").append(otherSong.BEATpm); // Ensure BEATpm is added here
+   //             matchCount++;
+   //             int diff;
+   //             if(BEATpm<=otherBEATpm){
+   //              diff = (  otherBEATpm - BEATpm);
+   //             }
+   //             else{
+   //               diff = (BEATpm - otherBEATpm);
+   //             }
+   //              currSong.wgt += 30-diff;
+   //             break; // Stop after the first match
+   //           }
+   //         }
+
+   //         // Check for matching tags
+   //         if (otherSong.tags != null) {
+   //           for (String tag : otherSong.tags) {
+   //             if (tagsInPlaylist.contains(tag)) {
+   //               if (similarities.length() > 0) {
+   //                 similarities.append(", ");
+   //               }
+   //               similarities.append("Tag: ").append(tag);
+   //               matchCount++;
+   //               otherSong.wgt = otherSong.wgt+10;
+   //             }
+   //           }
+   //         }
+
+   //         // If there are 2 or more matches, add the song to the suggested list
+   //         if (matchCount >= 2 && otherSong.wgt >=60) {
+   //           otherSong.similarities = similarities.toString();
+   //           suggestedSongs.add(otherSong);
+   //         }
+   //       }
+   //       otherSong = otherSong.sNext; // Move to the next song in the other user's playlist
+   //     }
+   //   }
+   //   otherUser = otherUser.uNext; // Move to the next user in the linked list
+   // }
+
+   // // Step 4: Print suggestions
+   // if (!suggestedSongs.isEmpty()) {
+   //   // Convert the Set to an array
+   //   int count =0;
+   //   Song[] suggestedArray = new Song[suggestedSongs.size()];
+   //   int index = 0;
+   //   for (Song song : suggestedSongs) {
+   //     suggestedArray[index++] = song;
+   //   }
+
+   //   // Sort the array by wgt in descending order
+   //   for (int i = 0; i < suggestedArray.length - 1; i++) {
+   //     for (int j = 0; j < suggestedArray.length - 1 - i; j++) {
+   //       if (suggestedArray[j].wgt < suggestedArray[j + 1].wgt) {
+   //         // Swap
+   //         Song temp = suggestedArray[j];
+   //         suggestedArray[j] = suggestedArray[j + 1];
+   //         suggestedArray[j + 1] = temp;
+   //       }
+   //     }
+   //   }
+
       println("Suggested Songs for " + currUser.username + ":");
-      for (Song song : suggestedSongs) {
-        println(song.GENRE + " by " + song.ARTIST + "," + song.TITLE);
-      }
+      for (Song song : suggestedArray) {
+        // Print each suggested song with its genre, artist, title, and similarities
+        println(
+        //song.GENRE +  " by " +
+        song.ID + ", " + song.TITLE + " (Similarities: "  + song.similarities + "), " + song.wgt + "%");
+      count++;
+    }
     } else {
       println("No suggestions available for " + currUser.username + ".");
-      //currUser = SearchUser(UserID);
-      currPlaylist = currUser.SearchPlaylist(playlistID);
-      if (currUser == null||currPlaylist==null) {
-        return;
-      }
+    }
+  }
 
-      currSong = currPlaylist.First;
+  void sortSuggestedSongs(List<Song> songs) {
+    for (int i = 0; i < songs.size() - 1; i++) {
+      for (int j = 0; j < songs.size() - 1 - i; j++) {
+        if (songs.get(j).wgt < songs.get(j + 1).wgt) {
+          // Swap
+          Song temp = songs.get(j);
+          songs.set(j, songs.get(j + 1));
+          songs.set(j + 1, temp);
+        }
+      }
     }
   }
 
@@ -258,9 +422,9 @@ class MusicPlayerSystem
   {
   }
 
-  void addToLib(Song s)
+  void addToLib(Song s, User u)
   {
-    curUser.addLib(s);
+    u.addLib(s);
     PrintWriter library;
     File temp;
     temp=new File(dataPath("/Users/"+curUser.username+"/library.txt"));
@@ -309,27 +473,75 @@ class MusicPlayerSystem
     File curUserLib=new File(dataPath("/Users/"+curUser.username+"/library.txt"));
     int index = 0;
     String[]userLibSongs=loadStrings(curUserLib);
-    String[] initViews = new String[1000];
+    String[] initAdds = new String[1000];
     if (userLibSongs!=null)
       for (String line : songStats)
       {
 
         String[] songStats = line.split(",");
-        String views = songStats[0].trim();
-        initViews[index] = views;
+        String adds = songStats[0].trim();
+        initAdds[index] = adds;
         index++;
       }
     index = 0;
     for (String p : userLibSongs)
     {
       String[]sAttributes=p.split(",");
-      Song temp = new Song(sAttributes[0].trim(), sAttributes[1].trim(), sAttributes[2].trim(), sAttributes[3].trim(), sAttributes[4].trim(), sAttributes[5].trim(), sAttributes[6].trim(), sAttributes[7].trim(), initViews[index] );
+      Song temp = new Song(sAttributes[0].trim(), sAttributes[1].trim(), sAttributes[2].trim(), sAttributes[3].trim(), sAttributes[4].trim(), sAttributes[5].trim(), sAttributes[6].trim(), sAttributes[7].trim(), initAdds[index] );
       curUser.addLib(temp);
       system.lib.add(sAttributes[1].trim());
       index++;
     }
   }
 
+void createPlaylist(String name, String PID)
+  {
+    PrintWriter newPlist=createWriter(dataPath("/Users/"+curUser.username+"/Playlists/"+name+".txt"));
+    newPlist.println(PID);
+    newPlist.flush();
+    newPlist.close();
+    curUser.pNames.add(name);
+    Playlist p=new Playlist(name, PID);
+    curUser.addPlaylist(p);
+  }
+
+  void pAddSong(Playlist plist, Song p)
+  {
+    plist.addSong(p);
+    File temp=new File(dataPath("/Users/"+curUser.username+"/Playlists/"+system.curPlaylist.name+".txt"));
+    String[]arr=loadStrings(temp);
+    PrintWriter addToPlist=createWriter(dataPath("/Users/"+curUser.username+"/Playlists/"+system.curPlaylist.name+".txt"));
+    for (String s : arr)
+    {
+      addToPlist.println(s);
+    }
+    addToPlist.println(p.ID+", " + p.TITLE+", " + p.ARTIST+", " + p.GENRE+", " + p.BEATpm+", " + p.tags[0]+", " + p.tags[1]+", " + p.tags[2]);
+    addToPlist.flush();
+    addToPlist.close();
+  }
+
+  void removeSongPlist(Song p)
+  {
+    Playlist playlist=system.curPlaylist;
+    playlist.removeIndex(p.TITLE);
+    playlist.songs.remove(p.TITLE);
+    File playlistFile=new File(dataPath("/Users/"+curUser.username+"/Playlists/"+playlist.name+".txt"));
+    String[]playlistFileArr=loadStrings(playlistFile);
+    PrintWriter playlistWriter=createWriter(dataPath("/Users/"+curUser.username+"/Playlists/"+playlist.name+".txt"));
+    playlistWriter.println(playlistFileArr[0]);
+    for (int i=1; i<playlistFileArr.length; i++)
+    {
+      String[]song=playlistFileArr[i].split(",");
+      println(song[0], song[1]);
+      if (!song[1].trim().equals(p.TITLE))
+      {
+        playlistWriter.println(song[0]+", " + song[1]+", " + song[2]+", " + song[3]+", " +song[4]+", " +song[5]+", " + song[6]+", " + song[7]);
+      }
+    }
+    playlistWriter.flush();
+    playlistWriter.close();
+    playlist.setButton();
+  }
   void reset()
   {
     curUser.libraryFirst=null;
@@ -353,37 +565,116 @@ class MusicPlayerSystem
   {
     if (eventTimer - millis() <= -5000)
     {
-      String requestingUser = str(random(int(100)));
-      //if(requestingUser != currentUser)
-      addViews();
+      String requestingUser = str(int(random(5)));
+      String songID = str(int(random(1000)));
+
+      simAdds(requestingUser, songID);
+      //checkAdds();
 
       eventTimer = millis();
     }
   }
 
-  void addViews()
+  void initAdds()
+  {
+    Song addIndex = ds.First;
+    while(addIndex != null)
+    {
+     if(!"0".equals(addIndex.adds) && addIndex.adds != null )
+     {
+       addIndex.initAdds = true;
+     }
+     addIndex = addIndex.next;
+    }
+    for (File userFolder : uFiles)
+    {
+      File libraryFile = new File(userFolder, "library.txt");
+      if (libraryFile.exists())
+      {
+        String[] contents = loadStrings(libraryFile);
+        for (int i=0; i<contents.length; i++)
+        {
+          String[] temp = contents[i].split(",");
+          String id = temp[0];
+          //temp[i].trim();
+
+          Song index = ds.First;
+          while (index != null)
+          {
+            //println(index.initAdds);
+            //println(index.ID, id);
+            if (index.adds == null)
+            {
+              index.adds = str(0);
+            }
+            if (index.ID.equals(id) && index.initAdds == false)
+            {
+              index.adds = str(int(index.adds) + 1);
+              //println(index.adds, index.ID);
+            }
+            index = index.next;
+          }
+        }
+      }
+    }
+  }
+
+  void checkAdds()
   {
     PrintWriter stats;
     stats = createWriter("data/songStats.txt");
-    Index = First;
-    String newViews;
-    //println(vals.length);
+    Index = ds.First;
+    String[] statsList = new String[1000];
+    //println(Index);
     while (Index!=null)
     {
-      newViews = str(int(random(100)));
-      Index.views = str(int(Index.views) + int(newViews));
-      //println(Index.views + " " + Index.ID);
-      stats.println(Index.views);
-      if (Index == null)
-      {
-        break;
-      }
-      println(Index.views);
-      Index = Index.sNext;
-    }
 
+      if (Index.adds == null)
+      {
+        statsList[int(Index.ID) - 1] = "0";
+      } else
+      {
+        statsList[int(Index.ID) - 1] = Index.adds;
+      }
+
+      Index = Index.next;
+    }
+    for(int i=0; i<statsList.length; i++)
+    {
+      println(statsList[i]);
+      stats.println(statsList[i]);
+    }
     stats.flush();
     stats.close();
-    songStatIDs = loadStrings("data/songStats.txt");
+    //songStatIDs = loadStrings("data/songStats.txt");
+  }
+  void simAdds(String user, String songID)
+  {
+    User grabbedUser = new User(null, null, null, null, null, null);
+    Song grabbedSong = new Song(null, null, null, null, null, null, null, null, null);
+    indexUser = FirstU;
+    while (indexUser != null)
+    {
+      if (indexUser.UID.equals(user))
+      {
+        grabbedUser = indexUser;
+        break;
+      }
+      indexUser = indexUser.uNext;
+    }
+    Index = ds.First;
+    while (Index != null)
+    {
+
+      if (Index.ID.equals(songID))
+      {
+        grabbedSong = Index;
+        break;
+      }
+      Index = Index.next;
+    }
+
+    println(grabbedUser.UID, grabbedSong.ID);
+    addToLib(grabbedSong, grabbedUser);
   }
 }

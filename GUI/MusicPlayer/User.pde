@@ -1,12 +1,12 @@
 class User
 {
-  SongDatabase ds;
   Playlist p;
   Playlist PFirst;
   Playlist PIndex;
   User uNext;
   Song libraryFirst;
   Song libraryIndex;
+  Set<String>pNames=new HashSet<String>();
 
 
   String firstName, lastName, email;
@@ -17,8 +17,6 @@ class User
 
   User(String firstName, String lastName, String email, String username, String password, String UID)
   {
-    ds   = new SongDatabase();
-    p = new Playlist(this.ds, str(1));
     this.username = username;
     this.password = password;
     this.firstName=firstName;
@@ -41,11 +39,33 @@ class User
     return null;
   }
 
+  void addPlaylist(Playlist p)
+  {
+    if (PFirst==null)
+    {
+      PFirst=p;
+      PIndex=PFirst;
+    } else
+    {
+      PIndex=PFirst;
+      while (PIndex!=null)
+      {
+        if (PIndex.pNext==null)
+        {
+          PIndex.pNext=p;
+          break;
+        } else
+          PIndex=PIndex.pNext;
+      }
+    }
+  }
   void addLib(Song s)
   {
+    println(libraryFirst);
     if (libraryFirst==null)
     {
-      println("True");
+      //println("adding..." + s.TITLE);
+      //println("True");
       libraryFirst=s;
       libraryIndex=libraryFirst;
     } else
@@ -120,19 +140,77 @@ class User
     else
       println("working");
     int posy=0;
-    int posx=0;
     while (libraryIndex!=null)
     {
       //libraryIndex.button.display();
       textAlign(CORNER);
-      libraryIndex.display(posx*370+40, 300*posy+130);
-      posx++;
-      if (posx==2)
-      {
-        posy++;
-        posx=0;
-      }
+      libraryIndex.display(300*posy+130);
+      posy++;
       libraryIndex=libraryIndex.next;
     }
+  }
+  void setLibButton(int space)
+  {
+    libraryIndex=libraryFirst;
+    int posy=2;
+    while (libraryIndex!=null)
+    {
+      libraryIndex.button=new Box(600, 70*posy+space, 180, 70, libraryIndex.TITLE, "Submit", color(255), color(0));//130
+      posy++;
+      libraryIndex=libraryIndex.next;
+    }
+  }
+
+  Song grabbedLibSong()
+  {
+    libraryIndex=libraryFirst;
+    while (libraryIndex!=null)
+    {
+      if (libraryIndex.button.mouseOver(mouseX, mouseY))
+      {
+        return libraryIndex;
+      } else
+        libraryIndex=libraryIndex.next;
+    }
+    return null;
+  }
+
+  void displayPlaylists()
+  {
+    PIndex=PFirst;
+    int posy=0;
+    while (PIndex!=null)
+    {
+      PIndex.display(posy);
+      posy++;
+      PIndex=PIndex.pNext;
+    }
+  }
+
+
+  void setPlaylistButton()
+  {
+    PIndex=PFirst;
+    int posy=0;
+    while (PIndex!=null)
+    {
+      PIndex.button=new Box(100, posy*70+250, 600, 50, "editPlaylist", "Submit", color(240), color(255, 255, 255, 0));
+      posy++;
+      PIndex=PIndex.pNext;
+    }
+  }
+
+  Playlist grabbedPlaylist()
+  {
+    PIndex=PFirst;
+    while (PIndex!=null)
+    {
+      if (PIndex.button.mouseOver(mouseX, mouseY))
+      {
+        return PIndex;
+      } else
+        PIndex=PIndex.pNext;
+    }
+    return null;
   }
 }

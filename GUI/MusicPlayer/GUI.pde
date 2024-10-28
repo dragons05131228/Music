@@ -5,9 +5,11 @@ class GUI
   boolean showPassword;
   boolean showError;
   boolean showMenu;
+  boolean overlap;
   int error;
+  Playlist curPlaylist;
   Set<String>lib=new HashSet<String>();
-
+  
   String[] errors={"Please Fill In The Missing Blanks", "Invalid Email", "Username Must Be A Minimum Of 5 Characters", "Password Must Be A Minimum Of 8 Characters", "Passwords Are Not The Same", "Invalid Username Or Password", "Username Already Exists"};
 
   GUI()
@@ -36,6 +38,12 @@ class GUI
       logout();
     if (stage==7)
       createPlaylistPage();
+    if (stage==8)
+      editPlaylistPage();
+    if (stage==9)
+      addSongPage();
+    if (stage==10)
+      editPNamePage();
   }
 
   void logout()
@@ -114,6 +122,29 @@ class GUI
 
   void cPlaylistBoxes()
   {
+    system.addBox(200, 360, 400, 50, "playlistName", "Input", color(200), color(0));
+    system.addBox(350, 430, 100, 40, "CreatePlaylist", "Submit", color(240), 0);
+    system.addBox(350, 490, 100, 40, "Cancel", "Submit", color(240), 0);
+  }
+
+  void ePlaylistBoxes()
+  {
+    system.addBox(32, 20, 160, 50, "back", "Submit", color(240), color(0));
+    system.addBox(224, 20, 160, 50, "addSong", "Submit", color(240), color(0));
+    system.addBox(416, 20, 160, 50, "editName", "Submit", color(240), color(0));
+    system.addBox(608, 20, 160, 50, "delete", "Submit", color(240), color(0));
+  }
+
+  void ePlistNameBoxes()
+  {
+    system.addBox(200, 360, 400, 50, "playlistName", "Input", color(200), color(0));
+    system.addBox(350, 430, 100, 40, "renamePlaylist", "Submit", color(240), 0);
+    system.addBox(350, 490, 100, 40, "Cancel", "Submit", color(240), 0);
+  }
+
+  void addSongBoxes()
+  {
+    system.addBox(32, 20, 160, 50, "back", "Submit", color(240), color(0));
   }
   //USER DISPLAY
   //---------------------------------------------------------------------------------------------
@@ -123,6 +154,7 @@ class GUI
   {
     for (int i=0; i<3; i++)
     {
+      noStroke();
       fill(0);
       rect(30, i*10+80, 30, 5);
     }
@@ -256,6 +288,53 @@ class GUI
   void createPlaylistPage()
   {
     background(255);
+    display();
+    textSize(50);
+    text("Playlist Name", 400, 300);
+    textSize(20);
+    text("Submit", 400, 455);
+    text("Cancel", 400, 515);
+    if (showError==true)
+    {
+      fill(255, 0, 0);
+      text(errors[error], 400, 600);
+    }
+  }
+
+  void editPlaylistPage()
+  {
+    background(255);
+    display();
+    textSize(40);
+    text(curPlaylist.name, 400, 150);
+    if (curPlaylist.first==null)
+    {
+      text("No Songs In This Playlist", 400, 500);
+    } else
+    {
+      for (int i=0; i<=curPlaylist.songs.size(); i++)
+      {
+        fill(255);
+        stroke(0);
+        rect(20, i*70+270, 380, 70);
+        rect(400, i*70+270, 160, 70);
+        rect(560, i*70+270, 40, 70);
+      }
+      rect(600, 270, 180, 70);
+      fill(0);
+      textSize(20);
+      text("Remove Song", 690, 310);
+      text("Song Title and Song Artist", 210, 310);
+      text("Genre", 480, 310);
+      text("BPM", 580, 310);
+      curPlaylist.songDisplay();
+    }
+    fill(0);
+    textSize(20);
+    text("Back", 112, 50);
+    text("Add Songs", 304, 50);
+    text("Edit Name", 496, 50);
+    text("Delete", 688, 50);
   }
 
   void accountInfo()
@@ -266,9 +345,66 @@ class GUI
   void library()
   {
     background(255);
-    display();
+    for (int i=0; i<=lib.size(); i++)
+    {
+      fill(255);
+      stroke(0);
+      rect(20, i*70+200, 380, 70);
+      rect(400, i*70+200, 160, 70);
+      rect(560, i*70+200, 40, 70);
+    }
+    rect(600, 200, 180, 70);
+    textSize(20);
+    fill(0);
+    textAlign(CENTER);
+    text("Remove", 690, 240);
+    text("Song Title and Song Artist", 210, 240);
+    text("Genre", 480, 240);
+    text("BPM", 580, 240);
     mps.curUser.libDisplay();
+    display();
     displayMenu();
+  }
+  void editPNamePage()
+  {
+    background(255);
+    display();
+    textSize(50);
+    text("Rename", 400, 290);
+    textSize(20);
+    text("Submit", 400, 455);
+    text("Cancel", 400, 515);
+    if (showError==true)
+    {
+      fill(255, 0, 0);
+      text(errors[error], 400, 600);
+    }
+  }
+  void addSongPage()
+  {
+    background(255);
+    display();
+    fill(0);
+    textSize(50);
+    text("Library", 400, 200);
+    for (int i=0; i<=lib.size(); i++)
+    {
+      fill(255);
+      stroke(0);
+      rect(20, i*70+230, 380, 70);
+      rect(400, i*70+230, 160, 70);
+      rect(560, i*70+230, 40, 70);
+    }
+    rect(600, 230, 180, 70);
+    textSize(20);
+    fill(0);
+    textAlign(CENTER);
+    text("Remove", 690, 270);
+    text("Song Title and Song Artist", 210, 270);
+    text("Genre", 480, 270);
+    text("BPM", 580, 270);
+    text("Back", 112, 50);
+    mps.curUser.libDisplay();
   }
   //DISPLAY
   //---------------------------------------------------------------------------------------------
@@ -512,12 +648,12 @@ class GUI
         Song a=ds.grabbedSong();
         if (!lib.contains(a.TITLE))
         {
-          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tags[0], a.tags[1], a.tags[2], a.views);
-          mps.addToLib(t);
+          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tags[0], a.tags[1], a.tags[2], a.adds);
+          mps.addToLib(t, mps.curUser );
           lib.add(a.TITLE);
         } else
         {
-          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tags[0], a.tags[1], a.tags[2], a.views);
+          Song t=new Song(a.ID, a.TITLE, a.ARTIST, a.GENRE, a.BEATpm, a.tags[0], a.tags[1], a.tags[2], a.adds);
           mps.removeFromLib(t);
           lib.remove(a.TITLE);
         }

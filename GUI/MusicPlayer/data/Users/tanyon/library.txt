@@ -1,0 +1,12 @@
+588, Blue Monday, Fats Domino, R&B, 136, piano, bluesy, classic
+22, Someone Like You, Adele, Pop, 67, emotional, piano, breakup
+930, Un-Break My Heart, Toni Braxton, R&B, 55, emotional, ballad, classic
+247, Paris, The Chainsmokers, EDM, 100, mellow, electronic, pop
+102, Numb, Linkin Park, Nu Metal, 110, angsty, electronic, rock
+532, Kansas City, Wilbert Harrison, R&B, 132, upbeat, city, classic
+789, Carry On Wayward Son, Kansas, Rock, 122, epic, guitar, classic
+473, I Can't Get Started, Bunny Berigan, Jazz, 68, trumpet, instrumental, classic
+152, Closer, The Chainsmokers ft. Halsey, EDM, 95, catchy, duet, electronic
+32, Beat It, Michael Jackson, Rock, 139, energetic, guitar, dance
+453, Blues in the Night, Woody Herman, Jazz, 100, bluesy, instrumental, classic
+261, Lucid Dreams, Juice WRLD, Hip Hop, 84, emotional, melodic, rap

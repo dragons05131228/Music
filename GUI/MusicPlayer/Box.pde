@@ -25,6 +25,14 @@ class Box
   {
     fill(c);
     stroke(stroke);
+    if (stage==4&&bName.equals("editPlaylist")&&!system.showMenu)
+    {
+      if (mouseOver(mouseX, mouseY))
+      {
+        stroke(0);
+      } else
+        stroke(255, 255, 255, 0);
+    }
     rect(pos.x, pos.y, len, wid);
     if (type.equals("Submit"))
     {

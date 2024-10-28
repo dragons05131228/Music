@@ -9,11 +9,12 @@ class Song {
   String GENRE;
   String BEATpm;
   String[] tags = new String[3];
-  String views;
+  String adds;
   String similarities;
   Box button;
+  boolean initAdds;
 
-  Song (String ID, String TITLE, String ARTIST, String GENRE, String BEATpm, String tag1, String tag2, String tag3, String views) {
+  Song (String ID, String TITLE, String ARTIST, String GENRE, String BEATpm, String tag1, String tag2, String tag3, String adds) {
     sNext = null;
     this.ID = ID;
     this.TITLE = TITLE;
@@ -23,44 +24,56 @@ class Song {
     tags[0] = tag1;
     tags[1] = tag2;
     tags[2] = tag3;
-    this.views = views;
+    this.adds = adds;
     similarities = "";
+    initAdds = false;
   }
 
   void Update() {
   }
 
-  void display(int x, int y)
+  void display(int y, int c)
   {
-    String newString="";
-    textSize(20);
+    textSize(18);
     fill(0);
-    if (ARTIST.length()>17)
+    textAlign(CENTER);
+    text(TITLE+"\n"+"By: "+ARTIST+"\n", 210, y*70+c);//300
+    text(GENRE, 480, y*70+c+10);//310
+    text(BEATpm, 580, y*70+c+10);//310
+    if (stage==2)
     {
-      String[]split=ARTIST.split(" ");
-      for (int i=0; i<split.length; i++)
+      if (!system.lib.contains(TITLE))
       {
-        newString+=split[i]+" ";
-        if (i==2)
-          newString+="\n";
-      }
-      text(TITLE+"\n\n"+"By: "+newString+"\n\n"+GENRE, x+160, y+50);
-    } else
-    {
-      text(TITLE+"\n\n"+"By: "+ARTIST+"\n\n"+GENRE, x+160, y+50);
-    }
-    if (stage==2&&!system.lib.contains(TITLE))
-    {
-      text("ADD TO LIBRARY", x+200, y+220);
-    } else if (stage==2)
-    {
-      text("IN LIBRARY", x+200, y+220);
-    } else if (stage==3)
-    {
-      if (mps.curUser.PFirst!=null)
+        fill(0, 255, 0);
+        text("ADD TO LIBRARY", 690, y*70+c+10);//310
+      } else
       {
-        text("ADD TO PLAYLIST", x+200, y+220);
+        fill(0);
+        text("IN LIBRARY", 690, y*70+c+10);//310
       }
     }
+    if (stage==3)
+    {
+      fill(255, 0, 0);
+      text("REMOVE FROM LIBRARY", 690, y*70+310);
+    }
+    if (stage==8)
+    {
+      fill(255, 0, 0);
+      textSize(15);
+      text("REMOVE FROM PLAYLIST", 690, y*70+380);
+    }
+    if (stage==9)
+    {
+      fill(#00C49A);
+      if (!system.curPlaylist.songs.contains(TITLE))
+        text("ADD TO PLAYLIST", 690, y*70+340);
+      else
+      {
+        fill(0);
+        text("IN PLAYLIST", 690, y*70+340);
+      }
+    }
+  }
   }
 }
